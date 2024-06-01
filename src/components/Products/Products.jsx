@@ -1,15 +1,14 @@
 import Nav from "../Home/Nav"
-
-function Productus() {
+function Products() {
     return (
         <>
         <Nav />
         <h1>
             Procuct us
         </h1>
-
+            <ProductCard/>
         </>
     )
 }
 
-export default Productus
+export default Products

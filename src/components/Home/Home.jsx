@@ -3,6 +3,7 @@ import Nav from './Nav'
 import ProductCard from './ProductCard'
 import Footer from './Footer';
 import { Link } from 'react-router-dom';
+import Form from './Form'
 function Home() {
     const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
     return (
@@ -36,8 +37,11 @@ function Home() {
                         })
                         }
                     </div>
+                    <div className='view-all-button'>
+                        <button>View All Products</button>
+                    </div>
+                    <Form/>
                     <Footer/>
-
                 </div>
 
                 

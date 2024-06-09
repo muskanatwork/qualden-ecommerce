@@ -354,6 +354,40 @@ textarea {
   color: black;
 } 
 
+/* Accodian design in the about us page */
+.accordianDiv {
+  background-color: rgb(247, 245, 242);
+  display: inline-block;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 20px;
+}
+
+.accordianDiv hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 1px;
+  background-color: rgb(251, 168, 13);
+}
+
+.accordianDiv h3 {
+  color: #09501a;
+  margin-left: 10px;
+}
+
+.accordianDiv div {
+  padding-left: 20px;
+  padding: 10px;
+  border-bottom: dotted 1px black;
+}
+
+.aboutusContentDiv {
+  display: flex;
+}
+
+
+
+
 
 /* Contact Us css */
 /* contact us table design */
@@ -463,3 +497,7 @@ button[type="submit"]:last-of-type:hover {
   background-color: rgb(245, 240, 233);
   border: 1px solid #ccc;
 }
+
+
+
+

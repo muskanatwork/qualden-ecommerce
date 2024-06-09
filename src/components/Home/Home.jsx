@@ -1,4 +1,3 @@
-import Carousel from './Carousel'
 import Nav from './Nav'
 import ProductCard from './ProductCard'
 import Footer from './Footer';

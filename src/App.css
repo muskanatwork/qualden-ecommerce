@@ -5,7 +5,7 @@
 
 
 /* Product Card */
-.div1 {
+/* .div1 {
   display: inline-block;
   max-height: 280px;
   max-width: 230px;
@@ -29,7 +29,54 @@
   text-align: center;
   font-weight: bold;
   font-size: 1.2em;
+} */
+
+
+.productCartContainer {
+  display: flex;
+  flex-wrap: wrap;
+  
 }
+
+.cartContainer {
+  width: 100%;
+  padding-left: 30px;
+  background-color: rgb(232, 232, 215);
+}
+
+.cartContainer h1 {
+  text-align: center;
+  padding: 30px;
+}
+
+.ProductCardDiv {
+  border: 1px solid #ccc;
+  background-color: rgb(253, 253, 245);
+  border-radius: 8px;
+  padding: 8px;
+  /* margin: auto; */
+  margin-bottom: 20px;
+  margin-right: 20px;
+  width: 250px;
+}
+
+.ProductCardDiv div {
+  border: 1px solid #ccc;
+}
+
+.ProductCardDiv img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+.ProductCardDiv h3 {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 18px;
+  color: #333;
+}
+
 
 /* Carousel-Button On Home page */
  .carousel-button {

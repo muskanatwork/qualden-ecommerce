@@ -1,12 +1,14 @@
-const ProductCard = () => {
-  return (
-    <div className='div1'>
-      <div className='div2'>
-        <img className='img' src='https://2.wlimg.com/product_images/bc-small/2020/2/4222645/noise-sensor-1582793122-5316534.jpeg' />
+const ProduntCard = ()=>{
+  return(
+      <>
+      <div className="ProductCardDiv">
+          <div>
+              <img src="https://2.wlimg.com/product_images/bc-small/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg"/>
+          </div>
+          <h3>Industrial Noise Sensor</h3>
       </div>
-      <p>Industrial noise sensor</p>
-    </div>
-  );
+      </>
+  )
 }
 
-export default ProductCard
+export default ProduntCard

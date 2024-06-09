@@ -3,6 +3,8 @@
   /* border: solid red 2px; */
 }
 
+
+/* Product Card */
 .div1 {
   display: inline-block;
   max-height: 280px;
@@ -29,7 +31,8 @@
   font-size: 1.2em;
 }
 
-.carousel-button {
+/* Carousel-Button On Home page */
+ .carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -76,8 +79,9 @@
   padding: 15px;
   margin: 10px;
   border: solid black 1px;
-}
+} 
 
+/* Home page paragraph */
 .websiteContent {
   padding: 20px;
 }
@@ -87,6 +91,8 @@
   padding: 10px;
 }
 
+
+/* Navgation b */
 nav {
   display: flex;
   justify-content: space-between;
@@ -174,6 +180,8 @@ nav .menu span {
   }
 }
 
+
+/* Side Baar */
 .main-container {
   border: 1px solid black;
   display: flex;
@@ -198,10 +206,10 @@ nav .menu span {
   width: 10%;
 
   background-color: rgb(1, 42, 1);
-}
+} 
 
 
-/* Footer Container */
+/* Footer */
 footer {
   background-color: rgb(5, 79, 5);
   padding: 30px;
@@ -217,7 +225,6 @@ footer {
 }
 
 .footer-section ul {
-  /* list-style-type: none; */
   padding: 0;
   color: #fff;
 }
@@ -263,6 +270,7 @@ footer {
   width: 100%;
 }
 
+/* Quick Enquiry form*/
 
 .contact-form-container {
   max-width: 700px;
@@ -329,10 +337,12 @@ textarea {
   background-color:yellowgreen;
 }
 
+/* View all-Button styling css */
+
 .view-all-button{
-  display: flex; /* Use flexbox */
-  justify-content: center; /* Horizontally center */
-  align-items: center; /* Vertically center */
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 .view-all-button button{
   padding: 10px;
@@ -342,87 +352,5 @@ textarea {
 }
 .view-all-button button:hover {
   color: black;
-}
-
-.contact-container{
-  display: flex;
-  gap: 30%;
-  border: solid wheat;
-  width: 70%;
-  height: auto;
-  box-shadow: #ccc 0 0 5px 5px;
-  margin: auto;
-}
-
-.form-container {
-  width: 80%;
-  max-width: 500px;
-}
-
-.form-group {
-  margin-bottom: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input[type='text'],
-input[type='email'],
-select,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-/* button {
-  width: 100%;
-  padding: 10px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
-} */
-
-.container1{
-  margin-top: 60px;
-  padding: 20px;
-  width: 500px;
-}
-
-table td{
-  border-collapse: collapse;
-  border-bottom: 1px dotted black ;
-  padding:  10px;
-  width: 400px;
-}
-
-
-table {
-  border-collapse: collapse;
-  margin-top: 60px;
-}
-.table-container {
-  /* border: solid black 1px; */
-  width: 400px;
-  margin-top: 20px;
-  margin-left: 60px;
-}
-
-
-
-@media screen and (max-width: 600px) {
-  td {
-    font-size: 14px;
-  }
-}
-
+} 
 

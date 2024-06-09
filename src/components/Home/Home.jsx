@@ -1,4 +1,5 @@
 import Nav from './Nav'
+import Carousel from './Carousel';
 import ProductCard from './ProductCard'
 import Footer from './Footer';
 import { Link } from 'react-router-dom';

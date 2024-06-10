@@ -5,7 +5,7 @@
 .productCartContainer {
   display: flex;
   flex-wrap: wrap;
-  
+
 }
 
 .cartContainer {
@@ -70,7 +70,7 @@
 
 
 /* Carousel-Button On Home page */
- .carousel-button {
+.carousel-button {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -117,7 +117,7 @@
   padding: 15px;
   margin: 10px;
   border: solid black 1px;
-} 
+}
 
 /* Home page paragraph */
 .websiteContent {
@@ -220,7 +220,7 @@ nav .menu span {
 
 /* Carousel styling in the home page */
 .carousel {
-  margin-top: 0; 
+  margin-top: 0;
   width: 100%;
   margin: 0 auto;
   position: relative;
@@ -233,8 +233,10 @@ nav .menu span {
   border: none;
   padding: 10px 15px;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5); /* Added for better visibility */
-  z-index: 10; /* Ensures buttons are on top */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Added for better visibility */
+  z-index: 10;
+  /* Ensures buttons are on top */
 }
 
 .carousel-button:hover {
@@ -262,7 +264,7 @@ nav .menu span {
 }
 
 .carousel-image {
-  margin-top: 0; 
+  margin-top: 0;
   width: 100%;
   height: 500px;
 }
@@ -311,7 +313,7 @@ nav .menu span {
   width: 10%;
 
   background-color: rgb(1, 42, 1);
-} 
+}
 
 
 /* Footer */
@@ -394,21 +396,25 @@ footer {
 .form-group {
   margin-bottom: 15px;
 }
-.form-group1{
-display: flex;
-gap: 20px;
+
+.form-group1 {
+  display: flex;
+  gap: 20px;
 }
-.form-group2{
+
+.form-group2 {
   display: flex;
   gap: 20px;
   margin-top: 20px;
 }
-.form-group3{
-width: 44%;
-margin-top: 20px;
+
+.form-group3 {
+  width: 44%;
+  margin-top: 20px;
 
 }
-.form-group4{
+
+.form-group4 {
   width: 96%;
   margin-top: 20px;
 
@@ -447,25 +453,27 @@ textarea {
 }
 
 .button:hover {
-  background-color:yellowgreen;
+  background-color: yellowgreen;
 }
 
 /* View all-Button styling css */
 
-.view-all-button{
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+.view-all-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.view-all-button button{
+
+.view-all-button button {
   padding: 10px;
   color: rgb(116, 186, 11);
-  background-color:beige;
+  background-color: beige;
   border: none;
 }
+
 .view-all-button button:hover {
   color: black;
-} 
+}
 
 .Quick-Enquiry {
   text-align: center;
@@ -721,12 +729,12 @@ button[type="submit"]:last-of-type:hover {
 
 .email-button {
   background-color: white;
-  color: black; 
+  color: black;
 }
 
 .sms-button {
   background-color: yellow;
-  color: black; 
+  color: black;
 }
 
 
@@ -734,7 +742,7 @@ button[type="submit"]:last-of-type:hover {
 /* breadcrumb styling */
 
 
-.breadcrumbs{
+.breadcrumbs {
   background: url('../src/assets/repeating-triangles.svg');
   width: 100%;
   padding: 20px;
@@ -742,17 +750,18 @@ button[type="submit"]:last-of-type:hover {
   justify-content: space-between;
 }
 
-.breadcrumbs h2{
+.breadcrumbs h2 {
   color: #fff;
 }
 
-.link{
+.link {
   color: #fff;
 }
 
-.breadcrumbs a{
-text-decoration: none;
+.breadcrumbs a {
+  text-decoration: none;
 }
+
 .breadcrumbs span::before {
   content: '>';
   margin: 0 5px;
@@ -814,6 +823,47 @@ text-decoration: none;
 }
 
 
+/* search bar */
 
+.App {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
+.search-bar {
+  display: flex;
+  align-items: center;
+}
+
+/* .search-bar button {
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-right: 5px;
+  color: #fff;
+} */
+
+.search-button-go{
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-right: 5px;
+  color: #fff;
+  padding: 5px;
+}
+
+.search-bar input {
+  padding: 5px;
+  font-size: 1em;
+  margin-right: 5px;
+}
+
+.search-bar .search-button-go:hover {
+  background-color: #134f09;
+}
 

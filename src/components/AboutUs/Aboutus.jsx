@@ -4,6 +4,8 @@ import Accordion from "./Accordian";
 import NavInfo from '../Common/NavInfo';
 import Breadcrumbs from '../Common/Breadcrumbs';
 import FooterNav from '../Common/FooterNav';
+import Search from '../Common/SearchBar';
+
 
 
 const AboutUs = () => {
@@ -102,6 +104,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
+                    <Search/>
                     <FooterNav/>
                 </div>
                 <div className="box3"></div>

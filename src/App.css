@@ -1,6 +1,5 @@
 * {
   margin-top: 0%;
-  border: solid red 2px;
 }
 
 .productCartContainer {
@@ -474,6 +473,28 @@ textarea {
 }
 
 
+
+
+/* about us css */
+.container2 {
+  display: flex;
+}
+
+/* Paragraph stuling in the aboutus page*/
+
+.paragraph {
+  width: 840px;
+}
+
+.paragraph p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.aboutusContent {
+  padding: 30px;
+}
+
 /* Accodian design in the about us page */
 .accordianDiv {
   background-color: rgb(247, 245, 242);
@@ -503,26 +524,6 @@ textarea {
 
 .aboutusContentDiv {
   display: flex;
-}
-
-/* about us css */
-.container2 {
-  display: flex;
-}
-
-/* Paragraph stuling in the aboutus page*/
-
-.paragraph {
-  width: 840px;
-}
-
-.paragraph p {
-  margin-bottom: 20px;
-  text-align: justify;
-}
-
-.aboutusContent {
-  padding: 30px;
 }
 
 /* Table styling  */
@@ -654,7 +655,8 @@ textarea {
   resize: vertical;
 }
 
-button[type="submit"],
+
+.btn button[type="submit"],
 button[type="submit"]:last-of-type {
   background-color: rgb(251, 140, 5);
   color: rgb(249, 246, 246);
@@ -717,6 +719,99 @@ button[type="submit"]:last-of-type:hover {
   border: none;
 }
 
+.email-button {
+  background-color: white;
+  color: black; 
+}
+
+.sms-button {
+  background-color: yellow;
+  color: black; 
+}
+
+
+
+/* breadcrumb styling */
+
+
+.breadcrumbs{
+  background: url('../src/assets/repeating-triangles.svg');
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.breadcrumbs h2{
+  color: #fff;
+}
+
+.link{
+  color: #fff;
+}
+
+.breadcrumbs a{
+text-decoration: none;
+}
+.breadcrumbs span::before {
+  content: '>';
+  margin: 0 5px;
+  color: white;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: end;
+  width: 100%;
+  background: url('../src/assets/large-triangles\ \(2\).svg');
+  padding: 20px;
+}
+
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.footer-nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.footer-nav ul li:last-child {
+  margin-right: 0;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer-nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.horiLine {
+  width: 100%;
+  padding-bottom: 20px;
+  background: url('../src/assets/large-triangles\ \(2\).svg');
+}
+
+.horiLine div {
+  border-bottom: 1px dotted #fff;
+}
+
+.footer-content {
+  /* background-color: green; */
+  background: url('../src/assets/large-triangles\ \(2\).svg');
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  color: #fff;
+}
 
 
 

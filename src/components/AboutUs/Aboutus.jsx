@@ -2,6 +2,9 @@ import React from 'react';
 import Nav from "../Home/Nav";
 import Accordion from "./Accordian"; 
 import NavInfo from '../Common/NavInfo';
+import Breadcrumbs from '../Common/Breadcrumbs';
+import FooterNav from '../Common/FooterNav';
+
 
 const AboutUs = () => {
     return (
@@ -11,6 +14,15 @@ const AboutUs = () => {
                 <div className="box1"></div>
                 <div className="box2">
                 <NavInfo/>
+                <div className='breadcrumbs'>
+                        <div>
+                            <h2>About US</h2>
+                        </div>
+                        <div>
+                            <Breadcrumbs />
+                        </div>
+                    </div>
+
                     <div className="aboutusContentDiv">
                         <div className="aboutusContent">
                             <div className="paragraph">
@@ -90,6 +102,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
+                    <FooterNav/>
                 </div>
                 <div className="box3"></div>
             </div>

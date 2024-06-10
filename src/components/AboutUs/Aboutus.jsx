@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from "../Home/Nav";
 import Accordion from "./Accordian"; 
+import NavInfo from '../Common/NavInfo';
 
 const AboutUs = () => {
     return (
@@ -9,6 +10,7 @@ const AboutUs = () => {
                 <Nav />
                 <div className="box1"></div>
                 <div className="box2">
+                <NavInfo/>
                     <div className="aboutusContentDiv">
                         <div className="aboutusContent">
                             <div className="paragraph">

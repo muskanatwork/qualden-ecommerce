@@ -2,6 +2,9 @@ const Form = () => {
     return (
         <>
             <div className="contact-form-container">
+                <div>
+                    <h1 className="Quick-Enquiry">Quick Enquiry</h1>
+                </div>
                 <form >
                     <div className="form-group1">
                         <input type="text" id="product" name="product" required placeholder="Enter Product Name" />
@@ -20,8 +23,6 @@ const Form = () => {
                     <button className="button" type="submit">Send Message</button>
                 </form>
             </div>
-
-
         </>
     )
 }

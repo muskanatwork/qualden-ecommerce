@@ -3,35 +3,6 @@
   border: solid red 2px;
 }
 
-
-/* Product Card */
-/* .div1 {
-  display: inline-block;
-  max-height: 280px;
-  max-width: 230px;
-  border: solid rgb(216, 210, 210) 1px;
-  border-radius: 5px;
-  padding: 10px;
-  background-color: rgb(250, 247, 243);
-  margin: 10px;
-}
-
-.div2 {
-  border: solid rgb(216, 210, 210) 1px;
-}
-
-.img {
-  height: 100%;
-  width: 100%;
-}
-
-.div1 p {
-  text-align: center;
-  font-weight: bold;
-  font-size: 1.2em;
-} */
-
-
 .productCartContainer {
   display: flex;
   flex-wrap: wrap;
@@ -75,6 +46,27 @@
   margin-top: 8px;
   font-size: 18px;
   color: #333;
+}
+
+/* SideBar styling in home page */
+.container {
+  display: flex;
+}
+
+.box1 {
+  background-color: rgb(8, 40, 8);
+  width: 12%;
+}
+
+.box2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 86%;
+}
+
+.box3 {
+  background-color: rgb(8, 40, 8);
+  width: 12%;
 }
 
 
@@ -276,6 +268,23 @@ nav .menu span {
   height: 500px;
 }
 
+/* paragraph styling in the home page */
+
+.paraDiv {
+  padding: 30px;
+  background-color: rgb(250, 249, 247);
+}
+
+.paraDiv h1 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.paraDiv p {
+  text-align: justify;
+}
+
+
 
 
 /* Side Baar */
@@ -367,6 +376,14 @@ footer {
   width: 100%;
 }
 
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  footer {
+    display: none;
+  }
+}
+
+
 /* Quick Enquiry form*/
 
 .contact-form-container {
@@ -450,6 +467,12 @@ textarea {
 .view-all-button button:hover {
   color: black;
 } 
+
+.Quick-Enquiry {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
 
 /* Accodian design in the about us page */
 .accordianDiv {
@@ -666,6 +689,35 @@ button[type="submit"]:last-of-type:hover {
   background-color: rgb(245, 240, 233);
   border: 1px solid #ccc;
 }
+
+
+
+/* nav info */
+.Nav-info {
+  background-color: #28a745;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 50px;
+  color: #fff;
+}
+
+.info-heading {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  width: 100%;
+}
+
+.info-button {
+  padding: 6px;
+  border-radius: 25px;
+  border: none;
+}
+
+
 
 
 

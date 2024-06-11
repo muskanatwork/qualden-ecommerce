@@ -24,6 +24,7 @@ const AboutUs = () => {
                             <Breadcrumbs />
                         </div>
                     </div>
+                    <Search/>
 
                     <div className="aboutusContentDiv">
                         <div className="aboutusContent">
@@ -104,7 +105,6 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
-                    <Search/>
                     <FooterNav/>
                 </div>
                 <div className="box3"></div>

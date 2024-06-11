@@ -1,5 +1,9 @@
 import Nav from "../Home/Nav"
+import Data from '../Home/Data.json'
+import ProductCard from "../Home/ProductCard";
+
 function Products() {
+    console.log(Data);
     return (
         <>
         <Nav />

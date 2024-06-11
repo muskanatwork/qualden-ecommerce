@@ -1,4 +1,4 @@
-const ProduntCard = ()=>{
+const ProductCard = ()=>{
   return(
       <>
       <div className="ProductCardDiv">
@@ -11,4 +11,4 @@ const ProduntCard = ()=>{
   )
 }
 
-export default ProduntCard
+export default ProductCard

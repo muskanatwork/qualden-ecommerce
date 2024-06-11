@@ -517,6 +517,7 @@ textarea {
   margin-bottom: 10px;
   height: 1px;
   background-color: rgb(251, 168, 13);
+  border: none;
 }
 
 .accordianDiv h3 {
@@ -524,7 +525,7 @@ textarea {
   margin-left: 10px;
 }
 
-.accordianDiv div {
+.accordianItem{
   padding-left: 20px;
   padding: 10px;
   border-bottom: dotted 1px black;
@@ -533,6 +534,13 @@ textarea {
 .aboutusContentDiv {
   display: flex;
 }
+
+.accordianIcon {
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer; /* Add this to show hand cursor */
+}
+
 
 /* Table styling  */
 .cell1 {
@@ -857,4 +865,8 @@ button[type="submit"]:last-of-type:hover {
 .search-bar .search-button-go:hover {
   background-color: #134f09;
 }
+
+
+
+
 

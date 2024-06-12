@@ -10,9 +10,10 @@ const Home = () => {
     return (
         <>
             <div className="container">
-            <Nav />
                 <div className="box1"></div>
                 <div className="box2">
+                <Nav />
+
                     <Carousel />
                     <div className="homeContant">
                         <div className="paraDiv">

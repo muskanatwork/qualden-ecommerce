@@ -36,6 +36,12 @@ const Search = () => {
     setResults(filteredResults);
   };
 
+  const handleKeyPress = (event) => {
+    if (event.key === 'Enter') {
+      handleGoClick();
+    }
+  };
+
   return (
     <div className="App">
       <div className="search-bar">
@@ -48,6 +54,7 @@ const Search = () => {
               type="text"
               value={searchTerm}
               onChange={handleInputChange}
+              onKeyPress={handleKeyPress}
               placeholder="Search text here..."
             />
             <button className='search-button-go' onClick={handleGoClick}>Go</button>

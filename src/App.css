@@ -55,7 +55,7 @@
   padding-top: 0;
   margin-bottom: 20px;
   margin-right: 20px;
-  width: 260px;
+  width: 240px;
 }
 
 .productItem-image-container {
@@ -112,6 +112,7 @@
 
 .productItem-hover-card p {
   text-align: left;
+  line-height: 10px;
   margin-left: 10px;
 }
 
@@ -163,12 +164,19 @@
   flex-wrap: wrap;
 }
 
+.categoryContainer{
+  padding-left: 20px;
+}
+
+
 .categoryTittle h2 {
   color: #134f09;
   margin-bottom: 0;
+  margin-top: 20px;
 }
 
 .categoryTittle{
+  width: 100%;
   margin-bottom: 20px;
 }
 
@@ -826,31 +834,6 @@ button[type="submit"]:last-of-type:hover {
 }
 
 
-/* contact us media query */
-
-
-@media screen and (max-width: 768px) {
-  .contact-container {
-    flex-wrap: wrap;
-    width: 100%;
-  }
-
-}
-
-@media screen and (max-width: 1024px) {
-  .box1 {
-    display: none;
-  }
-
-  .box3 {
-    display: none;
-  }
-
-}
-
-
-
-
 
 /* nav info */
 .Nav-info {
@@ -858,18 +841,17 @@ button[type="submit"]:last-of-type:hover {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 50px;
   color: #fff;
   border: 1px solid black;
 }
 
 .info-heading {
-  /* justify-content: center;
+  justify-content: center;
   align-items: center;
   display: flex;
   gap: 30px;
   padding: 10px;
-  width: 100%; */
+  width: 100%;
 }
 
 .info-button {
@@ -1009,14 +991,6 @@ button[type="submit"]:last-of-type:hover {
   background-color: #134f09;
 }
 
-
-
-
-
-
-* {
-  margin-top: 0%;
-}
 
 .productCartContainer {
   display: flex;
@@ -1731,7 +1705,6 @@ button[type="submit"]:last-of-type:hover {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  margin-top: 50px;
   color: #fff;
   border: 1px solid black;
 }
@@ -1946,3 +1919,81 @@ li {
 .open {
   display: block !important;
 }
+
+
+.requirement-form-container{
+  background-color:black;
+  height:400px;
+}
+
+.requirement-heading{
+  color: #fff;
+}
+
+
+
+.submit-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Get a Quick Quote css */
+
+.close-button {
+  position: absolute !important;
+  right: 8px !important;
+  top: 8px !important;
+  color: #777 !important;
+}
+
+.quote-image {
+  width: 40%;
+  height: auto;
+  margin-bottom: 16px;
+}
+
+.dialog-content{
+  display: flex;
+}
+
+.input-field {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.number-input{
+  display: flex;
+  gap: 10px;
+}
+
+
+.send-enquiry-button {
+  border: none;
+  background-color: black;
+  padding: 10px;
+  width: 40%;
+  margin-top: 10px;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.send-enquiry-button:hover {
+  background-color: #388e3c;
+}
+
+
+
+
+
+
+

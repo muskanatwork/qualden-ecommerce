@@ -9,11 +9,11 @@ import FooterNav from '../Common/FooterNav';
 const ContactUs = () => {
     return (
         <>
-            <Nav />
             <div className="container1">
                 
                 <div className="box1"></div>
                 <div className="box2">
+                <Nav />
                 <NavInfo />
                 <div className='breadcrumbs'>
                         <div><h2>Contact Us</h2></div>

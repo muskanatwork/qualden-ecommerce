@@ -12,9 +12,9 @@ const AboutUs = () => {
     return (
         <>
             <div className="container2">
-                <Nav />
                 <div className="box1"></div>
                 <div className="box2">
+                <Nav />
                 <NavInfo/>
                 <div className='breadcrumbs'>
                         <div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-
+import SearchIcon from '@mui/icons-material/Search';
+import CloseIcon from '@mui/icons-material/Close';
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showSearch, setShowSearch] = useState(false);
@@ -46,7 +47,7 @@ const Search = () => {
     <div className="App">
       <div className="search-bar">
         <button onClick={showSearch ? handleCancelIconClick : handleSearchIconClick}>
-          <i className="search-icon">{showSearch ? '❌' : '🔍'}</i>
+          <i className="search-icon">{showSearch ? <CloseIcon/> : <SearchIcon/>}</i>
         </button>
         {showSearch && (
           <>

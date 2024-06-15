@@ -35,7 +35,7 @@ const EnquiryFormDialog = ({ open, onClose }) => {
                             placeholder="Quantity"
                             className="input-field"
                         />
-                        <input
+                        <input        
                             type="number"
                             placeholder="Piece(s)"
                             className="input-field"

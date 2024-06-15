@@ -164,7 +164,7 @@
   flex-wrap: wrap;
 }
 
-.categoryContainer{
+.categoryContainer {
   padding-left: 20px;
 }
 
@@ -175,7 +175,7 @@
   margin-top: 20px;
 }
 
-.categoryTittle{
+.categoryTittle {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -1921,12 +1921,12 @@ li {
 }
 
 
-.requirement-form-container{
-  background-color:black;
-  height:400px;
+.requirement-form-container {
+  background-color: black;
+  height: 400px;
 }
 
-.requirement-heading{
+.requirement-heading {
   color: #fff;
 }
 
@@ -1958,7 +1958,7 @@ li {
   margin-bottom: 16px;
 }
 
-.dialog-content{
+.dialog-content {
   display: flex;
 }
 
@@ -1971,7 +1971,7 @@ li {
   box-sizing: border-box;
 }
 
-.number-input{
+.number-input {
   display: flex;
   gap: 10px;
 }
@@ -1991,9 +1991,211 @@ li {
   background-color: #388e3c;
 }
 
+/* customPhoneInput.css */
+.react-tel-input .country-list {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.react-tel-input .country-list .country {
+  display: block;
+  width: 100%;
+}
+
+.dialog-content h3 {
+  text-align: center;
+  background-color: rgb(247, 180, 56);
+  color: #fff;
+}
+
+/* details table 1 */
+.detailsContainer {
+  max-width: 1100px;
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: rgb(254, 254, 247);
+  margin: auto;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.detailContant {
+  display: flex;
+  flex-direction: column;
+  width: 680px;
+}
+
+
+.detailRow {
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+}
+
+.detailRow p {
+  margin-right: 10px;
+}
 
 
 
+.preferredBuyerFrom {
+  display: flex;
+  gap: 20px;
+  border-bottom: dotted black 1px;
+}
+
+.detail-button {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.detail-button .detail-button1 {
+  background-color: blanchedalmond;
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  border: 1px rgb(240, 187, 89) solid;
+}
+
+.detail-button .detail-button1:hover {
+  background-color: rgb(221, 160, 48);
+}
+
+.detail-button .detail-button2 {
+  background-color: rgb(221, 160, 48);
+  padding: 10px;
+  font-size: 20px;
+  border: none;
+  color: white;
+}
+
+.detail-button .detail-button2:hover {
+  background-color: green;
+}
 
 
+.number-input button {
+  background-color: rgb(221, 160, 48);
+  width: 60%;
+  height: 30px;
+  color: white;
+  border: none;
+}
 
+
+/* details table 2 */
+.zoomingImg img {
+  height: 400px;
+}
+
+.DetailsContainertable {
+  background-color: rgb(240, 240, 238);
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.productDetails {
+  display: flex;
+  gap: 30px;
+}
+
+.interested {
+  display: block;
+  margin: auto;
+}
+
+.interested button {
+  padding: 10px;
+  border: none;
+  background-color: rgb(204, 150, 50);
+  color: white;
+}
+
+.interested button:hover {
+  background-color: #09501a;
+}
+
+
+/* form on details page */
+.detailFormContainer {
+  background-color: rgb(240, 240, 238);
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.deatilForm {
+  display: flex;
+  gap: 20px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+.input-field {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.phone-select-button {
+  margin-right: 10px;
+}
+
+input[type="radio"] {
+  margin-right: 5px;
+}
+
+
+.detailbutton {
+  text-align: center;
+}
+
+
+.detailbutton button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Hover effect */
+.detailbutton button:hover {
+  background-color: green;
+}
+
+.detailFormContainer{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.detailsContainer{
+  margin-top: 30px;
+}
+.DetailsContainertable{
+  margin-top: 30px;
+}

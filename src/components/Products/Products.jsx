@@ -15,8 +15,8 @@ const Products = () => {
             <div className="container2">
                 <div className="box1"></div>
                 <div className="box2">
-                    <Nav />
                     <NavInfo/>
+                    <Nav />
                 <div className='breadcrumbs'>
                         <div>
                             <h2>Products</h2>

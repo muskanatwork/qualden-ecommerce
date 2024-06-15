@@ -5,8 +5,7 @@ import NavInfo from '../Common/NavInfo';
 import Breadcrumbs from '../Common/Breadcrumbs';
 import FooterNav from '../Common/FooterNav';
 import Search from '../Common/SearchBar';
-
-
+import Navigation from '../Common/Navigation';
 
 const AboutUs = () => {
     return (
@@ -14,8 +13,8 @@ const AboutUs = () => {
             <div className="container2">
                 <div className="box1"></div>
                 <div className="box2">
-                <Nav />
                 <NavInfo/>
+                <Navigation/>
                 <div className='breadcrumbs'>
                         <div>
                             <h2>About US</h2>
@@ -24,7 +23,6 @@ const AboutUs = () => {
                             <Breadcrumbs />
                         </div>
                     </div>
-                    <Search/>
 
                     <div className="aboutusContentDiv">
                         <div className="aboutusContent">

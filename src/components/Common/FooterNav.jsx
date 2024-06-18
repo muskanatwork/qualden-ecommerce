@@ -18,8 +18,8 @@ const FooterNav = () => {
                 <div></div>
             </div>
             <div className='footer-content'>
-                <h3>All Rights Reserved. Kuchhal Brothers (Terms of Use)</h3>
-                <h3>Developed & Managed By Weblink.In Pvt. Ltd.</h3>
+                <h3>All Rights Reserved. Qualden (Terms of Use)</h3>
+                <h3>Developed & Managed By Qualden</h3>
             </div>
         </>
     );

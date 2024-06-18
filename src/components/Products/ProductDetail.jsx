@@ -5,6 +5,8 @@ import FooterNav from '../Common/FooterNav';
 import TableDetail from './TableDetail';
 import TableInfo from './TableInfo';
 import ProductForm from './ProductForm';
+import ProductCrousel from './ProductCrousel';
+import Breadcrumbs from '../Common/Breadcrumbs';
 const ProductDetails = () => {
     return (
         <>
@@ -13,13 +15,16 @@ const ProductDetails = () => {
                 <div className="box2">
                     <Nav />
                     <NavInfo />
+                    <Breadcrumbs/>
                     <TableDetail />
                     <TableInfo />
                     <ProductForm/>
+                    <ProductCrousel/>
                     <FooterNav />
                 </div>
                 <div className="box3"></div>
             </div>
+            
         </>
     );
 }

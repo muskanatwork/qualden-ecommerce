@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import EnquiryFormDialog from './EnquiryFormDialog';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const ProductCategory = () => {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
+    const navigate = useNavigate();
 
-    const handleDialogOpen = () => {
+    const handleDialogOpen = (event) => {
+        event.stopPropagation(); 
         setIsDialogOpen(true);
     };
 
@@ -13,10 +15,13 @@ const ProductCategory = () => {
         setIsDialogOpen(false);
     };
 
-    return (
+    const handleNavigate = () => {
+        navigate('productDetails');
+    };
 
-        <Link to='productDetails'>
-            <div className="productItem">
+    return (
+        <>
+            <div className="productItem" onClick={handleNavigate}>
                 <div className="productItem-image-container">
                     <img
                         src="https://2.wlimg.com/product_images/bc-full/2020/3/4222645/pt100-industrial-temperature-sensor-1583473665-5327671.jpeg"
@@ -34,14 +39,13 @@ const ProductCategory = () => {
                         <p>Probe Length(mm): 30</p>
                         <p>Cable Length: 1.05 Meter</p>
                         <button onClick={handleDialogOpen}>Enquiry Now</button>
-                        <button>View More</button>
+                        <button onClick={(e) => { e.stopPropagation(); handleNavigate(); }}>View More</button>
                     </div>
                 </div>
-                <EnquiryFormDialog open={isDialogOpen} onClose={handleDialogClose} />
             </div>
-        </Link>
+            <EnquiryFormDialog open={isDialogOpen} onClose={handleDialogClose} />
+        </>
     );
 }
 
 export default ProductCategory;
-

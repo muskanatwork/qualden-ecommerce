@@ -1,15 +1,26 @@
-import { FaEnvelope, FaMobile } from 'react-icons/fa';
+import React, { useState } from 'react';
+import { FaEnvelope } from 'react-icons/fa';
 import CallIcon from '@mui/icons-material/Call';
-
+import EnquiryFormDialog from './EnquiryFormDialog'; // Ensure the import path is correct
 
 const TableDetail = () => {
+    const [dialogOpen, setDialogOpen] = useState(false);
+
+    const handleDialogOpen = () => {
+        setDialogOpen(true);
+    };
+
+    const handleDialogClose = () => {
+        setDialogOpen(false);
+    };
+
     return (
         <>
             <div className="detailsContainer">
                 <div className='zoomingImg'>
                     <img src="https://2.wlimg.com/product_images/bc-full/2020/3/4222645/pt100-industrial-temperature-sensor-1583473665-5327671.jpeg" alt="PT100 Industrial Temperature Sensor" />
                 </div>
-                <div >
+                <div>
                     <h2>PT100 Industrial Temperature Sensor</h2>
                     <h3>1 Piece(s) (MOQ)</h3>
                     <div className="number-input">
@@ -23,7 +34,7 @@ const TableDetail = () => {
                             placeholder="Piece(s)"
                             className="input-field"
                         />
-                        <button>Get Best Price</button>
+                        <button onClick={handleDialogOpen}>Get Best Price</button>
                     </div>
                     <div className="detailContant">
                         <div className="detailRow">
@@ -52,14 +63,15 @@ const TableDetail = () => {
                         <h4>Anywhere in India</h4>
                     </div>
                     <div className='detail-button'>
-                        <button className='detail-button1'> <CallIcon /> Request to call</button>
-                        <button className='detail-button2'> <FaEnvelope />Send Enquiry</button>
+                        <button className='detail-button1' onClick={handleDialogOpen}> <CallIcon /> Request to call</button>
+                        <button className='detail-button2' onClick={handleDialogOpen}> <FaEnvelope />Send Enquiry</button>
                     </div>
                 </div>
             </div>
 
+            <EnquiryFormDialog open={dialogOpen} onClose={handleDialogClose} />
         </>
-    )
-}
+    );
+};
 
 export default TableDetail;

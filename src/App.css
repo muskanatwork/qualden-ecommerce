@@ -839,36 +839,50 @@ button[type="submit"]:last-of-type:hover {
 .Nav-info {
   background-color: #28a745;
   display: flex;
-  width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
   color: #fff;
   border: 1px solid black;
 }
 
-.info-heading {
-  justify-content: center;
-  align-items: center;
+
+.icon-text {
   display: flex;
-  gap: 30px;
-  padding: 10px;
-  width: 100%;
+  align-items: center;
+  gap: 5px;
 }
 
 .info-button {
-  padding: 6px;
+  padding: 8px;
   border-radius: 25px;
   border: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
 }
 
 .email-button {
   background-color: white;
   color: black;
+  height: 25px;
 }
 
 .sms-button {
   background-color: yellow;
-  color: black;
+  color: white;
+  height: 25px;
+
 }
+
+.sms-button .MuiSvgIcon-root {
+  color: white;
+}
+
+.Nav-info{
+  font-weight: 900;
+}
+
 
 
 
@@ -1225,9 +1239,7 @@ nav .menu span {
   padding: 10px 15px;
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
-  /* Added for better visibility */
   z-index: 10;
-  /* Ensures buttons are on top */
 }
 
 .carousel-button:hover {
@@ -2199,3 +2211,5 @@ input[type="radio"] {
 .DetailsContainertable{
   margin-top: 30px;
 }
+
+/* productCard Carousel */

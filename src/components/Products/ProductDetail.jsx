@@ -5,9 +5,10 @@ import FooterNav from '../Common/FooterNav';
 import TableDetail from './TableDetail';
 import TableInfo from './TableInfo';
 import ProductForm from './ProductForm';
-import ProductCrousel from './ProductCrousel';
+import Carousel from './ProductCardCrousel';
 import Breadcrumbs from '../Common/Breadcrumbs';
 const ProductDetails = () => {
+
     return (
         <>
             <div className="container1">
@@ -19,7 +20,7 @@ const ProductDetails = () => {
                     <TableDetail />
                     <TableInfo />
                     <ProductForm/>
-                    <ProductCrousel/>
+                    <Carousel />
                     <FooterNav />
                 </div>
                 <div className="box3"></div>

@@ -6,8 +6,11 @@ const Breadcrumbs = () => {
     const location = useLocation();
     const pathnames = location.pathname.split('/').filter(x => x);
 
+    console.log("Location pathname:", location.pathname);
+    console.log("Pathnames:", pathnames);
+
     return (
-        <>
+        <div className="breadcrumbs">
             <Link className='link' to="/">Home</Link>
             {pathnames.map((value, index) => {
                 const to = `/${pathnames.slice(0, index + 1).join('/')}`;
@@ -17,7 +20,7 @@ const Breadcrumbs = () => {
                     </span>
                 );
             })}
-        </>
+        </div>
     );
 };
 

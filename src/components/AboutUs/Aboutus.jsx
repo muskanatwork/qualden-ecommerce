@@ -6,7 +6,7 @@ import Breadcrumbs from '../Common/Breadcrumbs';
 import FooterNav from '../Common/FooterNav';
 import Search from '../Common/SearchBar';
 import Navigation from '../Common/Navigation';
-
+import ScrollToTopButton from '../Common/ScrollToTopButton';
 const AboutUs = () => {
     return (
         <>
@@ -104,6 +104,7 @@ const AboutUs = () => {
                         </div>
                     </div>
                     <FooterNav/>
+                    <ScrollToTopButton/>
                 </div>
                 <div className="box3"></div>
             </div>

@@ -6,15 +6,14 @@ import Nav from "./Nav"
 import { Link, NavLink } from 'react-router-dom';
 import SubmitButton from "../Common/RequrimentButton"
 import ScrollToTopButton from "../Common/ScrollToTopButton"
+import WhatsAppButton from "../Common/WhatsAppButton"
 const Home = () => {
     const ProductCartArr = [1, 2, 3, 4, 5, 5, 4, 3, 3, 3, 2, 2]
     return (
         <>
             <div className="container">
-                <div className="box1"></div>
-                <div className="box2">
-                <Nav />
-
+                <div className="main">
+                    <Nav />
                     <Carousel />
                     <div className="homeContant">
                         <div className="paraDiv">
@@ -47,17 +46,20 @@ const Home = () => {
                                 }
                             </div>
                             <div className='view-all-button'>
-                              <Link to="/product"><button>View All Products</button></Link>
+                                <Link to="/product"><button>View All Products</button></Link>
                             </div>
 
                         </div>
                         <Form />
                     </div>
-                    <SubmitButton/>
+                    <SubmitButton />
                     <Footer />
-                    <ScrollToTopButton/>
+                    <ScrollToTopButton />
+                    <WhatsAppButton
+                        phoneNumber="919876543210" // Change this to your WhatsApp number with country code
+                        message="Hello, I want to chat with you!"
+                    />
                 </div>
-                <div className="box3"></div>
             </div>
         </>
     )

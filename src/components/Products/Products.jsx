@@ -13,9 +13,8 @@ const Products = () => {
 
     return (
         <>
-            <div className="container2">
-                <div className="box1"></div>
-                <div className="box2">
+            <div className="container">
+                <div className="main">
                     <NavInfo/>
                     <Navigation/>
                     <div className='breadcrumbs'>
@@ -84,8 +83,6 @@ const Products = () => {
                     </div>
                     <FooterNav/>
                 </div>
-                {/* <RequirementForm/> */}
-                <div className="box3"></div>
             </div>
         </>
     );

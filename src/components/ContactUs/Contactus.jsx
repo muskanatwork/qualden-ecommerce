@@ -8,9 +8,8 @@ import Navigation from '../Common/Navigation';
 const ContactUs = () => {
     return (
         <>
-            <div className="container1">
-                <div className="box1"></div>
-                <div className="box2">
+            <div className="container">
+                <div className="main">
                 <NavInfo />
                 <Navigation/>
                     <div className='breadcrumbs'>
@@ -24,7 +23,6 @@ const ContactUs = () => {
                     </div>
                     <FooterNav/>
                 </div>
-                <div className="box3"></div>
             </div>
         </>
     );

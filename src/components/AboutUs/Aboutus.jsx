@@ -4,15 +4,13 @@ import Accordion from "./Accordian";
 import NavInfo from '../Common/NavInfo';
 import Breadcrumbs from '../Common/Breadcrumbs';
 import FooterNav from '../Common/FooterNav';
-import Search from '../Common/SearchBar';
 import Navigation from '../Common/Navigation';
 import ScrollToTopButton from '../Common/ScrollToTopButton';
 const AboutUs = () => {
     return (
         <>
-            <div className="container2">
-                <div className="box1"></div>
-                <div className="box2">
+            <div className="container">
+                <div className="main">
                 <NavInfo/>
                 <Navigation/>
                 <div className='breadcrumbs'>
@@ -106,7 +104,6 @@ const AboutUs = () => {
                     <FooterNav/>
                     <ScrollToTopButton/>
                 </div>
-                <div className="box3"></div>
             </div>
         </>
     );

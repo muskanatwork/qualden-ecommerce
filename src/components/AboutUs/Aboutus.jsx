@@ -1,19 +1,18 @@
 import React from 'react';
-import Nav from "../Home/Nav";
-import Accordion from "./Accordian"; 
+import Accordion from "./Accordian";
 import NavInfo from '../Common/NavInfo';
 import Breadcrumbs from '../Common/Breadcrumbs';
 import FooterNav from '../Common/FooterNav';
-import Navigation from '../Common/Navigation';
+import Nav from '../Home/Nav';
 import ScrollToTopButton from '../Common/ScrollToTopButton';
 const AboutUs = () => {
     return (
         <>
             <div className="container">
                 <div className="main">
-                <NavInfo/>
-                <Navigation/>
-                <div className='breadcrumbs'>
+                    <NavInfo />
+                    <Nav />
+                    <div className='breadcrumbs'>
                         <div>
                             <h2>About US</h2>
                         </div>
@@ -40,7 +39,7 @@ const AboutUs = () => {
                                     period etc.
                                 </p>
                                 <p>Sensor Mart was established in the year 2016 with a vision
-                                    to cater to the buyers’ demands for gauges, meters, and
+                                    to cater to the buyers demands for gauges, meters, and
                                     sensors with commitment and precision. Under the aegis of
                                     Co-Founders of the organization viz., Mr. Anshuman Agarwal
                                     and Ms. Anchal Agarwal, today we can say that the buyers we
@@ -89,20 +88,22 @@ const AboutUs = () => {
                             </div>
                         </div>
                         <div>
-                            <Accordion />
-                            <div className="ContactUsDiv">
-                                <h3>Contact Us</h3>
-                                <hr />
-                                <h4>Kuchhal Brothers</h4>
-                                <div>1104,1105 Salempur Rajputana industrial Area,
-                                    Salempur, Roorkee, Uttarakhand - 247667, India</div>
-                                <div>Mobile : +91-9719411764, +91-7017880914</div>
-                                <div>Call Us : 08069247354 Ext : 036</div>
+                            <div className='aside'>
+                                <Accordion />
+                                <div className="ContactUsDiv">
+                                    <h3>Contact Us</h3>
+                                    <hr />
+                                    <h4>Kuchhal Brothers</h4>
+                                    <div>1104,1105 Salempur Rajputana industrial Area,
+                                        Salempur, Roorkee, Uttarakhand - 247667, India</div>
+                                    <div>Mobile : +91-9719411764, +91-7017880914</div>
+                                    <div>Call Us : 08069247354 Ext : 036</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <FooterNav/>
-                    <ScrollToTopButton/>
+                    <FooterNav />
+                    <ScrollToTopButton />
                 </div>
             </div>
         </>

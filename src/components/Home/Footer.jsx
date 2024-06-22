@@ -5,7 +5,10 @@ const Footer = () => {
         <footer>
 
             <div className="footer-section">
-                <h3>General Links</h3>
+               <div className='generalDiv'>
+               <h3>General Links</h3>
+               <p>+</p>
+                </div>
                 <div className='footer-box1'>
                     <div className='section2'>
                         <ul>
@@ -26,7 +29,11 @@ const Footer = () => {
 
             </div>
             <div className="footer-section">
-                <h3>Products</h3>
+            <div className='generalDiv'>
+               <h3>Products</h3>
+               <p>+</p>
+                </div>
+
                 <div className='footer-box1'>
                     <div className='section1'>
                         <ul>

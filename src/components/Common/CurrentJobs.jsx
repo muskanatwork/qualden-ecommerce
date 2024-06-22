@@ -1,5 +1,4 @@
 import React from 'react';
-import Nav from "../Home/Nav";
 import Accordion from '../AboutUs/Accordian';
 import NavInfo from './NavInfo';
 import Breadcrumbs from '../Common/Breadcrumbs';
@@ -11,9 +10,8 @@ const CurrentJobs = () => {
     return (
         <>
 
-            <div className="container2">
-                <div className="box1"></div>
-                <div className="box2">
+            <div className="container">
+                <div className="main">
                     <NavInfo />
                     <Navigation />
                     <div className='breadcrumbs'>
@@ -27,22 +25,23 @@ const CurrentJobs = () => {
 
                     <div className="aboutusContentDiv">
                         <div>
-                        <JobApplicationForm/>
-                            <Accordion />
-                            <div className="ContactUsDiv">
-                                <h3>Contact Us</h3>
-                                <hr />
-                                <h4>Kuchhal Brothers</h4>
-                                <div>1104,1105 Salempur Rajputana industrial Area,
-                                    Salempur, Roorkee, Uttarakhand - 247667, India</div>
-                                <div>Mobile : +91-9719411764, +91-7017880914</div>
-                                <div>Call Us : 08069247354 Ext : 036</div>
+                            <JobApplicationForm />
+                            <div className='aside'>
+                                <Accordion />
+                                <div className="ContactUsDiv">
+                                    <h3>Contact Us</h3>
+                                    <hr/>
+                                    <h4>Kuchhal Brothers</h4>
+                                    <div>1104,1105 Salempur Rajputana industrial Area,
+                                        Salempur, Roorkee, Uttarakhand - 247667, India</div>
+                                    <div>Mobile : +91-9719411764, +91-7017880914</div>
+                                    <div>Call Us : 08069247354 Ext : 036</div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <FooterNav />
                 </div>
-                <div className="box3"></div>
             </div>
 
         </>

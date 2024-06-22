@@ -3,12 +3,14 @@ import Footer from "./Footer"
 import ProduntCard from "./ProductCard"
 import Form from "./Form"
 import Nav from "./Nav"
-import { Link, NavLink } from 'react-router-dom';
+import { Link} from 'react-router-dom';
 import SubmitButton from "../Common/RequrimentButton"
 import ScrollToTopButton from "../Common/ScrollToTopButton"
 import WhatsAppButton from "../Common/WhatsAppButton"
+import Data from '../Products/Data.json'
+import {useState} from 'react';
 const Home = () => {
-    const ProductCartArr = [1, 2, 3, 4, 5, 5, 4, 3, 3, 3, 2, 2]
+    const [data, setData] = useState(Data);
     return (
         <>
             <div className="container">
@@ -38,9 +40,9 @@ const Home = () => {
                             <h1>Product Range</h1>
                             <div className="productCartContainer">
                                 {
-                                    ProductCartArr.map((item, index) => {
+                                    data.map((item, index) => {
                                         return (
-                                            <ProduntCard key={index} />
+                                            <ProduntCard key={index} item={item} />
                                         )
                                     })
                                 }

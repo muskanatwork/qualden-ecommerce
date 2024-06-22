@@ -10,7 +10,7 @@
   margin: auto;
   background-color: #fff;
 }
-/* src/ScrollToTopButton.css */
+/*/ScrollToTopButton.css */
 .scroll-to-top {
   position: fixed;
   bottom: 50px;
@@ -319,10 +319,16 @@ nav {
 
 nav ul {
   display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li {
   list-style: none;
+  margin: 0 10px;
+  position: relative;
+
 }
 
 nav ul li a {
@@ -395,12 +401,14 @@ nav .menu span {
 
 /* Carousel styling in the home page */
 .carousel {
+  border: solid black 1px;
   margin-top: 0;
   width: 100%;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
   margin-top: 7%;
+
 }
 
 .carousel-button {
@@ -460,9 +468,6 @@ nav .menu span {
   text-align: justify;
 }
 
-
-
-
 /* Side Baar */
 .main-container {
   border: 1px solid black;
@@ -514,7 +519,13 @@ footer {
 .footer-section ul li {
   margin-bottom: 15px;
 }
-
+.generalDiv{
+  display: flex;
+  justify-content: space-between;
+}
+.generalDiv{
+  color: #fff;
+}
 .footer-section ul li a {
   color: rgb(178, 173, 173);
   text-decoration: none;
@@ -551,13 +562,67 @@ footer {
   height: 100%;
   width: 100%;
 }
-
-/* Responsive styles */
-@media screen and (max-width: 768px) {
-  footer {
-    display: none;
-  }
+.image-container .image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 5px;
+  border-radius: 5px;
+}.footer-section {
+  margin-bottom: 20px;
 }
+
+.generalDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-box1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1, .section2 {
+  margin-right: 20px;
+}
+
+.section1 ul, .section2 ul {
+  list-style: none;
+  padding: 0;
+}
+
+.section1 li, .section2 li {
+  margin-bottom: 10px;
+}
+
+.img-div {
+  display: flex;
+  gap: 10px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+}
+
+.image-container .image-text {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  padding: 5px;
+  border-radius: 5px;
+}
+
 
 
 /* Quick Enquiry form*/
@@ -957,7 +1022,7 @@ button[type="submit"]:last-of-type:hover {
 .footer-nav {
   display: flex;
   justify-content: end;
-  width: 100%;
+  width: 80%;
   background: url('../src/assets/large-triangles\ \(2\).svg');
   padding: 20px;
 }
@@ -1912,33 +1977,6 @@ nav {
   position: relative;
 }
 
-.menu {
-  cursor: pointer;
-}
-
-.menu span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px;
-  background-color: #333;
-}
-
-.logo {
-  width: 50px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
-
-li {
-  margin: 0 10px;
-  position: relative;
-}
 
 .dropdown-content {
   display: none;
@@ -1961,17 +1999,12 @@ li {
 }
 
 .dropdown-content li a:hover {
-  background-color: #f1f1f1;
+  background-color: white;
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
 }
-
-.open {
-  display: block !important;
-}
-
 
 .requirement-form-container {
   background-color: black;

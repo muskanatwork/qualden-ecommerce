@@ -2,28 +2,30 @@ import React from 'react';
 import Nav from "../Home/Nav";
 import NavInfo from '../Common/NavInfo';
 import FooterNav from '../Common/FooterNav';
-import TableDetail from './TableDetail';
+import ImagePreview from './ImagePreview';
 import TableInfo from './TableInfo';
 import ProductForm from './ProductForm';
 import Carousel from './ProductCardCrousel';
 import Breadcrumbs from '../Common/Breadcrumbs';
+import ProductDescription from './ProductDescription';
 const ProductDetails = () => {
 
     return (
         <>
-            <div className="container1">
-                <div className="box1"></div>
-                <div className="box2">
+            <div className="container">
+                <div className="main">
                     <Nav />
                     <NavInfo />
                     <Breadcrumbs/>
-                    <TableDetail />
+                    <div className="detailsContainer">
+                    <ImagePreview />
+                    <ProductDescription/>
+                    </div>
                     <TableInfo />
                     <ProductForm/>
                     <Carousel />
                     <FooterNav />
                 </div>
-                <div className="box3"></div>
             </div>
             
         </>

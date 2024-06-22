@@ -9,6 +9,8 @@ import ScrollToTopButton from "../Common/ScrollToTopButton"
 import WhatsAppButton from "../Common/WhatsAppButton"
 import Data from '../Products/Data.json'
 import {useState} from 'react';
+import '../css/Home.css'
+
 const Home = () => {
     const [data, setData] = useState(Data);
     return (

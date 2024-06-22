@@ -1,0 +1,113 @@
+/* about us css */
+.container2 {
+    display: flex;
+  }
+  
+  /* Paragraph stuling in the aboutus page*/
+  
+  .paragraph {
+    width: 840px;
+  }
+  
+  .paragraph p {
+    margin-bottom: 20px;
+    text-align: justify;
+  }
+  
+  .aboutusContent {
+    padding: 30px;
+  }
+  
+  /* Accodian design in the about us page */
+  .accordianDiv {
+    background-color: rgb(247, 245, 242);
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px;
+  }
+  
+  .accordianDiv hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+    background-color: rgb(251, 168, 13);
+    border: none;
+  }
+  
+  .accordianDiv h3 {
+    color: #09501a;
+    margin-left: 10px;
+  }
+  
+  .accordianItem {
+    padding-left: 20px;
+    padding: 10px;
+    border-bottom: dotted 1px black;
+  }
+  
+  .aboutusContentDiv {
+    display: flex;
+  }
+  
+  .accordianIcon {
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    /* Add this to show hand cursor */
+  }
+  
+  
+  /* Table styling  */
+  .cell1 {
+    width: 350px;
+    text-align: end;
+    background-color: rgb(252, 252, 231);
+  }
+  
+  .cell2 {
+    width: 450px;
+    background-color: #e7e4e4;
+  }
+  
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+  }
+
+  /* ContactUs styling in the aboutus page */
+
+.ContactUsDiv {
+    background-color: rgb(247, 245, 242);
+    display: inline-block;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin: 20px;
+    margin-top: 5px;
+  }
+  
+  .ContactUsDiv hr {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 1px;
+    background-color: rgb(251, 168, 13);
+  }
+  
+  .ContactUsDiv h3 {
+    color: #09501a;
+  }
+  
+  .ContactUsDiv h4 {
+    color: #09501a;
+  }
+  
+  .ContactUsDiv div {
+    padding-left: 20px;
+    padding: 10px;
+    border-bottom: dotted 1px black;
+  }
+  
+  

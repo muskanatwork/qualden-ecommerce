@@ -5,6 +5,8 @@ import Breadcrumbs from '../Common/Breadcrumbs';
 import FooterNav from '../Common/FooterNav';
 import Nav from '../Home/Nav';
 import ScrollToTopButton from '../Common/ScrollToTopButton';
+import '../css/AboutUs.css'
+
 const AboutUs = () => {
     return (
         <>

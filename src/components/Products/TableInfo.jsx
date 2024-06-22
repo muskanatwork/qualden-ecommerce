@@ -3,29 +3,6 @@ const TableInfo = () => {
         <>
             <div className='DetailsContainertable'>
                 <h2>Product Details</h2>
-                {/* <div className='productDetails'>
-                    <div >
-                        <p>Probe Length(mm)	</p>
-                        <p>Accuracy</p>
-                        <p>Shipment Dimensions	</p>
-                    </div>
-                    <div >
-                        <h3>30</h3>
-                        <h3>±(0.3°C+0.5%|t|)</h3>
-                        <h3>8 × 6 × 2 cm </h3>
-                    </div>
-                    <div>
-                        <p>Cable Length	</p>
-                        <p>Response Time(s)	</p>
-                        <p>Shipment Weight	</p>
-                    </div>
-                    <div>
-                        <h3>1.05 Meter</h3>
-                        <h3>0.5</h3>
-                        <h3>0.095 kg</h3>
-                    </div>
-
-                </div> */}
                 <div className='productDetails'>
                     <div className="detailContant">
                         <div className="detailRow">

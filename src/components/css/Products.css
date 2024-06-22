@@ -1,0 +1,384 @@
+.productItem {
+    position: relative;
+    border: 1px solid #ccc;
+    background-color: rgb(253, 253, 245);
+    padding: 8px;
+    padding-top: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+    width: 240px;
+  }
+  
+  .productItem-image-container {
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .productItem img {
+    max-width: 100%;
+    height: auto;
+    border: 0.5px solid #ccc;
+  }
+  
+  .productItem h3 {
+    text-align: center;
+    margin-top: 8px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .productItem-hover-card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  .productItem:hover .productItem-hover-card {
+    opacity: 0.8;
+    pointer-events: auto;
+  }
+  
+  .productItem-hover-card div {
+    border: 1px solid white;
+    height: 90%;
+    width: 90%;
+  }
+  
+  .productItem-hover-card h5 {
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+  
+  .productItem-hover-card p {
+    text-align: left;
+    line-height: 10px;
+    margin-left: 10px;
+  }
+  
+  .productItem-hover-card button {
+    background-color: green;
+    /* Green color */
+    color: white;
+    border-radius: 4px;
+    border: 1px solid #fff;
+    padding: 8px 16px;
+    margin-right: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .productItem-hover-card button:last-child {
+    background-color: orange;
+    /* Orange color */
+  }
+  
+  .productItem-hover-card button:hover {
+    background-color: orange;
+    /* Hover: Orange to Green */
+  }
+  
+  .productItem-hover-card button:last-child:hover {
+    background-color: green;
+    /* Hover: Green to Orange */
+  }
+  
+  .Electronicdiv {
+    display: flex;
+    flex-wrap: wrap;
+  
+  }
+  
+  .radarDiv {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .tippingBucketDiv {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .otherProductDiv {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .categoryContainer {
+    padding-left: 20px;
+  }
+  
+  
+  .categoryTittle h2 {
+    color: #134f09;
+    margin-bottom: 0;
+    margin-top: 20px;
+  }
+  
+  .categoryTittle {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+
+
+  
+/* details table 1 */
+.detailsContainer {
+    max-width: 1100px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: rgb(254, 254, 247);
+    margin: auto;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .detailContant {
+    display: flex;
+    flex-direction: column;
+    width: 680px;
+  }
+  
+  
+  .detailRow {
+    display: flex;
+    justify-content:space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+  
+  .detailRow p {
+    margin-right: 10px;
+  }
+  
+  
+  
+  .preferredBuyerFrom {
+    display: flex;
+    gap: 20px;
+    border-bottom: dotted black 1px;
+  }
+  
+  .detail-button {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+  }
+  
+  .detail-button .detail-button1 {
+    background-color: blanchedalmond;
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border: 1px rgb(240, 187, 89) solid;
+  }
+  
+  .detail-button .detail-button1:hover {
+    background-color: rgb(221, 160, 48);
+  }
+  
+  .detail-button .detail-button2 {
+    background-color: rgb(221, 160, 48);
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    color: white;
+  }
+  
+  .detail-button .detail-button2:hover {
+    background-color: green;
+  }
+  
+  
+  .number-input button {
+    background-color: rgb(221, 160, 48);
+    width: 60%;
+    height: 30px;
+    color: white;
+    border: none;
+  }
+
+
+  /* details table 2 */
+.zoomingImg img {
+    height: 400px;
+  }
+  
+  .DetailsContainertable {
+    background-color: rgb(240, 240, 238);
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+  }
+  
+  .productDetails {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .interested {
+    display: block;
+    margin: auto;
+  }
+  
+  .interested button {
+    padding: 10px;
+    border: none;
+    background-color: rgb(204, 150, 50);
+    color: white;
+  }
+  
+  .interested button:hover {
+    background-color: #09501a;
+  }
+
+  /* form on details page */
+.detailFormContainer {
+    background-color: rgb(240, 240, 238);
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .deatilForm {
+    display: flex;
+    gap: 20px;
+  }
+  
+  label {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="number"],
+  .input-field {
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .phone-select-button {
+    margin-right: 10px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  
+  .detailbutton {
+    text-align: center;
+  }
+  
+  
+  .detailbutton button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Hover effect */
+  .detailbutton button:hover {
+    background-color: green;
+  }
+  
+  .detailFormContainer{
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .detailsContainer{
+    margin-top: 30px;
+  }
+  .DetailsContainertable{
+    margin-top: 30px;
+  }
+  
+
+  /* Carousel */
+.carousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0;
+  }
+  
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-item {
+    flex: 0 0 25%; /* Display 4 cards in a row */
+  }
+  
+  .card {
+    width: 100%; /* Adjust card width as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card img {
+    width: 100%;
+    height: 200px; /* Adjust image height as needed */
+    object-fit: cover;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  
+  .card-body {
+    padding: 10px;
+  }
+  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
+  
+  

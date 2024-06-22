@@ -5,6 +5,8 @@ import Breadcrumbs from '../Common/Breadcrumbs';
 import NavInfo from '../Common/NavInfo';
 import FooterNav from '../Common/FooterNav';
 import Navigation from '../Common/Navigation';
+
+import '../css/ContactUs.css'
 const ContactUs = () => {
     return (
         <>

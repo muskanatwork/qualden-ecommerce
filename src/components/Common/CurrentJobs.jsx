@@ -3,7 +3,7 @@ import Accordion from '../AboutUs/Accordian';
 import NavInfo from './NavInfo';
 import Breadcrumbs from '../Common/Breadcrumbs';
 import FooterNav from '../Common/FooterNav';
-import Navigation from '../Common/Navigation';
+import Nav from '../Home/Nav'
 import JobApplicationForm from './CurrentJobsForm';
 
 const CurrentJobs = () => {
@@ -13,7 +13,7 @@ const CurrentJobs = () => {
             <div className="container">
                 <div className="main">
                     <NavInfo />
-                    <Navigation />
+                    <Nav />
                     <div className='breadcrumbs'>
                         <div>
                             <h2>About US</h2>

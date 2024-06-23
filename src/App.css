@@ -10,92 +10,6 @@
   margin: auto;
   background-color: #fff;
 }
-/*/ScrollToTopButton.css */
-.scroll-to-top {
-  position: fixed;
-  bottom: 50px;
-  right: 50px;
-  z-index: 1000;
-}
-
-.scroll-to-top button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.whatsapp-button {
-  position: fixed;
-  background-color: #25D366;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
-
-.whatsapp-button:hover {
-  background-color: #20c35b;
-}
-
-/* SideBar styling in home page */
-.container {
-  display: flex;
-}
-
-.box1 {
-  background-color: rgb(8, 40, 8);
-  width: 12%;
-}
-
-.box2 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 86%;
-}
-
-.box3 {
-  background-color: rgb(8, 40, 8);
-  width: 12%;
-}
-
-
-
-
-
-/* Side Baar */
-.main-container {
-  border: 1px solid black;
-  display: flex;
-
-}
-
-.box1 {
-  border: 1px solid black;
-  width: 10%;
-  background-color: rgb(1, 42, 1);
-
-}
-
-.box2 {
-  border: 1px solid black;
-  width: 80%;
-
-}
-
-.box3 {
-  border: 1px solid black;
-  width: 10%;
-
-  background-color: rgb(1, 42, 1);
-}
-
 
 /* nav info */
 .Nav-info {
@@ -109,6 +23,14 @@
 
 }
 
+.info-heading {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  width: 100%;
+}
 
 .icon-text {
   display: flex;
@@ -143,11 +65,180 @@
   color: white;
 }
 
+/* Existing styles... */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f7f9eb;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 2;
+  padding: 0 10px; /* Added padding for spacing */
+}
+
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+
+nav .menu span {
+  height: 0.5rem;
+  width: 100%;
+  background-color: black;
+  border-radius: 0.2rem;
+}
+
+nav .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(9, 0, 0);
+  padding: 0.5rem;
+  margin: 0 0.5rem;
+}
+
+.active {
+  background-color: rgba(255, 255, 0, 0.746);
+}
+
+.logo {
+  width: 80px;
+  margin-left: 10px;
+}
+
+nav ul li a:hover {
+  background-color: rgb(248, 248, 60);
+}
+
+@media(max-width:480px) {
+  nav .menu {
+    display: flex;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  nav .nav-right {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+
+  nav ul.open {
+    display: flex;
+  }
+
+  .search-bar {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+/* Remaining styles... */
+
+/* drop down in nav product page */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content li {
+  display: block;
+}
+
+.dropdown-content li a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content li a:hover {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+/*/ScrollToTopButton.css */
+.scroll-to-top {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 1000;
+}
+
+.scroll-to-top button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+/* whatsapp styling */
+.whatsapp-button {
+  position: fixed;
+  background-color: #25D366;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #20c35b;
+}
 
 
 /* breadcrumb styling */
-
-
 .breadcrumbs {
   background: url('../src/assets/repeating-triangles.svg');
   width: 100%;
@@ -174,62 +265,8 @@
   color: white;
 }
 
-.footer-nav {
-  display: flex;
-  justify-content: end;
-  width: 80%;
-  background: url('../src/assets/large-triangles\ \(2\).svg');
-  padding: 20px;
-}
-
-.footer-nav ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-}
-
-.footer-nav ul li {
-  display: inline;
-  margin-right: 20px;
-}
-
-.footer-nav ul li:last-child {
-  margin-right: 0;
-}
-
-.footer-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-size: 16px;
-}
-
-.footer-nav ul li a:hover {
-  text-decoration: underline;
-}
-
-.horiLine {
-  width: 100%;
-  padding-bottom: 20px;
-  background: url('../src/assets/large-triangles\ \(2\).svg');
-}
-
-.horiLine div {
-  border-bottom: 1px dotted #fff;
-}
-
-.footer-content {
-  /* background-color: green; */
-  background: url('../src/assets/large-triangles\ \(2\).svg');
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 12px;
-  color: #fff;
-}
 
 /* search bar */
-
 .App {
   font-family: Arial, sans-serif;
   display: flex;
@@ -264,149 +301,17 @@
   background-color: #134f09;
 }
 
-
-/* SideBar styling in home page */
-.container {
-  display: flex;
-}
-
-.box1 {
-  background-color: rgb(8, 40, 8);
-  width: 12%;
-}
-
-.box2 {
-  display: flex;
-  flex-wrap: wrap;
-  width: 86%;
-}
-
-.box3 {
-  background-color: rgb(8, 40, 8);
-  width: 12%;
-}
-
-
-
-/* Home page paragraph */
-.websiteContent {
-  padding: 20px;
-}
-
-.websiteContent h1 {
-  text-align: center;
-  padding: 10px;
-}
-
-
-
 .sidebar {
   background-color: aquamarine;
   width: 400px;
   height: 500px;
 }
 
-
-
-
-
-/* Side Baar */
-.main-container {
-  border: 1px solid black;
-  display: flex;
-
-}
-
-.box1 {
-  border: 1px solid black;
-  width: 10%;
-  background-color: rgb(1, 42, 1);
-
-}
-
-.box2 {
-  border: 1px solid black;
-  width: 80%;
-
-}
-
-.box3 {
-  border: 1px solid black;
-  width: 10%;
-
-  background-color: rgb(1, 42, 1);
-}
-
-/* nav info */
-.Nav-info {
-  background-color: #28a745;
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  color: #fff;
-  border: 1px solid black;
-}
-
-.info-heading {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  gap: 30px;
-  padding: 10px;
-  width: 100%;
-}
-
-.info-button {
-  padding: 6px;
-  border-radius: 25px;
-  border: none;
-}
-
-.email-button {
-  background-color: white;
-  color: black;
-}
-
-.sms-button {
-  background-color: yellow;
-  color: black;
-}
-
-
-
-/* breadcrumb styling */
-
-
-.breadcrumbs {
-  background: url('../src/assets/repeating-triangles.svg');
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.breadcrumbs h2 {
-  color: #fff;
-}
-
-.link {
-  color: #fff;
-}
-
-.breadcrumbs a {
-  text-decoration: none;
-}
-
-.breadcrumbs span::before {
-  content: '>';
-  margin: 0 5px;
-  color: white;
-}
-
+/* footer nav */
 .footer-nav {
   display: flex;
   justify-content: end;
-  width: 100%;
+  width: 80%;
   background: url('../src/assets/large-triangles\ \(2\).svg');
   padding: 20px;
 }
@@ -448,7 +353,6 @@
 }
 
 .footer-content {
-  /* background-color: green; */
   background: url('../src/assets/large-triangles\ \(2\).svg');
   width: 100%;
   display: flex;
@@ -457,82 +361,7 @@
   color: #fff;
 }
 
-
-/* search bar */
-
-.App {
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-}
-
-
-.search-button-go {
-  background-color: yellow;
-  border: none;
-  cursor: pointer;
-  font-size: 1.2em;
-  margin-right: 5px;
-  color: #fff;
-  padding: 5px;
-}
-
-.search-bar input {
-  padding: 5px;
-  font-size: 1em;
-  margin-right: 5px;
-}
-
-.search-bar .search-button-go:hover {
-  background-color: #134f09;
-}
-
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 200px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-
-.dropdown-content li {
-  display: block;
-}
-
-.dropdown-content li a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content li a:hover {
-  background-color: white;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.requirement-form-container {
-  background-color: black;
-  height: 400px;
-}
-
-.requirement-heading {
-  color: #fff;
-}
-
-
-
+/* submit your requrement button */
 .submit-button {
   background-color: #333;
   color: white;
@@ -544,8 +373,16 @@
   transition: background-color 0.3s ease;
 }
 
-/* Get a Quick Quote css */
+.requirement-form-container {
+  background-color: black;
+  height: 400px;
+}
 
+.requirement-heading {
+  color: #fff;
+} 
+
+/* enquiry-button form*/
 .close-button {
   position: absolute !important;
   right: 8px !important;
@@ -577,7 +414,6 @@
   gap: 10px;
 }
 
-
 .send-enquiry-button {
   border: none;
   background-color: black;
@@ -591,26 +427,6 @@
 .send-enquiry-button:hover {
   background-color: #388e3c;
 }
-
-/* customPhoneInput.css */
-.react-tel-input .country-list {
-  display: flex;
-  flex-direction: column;
-  max-height: 300px;
-  overflow-y: auto;
-}
-
-.react-tel-input .country-list .country {
-  display: block;
-  width: 100%;
-}
-
-.dialog-content h3 {
-  text-align: center;
-  background-color: rgb(247, 180, 56);
-  color: #fff;
-}
-
 
 
 

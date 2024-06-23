@@ -4,7 +4,7 @@ import ContactUsTable from "./ContactUsTable";
 import Breadcrumbs from '../Common/Breadcrumbs';
 import NavInfo from '../Common/NavInfo';
 import FooterNav from '../Common/FooterNav';
-import Navigation from '../Common/Navigation';
+import Nav from '../Home/Nav';
 
 import '../css/ContactUs.css'
 const ContactUs = () => {
@@ -13,7 +13,7 @@ const ContactUs = () => {
             <div className="container">
                 <div className="main">
                 <NavInfo />
-                <Navigation/>
+                <Nav/>
                     <div className='breadcrumbs'>
                         <div><h2>Contact Us</h2></div>
                         <div className='breadcrumbs-link'><Breadcrumbs /></div>

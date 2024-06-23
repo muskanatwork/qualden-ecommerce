@@ -3,7 +3,6 @@ import ProductCategory from "./ProductCategory";
  import NavInfo from "../Common/NavInfo";
  import Breadcrumbs from "../Common/Breadcrumbs";
  import FooterNav from "../Common/FooterNav";
- import Navigation from "../Common/Navigation";
  import '../css/Products.css'
 const Products = () => {
     const electronicArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5]
@@ -17,7 +16,7 @@ const Products = () => {
             <div className="container">
                 <div className="main">
                     <NavInfo/>
-                    <Navigation/>
+                    <Nav/>
                     <div className='breadcrumbs'>
                         <div>
                             <h2>Products</h2>

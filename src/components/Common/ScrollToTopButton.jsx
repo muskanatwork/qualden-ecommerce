@@ -1,10 +1,8 @@
-// src/ScrollToTopButton.js
 import React, { useState, useEffect } from 'react';
-
+import KeyboardControlKeyIcon from '@mui/icons-material/KeyboardControlKey';
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
-  // Show button when page is scrolled upto given distance
   const toggleVisibility = () => {
     if (window.scrollY > 300) {
       setIsVisible(true);
@@ -13,8 +11,6 @@ const ScrollToTopButton = () => {
     }
   };
 
-  // Set the top coordinate to 0
-  // make scrolling smooth
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -33,8 +29,7 @@ const ScrollToTopButton = () => {
     <div className="scroll-to-top">
       {isVisible && 
         <button onClick={scrollToTop}>
-          Tap to Up
-        </button>}
+        <KeyboardControlKeyIcon/> </button>}
     </div>
   );
 };

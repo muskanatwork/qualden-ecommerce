@@ -1,7 +1,5 @@
 import React from 'react';
-import { Button } from '@mui/material';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
-
 const WhatsAppButton = ({ phoneNumber, message }) => {
     const handleClick = () => {
         const encodedMessage = encodeURIComponent(message);
@@ -10,14 +8,10 @@ const WhatsAppButton = ({ phoneNumber, message }) => {
     };
 
     return (
-        <Button 
-            variant="contained" 
-            color="success" 
-            startIcon={<WhatsAppIcon />} 
-            onClick={handleClick}
-        >
-            Chat on WhatsApp
-        </Button>
+        <div className='whatsApp'>       
+             <WhatsAppIcon onClick={handleClick} />
+        </div>
+
     );
 };
 

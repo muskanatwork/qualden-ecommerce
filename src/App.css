@@ -204,40 +204,35 @@ nav ul li a:hover {
 /*/ScrollToTopButton.css */
 .scroll-to-top {
   position: fixed;
-  bottom: 50px;
-  right: 50px;
+  bottom: 25px;
+  right: 25px;
   z-index: 1000;
 }
 
 .scroll-to-top button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background-color: #007bff;
+  padding: 5px;
+  font-size: 5px;
+  background-color: orange;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
 }
 
 
 /* whatsapp styling */
-.whatsapp-button {
+.whatsApp{
   position: fixed;
-  background-color: #25D366;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+  bottom: 49px;
+  right: 39px;
+  z-index: 1000;
+
 }
 
-.whatsapp-button:hover {
-  background-color: #20c35b;
+.whatsApp .MuiSvgIcon-root {
+  color: #25D366 ;
+  font-size: 40px; 
 }
-
-
 /* breadcrumb styling */
 .breadcrumbs {
   background: url('../src/assets/repeating-triangles.svg');
@@ -427,6 +422,8 @@ nav ul li a:hover {
 .send-enquiry-button:hover {
   background-color: #388e3c;
 }
+
+
 
 
 

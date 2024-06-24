@@ -5,12 +5,13 @@ import ProductCategory from "./ProductCategory";
  import FooterNav from "../Common/FooterNav";
  import '../css/Products.css'
  import SubmitRequirement from "../Common/RequrimentButton";
+ import WhatsAppButton from "../Common/WhatsAppButton";
+ import ScrollToTopButton from "../Common/ScrollToTopButton";
 const Products = () => {
     const electronicArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5]
     const radarArr = [1, 2, 3, 4, 5]
     const tippingBucketArr = [1, 2]
     const otherProductArr = [1, 2, 3, 4, 5, 6, 7]
-
 
     return (
         <>
@@ -84,6 +85,12 @@ const Products = () => {
                     </div>
                     <SubmitRequirement />
                     <FooterNav/>
+                    <ScrollToTopButton />
+                    <WhatsAppButton
+                        phoneNumber="919876543210" // Change this to your WhatsApp number with country code
+                        message="Hello, I want to chat with you!"
+                    />
+
                 </div>
             </div>
         </>

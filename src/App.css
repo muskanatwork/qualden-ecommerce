@@ -219,7 +219,6 @@ nav ul li a:hover {
   cursor: pointer;
 }
 
-
 /* whatsapp styling */
 .whatsApp{
   position: fixed;
@@ -358,6 +357,11 @@ nav ul li a:hover {
 
 /* submit your requrement button */
 .submit-button {
+  transform: rotate(270deg); 
+  position: fixed;
+  bottom: 43%;
+  right: -90px;
+  z-index: 1000;
   background-color: #333;
   color: white;
   border: none;
@@ -366,6 +370,9 @@ nav ul li a:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  display: flex; 
+  align-items: center; 
+
 }
 
 .requirement-form-container {

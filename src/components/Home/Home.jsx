@@ -4,7 +4,7 @@ import ProduntCard from "./ProductCard"
 import Form from "./Form"
 import Nav from "./Nav"
 import { Link} from 'react-router-dom';
-import SubmitButton from "../Common/RequrimentButton"
+import SubmitRequirement from "../Common/RequrimentButton"
 import ScrollToTopButton from "../Common/ScrollToTopButton"
 import WhatsAppButton from "../Common/WhatsAppButton"
 import Data from '../Products/Data.json'
@@ -56,7 +56,7 @@ const Home = () => {
                         </div>
                         <Form />
                     </div>
-                    <SubmitButton />
+                    <SubmitRequirement />
                     <Footer />
                     <ScrollToTopButton />
                     <WhatsAppButton

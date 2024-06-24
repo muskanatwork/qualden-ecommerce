@@ -6,6 +6,7 @@ import FooterNav from '../Common/FooterNav';
 import Nav from '../Home/Nav';
 import ScrollToTopButton from '../Common/ScrollToTopButton';
 import '../css/AboutUs.css'
+import SubmitRequirement from "../Common/RequrimentButton"
 
 const AboutUs = () => {
     return (
@@ -104,6 +105,7 @@ const AboutUs = () => {
                             </div>
                         </div>
                     </div>
+                    <SubmitRequirement />
                     <FooterNav />
                     <ScrollToTopButton />
                 </div>

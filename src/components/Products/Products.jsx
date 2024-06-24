@@ -4,6 +4,7 @@ import ProductCategory from "./ProductCategory";
  import Breadcrumbs from "../Common/Breadcrumbs";
  import FooterNav from "../Common/FooterNav";
  import '../css/Products.css'
+ import SubmitRequirement from "../Common/RequrimentButton";
 const Products = () => {
     const electronicArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5]
     const radarArr = [1, 2, 3, 4, 5]
@@ -81,6 +82,7 @@ const Products = () => {
                         </div>
 
                     </div>
+                    <SubmitRequirement />
                     <FooterNav/>
                 </div>
             </div>

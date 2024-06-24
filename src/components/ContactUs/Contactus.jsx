@@ -5,7 +5,7 @@ import Breadcrumbs from '../Common/Breadcrumbs';
 import NavInfo from '../Common/NavInfo';
 import FooterNav from '../Common/FooterNav';
 import Nav from '../Home/Nav';
-
+import SubmitRequirement from '../Common/RequrimentButton';
 import '../css/ContactUs.css'
 const ContactUs = () => {
     return (
@@ -24,6 +24,7 @@ const ContactUs = () => {
                         <ContactUsForm />
                     </div>
                     <FooterNav/>
+                    <SubmitRequirement />
                 </div>
             </div>
         </>

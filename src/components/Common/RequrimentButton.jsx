@@ -1,8 +1,5 @@
-// src/components/SubmitRequirement.js
-
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import KeyboardControlKeyIcon from '@mui/icons-material/KeyboardControlKey';
 
 const SubmitRequirement = () => {
   const [showForm, setShowForm] = useState(false);
@@ -19,7 +16,7 @@ const SubmitRequirement = () => {
     <div>
       {!showForm ? (
         <button onClick={handleButtonClick} className="submit-button">
-          Submit Your Requirement
+          Submit Your Requirement<KeyboardControlKeyIcon/>
         </button>
       ) : (
         <div className="requirement-form-container">

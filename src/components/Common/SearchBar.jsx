@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
+
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showSearch, setShowSearch] = useState(false);
@@ -29,6 +30,7 @@ const Search = () => {
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
   };
+  
 
   const handleGoClick = () => {
     const filteredResults = items.filter(item =>
@@ -37,7 +39,7 @@ const Search = () => {
     setResults(filteredResults);
   };
 
-  const handleKeyPress = (event) => {
+  const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
       handleGoClick();
     }
@@ -46,22 +48,22 @@ const Search = () => {
   return (
     <div className="App">
       <div className="search-bar">
-        <button onClick={showSearch ? handleCancelIconClick : handleSearchIconClick}>
+        <button className="no-border" onClick={showSearch ? handleCancelIconClick : handleSearchIconClick}>
           <i className="search-icon">{showSearch ? <CloseIcon/> : <SearchIcon/>}</i>
         </button>
-        {showSearch && (
-          <>
-            <input
-              type="text"
-              value={searchTerm}
-              onChange={handleInputChange}
-              onKeyPress={handleKeyPress}
-              placeholder="Search text here..."
-            />
-            <button className='search-button-go' onClick={handleGoClick}>Go</button>
-          </>
-        )}
       </div>
+      {showSearch && (
+        <div className='inputSearch'>
+          <input 
+            type="text"
+            value={searchTerm}
+            onChange={handleInputChange}
+            onKeyDown={handleKeyDown}
+            placeholder="Search text here..."
+          />
+          <button className='search-button-go' onClick={handleGoClick}>Go</button>
+        </div>
+      )}
       {results.length > 0 && (
         <div className="search-results">
           <ul>

@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
-
+import React from 'react';
+import CloseIcon from '@mui/icons-material/Close';
+import EditIcon from '@mui/icons-material/Edit';
 const SendForm = ({ isOpen, onCloseForm }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission
+        // Add form submission logic here
     };
 
     return (
@@ -12,31 +13,22 @@ const SendForm = ({ isOpen, onCloseForm }) => {
             {isOpen && (
                 <div className="modal">
                     <div className="modal-content">
-                        <span className="close" onClick={onCloseForm}>&times;</span>
-                        <h2>Product Form</h2>
+                        <span className="close" onClick={onCloseForm}>
+                            <CloseIcon />
+                        </span>
+                        <h2>Send Email</h2>
                         <form onSubmit={handleSubmit}>
-                            <label>Product:</label>
-                            <input type="text" name="product" required />
+                            <input type="text" name="product" placeholder="Product" required />
 
-                            <label>Quantity:</label>
-                            <input type="number" name="quantity" required />
+                            <textarea  name="description" placeholder="Description" required  />
 
-                            <label>Piece:</label>
-                            <input type="text" name="piece" required />
+                            <input type="text" name="name" placeholder="Name" required />
 
-                            <label>Description:</label>
-                            <textarea name="description" required />
+                            <input type="email" name="email" placeholder="Email" required />
 
-                            <label>Name:</label>
-                            <input type="text" name="name" required />
+                            <input type="tel" name="mobile" placeholder="Mobile Number" required />
 
-                            <label>Email:</label>
-                            <input type="email" name="email" required />
-
-                            <label>Mobile Number:</label>
-                            <input type="tel" name="mobile" required />
-
-                            <button type="submit">Submit</button>
+                            <button type="submit">Send Now</button>
                         </form>
                     </div>
                 </div>

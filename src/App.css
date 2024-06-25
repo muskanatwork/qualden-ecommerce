@@ -1,11 +1,13 @@
 * {
   margin: 0;
 }
-.container{
+
+.container {
   width: 100%;
   background-color: #09501a;
 }
-.main{
+
+.main {
   width: 80%;
   margin: auto;
   background-color: #fff;
@@ -18,7 +20,6 @@
   justify-content: space-around;
   align-items: center;
   color: #fff;
-  border: 1px solid black;
   font-weight: 900;
 }
 
@@ -214,7 +215,7 @@ nav ul li a:hover {
 }
 
 /* whatsapp styling */
-.whatsApp{
+.whatsApp {
   position: fixed;
   bottom: 49px;
   right: 39px;
@@ -223,15 +224,18 @@ nav ul li a:hover {
 }
 
 .whatsApp .MuiSvgIcon-root {
-  color: #25D366 ;
-  font-size: 40px; 
+  color: #25D366;
+  font-size: 40px;
 }
+
 /* breadcrumb styling */
 .breadcrumbs {
   background: url('../src/assets/repeating-triangles.svg');
-  width: 100%;
+  width: 96%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 2%;
 }
 
 .breadcrumbs h2 {
@@ -268,7 +272,7 @@ nav ul li a:hover {
   padding: 10px;
 }
 
-.inputSearch{
+.inputSearch {
   width: 250px;
   background-color: #f7f9eb;
   display: flex;
@@ -276,25 +280,28 @@ nav ul li a:hover {
   align-items: center;
   padding: 10px;
   position: absolute;
-  top: 40px; 
+  top: 40px;
   right: 50px;
-  border: solid 1px  #aaad99;
+  border: solid 1px #aaad99;
 }
+
 .no-border {
   border: none;
   background: none;
   padding: 0;
   margin: 0;
 }
+
 .inputSearch input {
   padding: 8px;
   width: 60%;
   margin-right: 10px;
 }
+
 .search-button-go {
   margin-bottom: 10px;
   padding: 8px 16px;
-  background-color:orange;
+  background-color: orange;
   color: white;
   border: none;
   cursor: pointer;
@@ -323,7 +330,7 @@ nav ul li a:hover {
 .footer-nav {
   width: 96%;
   background: url('../src/assets/large-triangles (2).svg');
-  color: #fff; 
+  color: #fff;
   padding: 2%;
 }
 
@@ -333,7 +340,7 @@ nav ul li a:hover {
   margin: 0;
   display: flex;
   justify-content: flex-end;
-  width: 100%; 
+  width: 100%;
 }
 
 .footer-nav ul li {
@@ -363,7 +370,8 @@ nav ul li a:hover {
 .horiLine div {
   border-bottom: 1px dotted #fff;
 }
-.footerHeading{
+
+.footerHeading {
   display: flex;
   justify-content: space-between;
 }
@@ -371,7 +379,7 @@ nav ul li a:hover {
 
 /* submit your requrement button */
 .submit-button {
-  transform: rotate(270deg); 
+  transform: rotate(270deg);
   position: fixed;
   bottom: 43%;
   right: -90px;
@@ -384,19 +392,40 @@ nav ul li a:hover {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  display: flex; 
-  align-items: center; 
-
+  display: flex;
+  align-items: center;
 }
 
 .requirement-form-container {
+  position: fixed;
+  top: 34%;
+  left: 50%;
+  transform: translateX(-50%);
   background-color: black;
-  height: 400px;
+  height: 430px;
+  width: 800px;
+  margin-bottom: 40px;
+  padding: 1%;
+  z-index: 1000;
 }
 
-.requirement-heading {
-  color: #fff;
-} 
+.requirement-heading h1 {
+  color: white;
+}
+
+.cancel-button {
+  border: none;
+  font-size: 30px;
+  margin-left: 98%;
+  background: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  top: -40px;
+
+}
+
 
 /* enquiry-button form*/
 .close-button {
@@ -444,8 +473,88 @@ nav ul li a:hover {
   background-color: #388e3c;
 }
 
+/* send email form popUp */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.622);
+  animation: fadeIn 0.4s;
+}
 
+.modal-content {
+  background-color: #e4e1e1;
+  border-radius: 8px;
+  padding: 20px;
+  width: 80%;
+  max-width: 350px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  animation: slideIn 0.4s;
+}
 
+.close {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+  border-radius: 60%;
+  padding: 1px;
+  font-size: 4px;
+  border: solid 2px white;
+}
 
+.close:hover,
+.close:focus {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #000;
+}
 
+.modal-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.modal-content input {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content textarea {
+  width: 100%;
+  max-width: 300px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+.modal-content form input[type="tel"] {
+  width: 100%;
+  max-width: 280px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content h2 {
+  color: #837f7f;
+  text-align: center;
+}

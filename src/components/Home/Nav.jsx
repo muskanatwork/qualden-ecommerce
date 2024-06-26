@@ -8,7 +8,7 @@ function Nav() {
   return (
     <nav>
       <Link to='/'>
-        <img className='logo' src="https://i.ytimg.com/vi/PhYXIuG0jZY/maxresdefault.jpg" alt="Logo" />
+        <img className='logo' src="src/assets/qualden-technology-private-limited-logo-90x90.png" alt="qualden" />
       </Link>
       <div className='nav-right'>
         <ul className={menuOpen ? "open" : ""}>

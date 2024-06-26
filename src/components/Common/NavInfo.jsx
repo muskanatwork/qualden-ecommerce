@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
-import SendForm from './SendForm'; // Make sure to adjust the import path as needed
+import SendForm from './SendForm';
 
 const NavInfo = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);

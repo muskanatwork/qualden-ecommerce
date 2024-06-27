@@ -1,3 +1,5 @@
+import PhoneInput from 'react-phone-input-2';
+
 const Form = () => {
     return (
         <>
@@ -15,7 +17,12 @@ const Form = () => {
                         <input type="text" id="country" name="country" readOnly placeholder="Your Country" />
                     </div>
                     <div className="form-group3">
-                        <input type="tel" id="mobileNumber" name="mobileNumber" required placeholder="Enter Your Mobile Number" />
+                    <PhoneInput
+                            country={'in'}
+                            placeholder="Mobile No."
+                            inputClass="input-field"
+                            buttonClass="phone-select-button">
+                        </PhoneInput>
                     </div>
                     <div className="form-group4">
                         <textarea id="message" name="message" required placeholder="Type Your Message Here"></textarea>

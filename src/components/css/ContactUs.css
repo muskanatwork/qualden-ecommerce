@@ -1,105 +1,163 @@
 /* Contact Us css */
 /* contact us table design */
-.container1 {
-    display: flex;
-  }
-  
-  .ContactUsTable {
-    margin: 0;
-    background-color: rgb(251, 252, 235);
-    padding: 20px;
+.ContactUsTable {
+  margin: 0;
+  background-color: rgb(251, 252, 235);
+  padding: 20px;
+}
+
+.table {
+  display: flex;
+  flex-direction: column; 
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: dotted 1px black;
+}
+
+/* Base styles for icon */
+.icon {
+  background-color: #000;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+.icon img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.contactTableText {
+  margin-left: 0; 
+  margin-top: 10px;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
+  .container1 {
+    flex-direction: row;
   }
   
   .table {
-    display: flex;
-    width: 500px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: dotted 1px black;
-  }
-  
-  .icon {
-    background-color: #000;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-  }
-  
-  .icon img {
+    flex-direction: row;
     width: 100%;
-    height: 100%;
-    border-radius: 50%;
   }
   
   .contactTableText {
     margin-left: 20px;
+    margin-top: 0; 
   }
+}
+
+/* Laptop and larger screens */
+@media (min-width: 1024px) {
+  .table {
+    width: 500px;
+  }
+}
   
-  /* Form styling in the Contact page */
-  
+/* Form styling in the Contact page */
+.form {
+  padding: 20px;
+  padding-top: 20px;
+}
+
+.form-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn button[type="submit"],
+button[type="submit"]:last-of-type {
+  background-color: rgb(251, 140, 5);
+  color: rgb(249, 246, 246);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:last-of-type:hover {
+  background-color: #134f09;
+}
+
+.btn {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 15px;
+}
+
+/* Default container for small screens */
+.contact-container {
+  display: flex;
+  flex-direction: column; 
+  margin: 20px;
+  margin-bottom: 40px;
+  background-color: rgb(245, 240, 233);
+  border: 1px solid #ccc;
+}
+
+/* Tablet and larger screens */
+@media (min-width: 768px) {
   .form {
     padding: 50px;
-    padding-top: 20px;
   }
-  
+
+  input[type="text"],
+  input[type="email"],
+  select,
+  textarea {
+    width: 100%;
+  }
+
+  .btn {
+    flex-wrap: nowrap; 
+  }
+
+  .contact-container {
+    flex-direction: row; 
+  }
+}
+
+/* Laptop and larger screens */
+@media (min-width: 1024px) {
   .form-container {
     max-width: 500px;
-    margin: 0 auto;
   }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 5px;
-  }
-  
+
   input[type="text"],
   input[type="email"],
   select,
   textarea {
     width: 500px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
   }
-  
-  textarea {
-    resize: vertical;
-  }
-  
-  
-  .btn button[type="submit"],
-  button[type="submit"]:last-of-type {
-    background-color: rgb(251, 140, 5);
-    color: rgb(249, 246, 246);
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    width: auto;
-  }
-  
-  button[type="submit"]:hover,
-  button[type="submit"]:last-of-type:hover {
-    background-color: #134f09;
-  }
-  
-  .btn {
-    display: flex;
-    gap: 15px;
-    /* Add space between buttons */
-  }
-  
-  
-  .contact-container {
-    display: flex;
-    margin: 20px;
-    margin-bottom: 40px;
-    background-color: rgb(245, 240, 233);
-    border: 1px solid #ccc;
-  }
-  
+}
+
   

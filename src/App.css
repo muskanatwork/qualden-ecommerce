@@ -1,7 +1,6 @@
 * {
   margin: 0;
 }
-
 .container {
   width: 100%;
   background-color: #09501a;
@@ -229,6 +228,7 @@ nav ul li a:hover {
 }
 
 /* breadcrumb styling */
+/* breadcrumb styling */
 .breadcrumbs {
   background: url('../src/assets/repeating-triangles.svg');
   width: 96%;
@@ -255,6 +255,52 @@ nav ul li a:hover {
   margin: 0 5px;
   color: white;
 }
+
+/* Responsive styling */
+
+/* Tablets (portrait and landscape) */
+@media (max-width: 1024px) {
+  .breadcrumbs {
+    padding: 3%;
+  }
+
+  .link {
+    font-size: 16px;
+  }
+}
+
+/* Mobile devices */
+@media (max-width: 768px) {
+  .breadcrumbs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .breadcrumbs span {
+    margin-top: 5px;
+  }
+
+  .breadcrumbs span::before {
+    content: '';
+    margin: 0;
+  }
+
+  .link {
+    font-size: 14px;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+  .breadcrumbs {
+    padding: 5%;
+  }
+
+  .link {
+    font-size: 12px;
+  }
+}
+
 
 
 /* search bar */

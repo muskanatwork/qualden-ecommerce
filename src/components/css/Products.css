@@ -281,6 +281,7 @@
 
 .dialog-content {
   display: flex;
+  gap: -50px;
 }
 
 .input-field {

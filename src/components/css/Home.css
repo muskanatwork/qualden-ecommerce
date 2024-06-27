@@ -78,10 +78,11 @@
   }
   
   .cartContainer {
-    width: 100%;
-    padding-left: 30px;
+    width: 100%; 
+    padding: 40px; 
     background-color: rgb(232, 232, 215);
-  }
+    box-sizing: border-box; 
+    }
   
   .cartContainer h1 {
     text-align: center;

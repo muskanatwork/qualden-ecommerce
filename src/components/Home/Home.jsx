@@ -10,6 +10,7 @@ import WhatsAppButton from "../Common/WhatsAppButton"
 import Data from '../Products/Data.json'
 import {useState} from 'react';
 import '../css/Home.css'
+import MobileFooter from "../Common/MobileFooter"
 
 const Home = () => {
     const [data, setData] = useState(Data);
@@ -58,6 +59,7 @@ const Home = () => {
                     </div>
                     <SubmitRequirement />
                     <Footer />
+                    <MobileFooter/>
                     <ScrollToTopButton />
                     <WhatsAppButton
                         phoneNumber="919876543210" // Change this to your WhatsApp number with country code

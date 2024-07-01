@@ -8,13 +8,14 @@ import ScrollToTopButton from '../Common/ScrollToTopButton';
 import '../css/AboutUs.css'
 import SubmitRequirement from "../Common/RequrimentButton"
 import WhatsAppButton from '../Common/WhatsAppButton';
+import MobileFooter from '../Common/MobileFooter';
 const AboutUs = () => {
     return (
         <>
             <div className="container">
+            <NavInfo />
+            <Nav />
                 <div className="main">
-                    <NavInfo />
-                    <Nav />
                     <div className='breadcrumbs'>
                         <div>
                             <h2>About US</h2>
@@ -107,6 +108,7 @@ const AboutUs = () => {
                     </div>
                     <SubmitRequirement />
                     <FooterNav />
+                    <MobileFooter/>
                     <ScrollToTopButton />
                     <WhatsAppButton
                         phoneNumber="919876543210" // Change this to your WhatsApp number with country code

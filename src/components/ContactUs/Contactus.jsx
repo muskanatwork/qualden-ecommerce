@@ -9,13 +9,14 @@ import SubmitRequirement from '../Common/RequrimentButton';
 import '../css/ContactUs.css'
 import WhatsAppButton from '../Common/WhatsAppButton';
 import ScrollToTopButton from '../Common/ScrollToTopButton';
+import MobileFooter from '../Common/MobileFooter'
 const ContactUs = () => {
     return (
         <>
             <div className="container">
+            <NavInfo />
+            <Nav/>
                 <div className="main">
-                <NavInfo />
-                <Nav/>
                     <div className='breadcrumbs'>
                         <div><h2>Contact Us</h2></div>
                         <div className='breadcrumbs-link'><Breadcrumbs /></div>
@@ -26,6 +27,7 @@ const ContactUs = () => {
                         <ContactUsForm />
                     </div>
                     <FooterNav/>
+                    <MobileFooter/>
                     <SubmitRequirement />
                     <ScrollToTopButton />
                     <WhatsAppButton

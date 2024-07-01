@@ -10,16 +10,24 @@
   width: 80%;
   margin: auto;
   background-color: #fff;
+  margin-top: 0;
 }
+.container .main > *:first-child {
+  margin-top: 0;
+}
+
 
 /* nav info */
 .Nav-info {
+
   background-color: #28a745;
   display: flex;
   justify-content: space-around;
   align-items: center;
   color: #fff;
   font-weight: 900;
+  width: 80%;
+  margin: auto;
 }
 
 .info-heading {
@@ -64,17 +72,28 @@
   color: white;
 }
 
-/* Existing styles... */
+/* nav bar*/
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f7f9eb;
+  margin: auto;
+  background-color:#fff;
   position: sticky;
-  width: 100%;
+  width: 80%;
   top: 0;
   z-index: 2;
+  /* transition: width 0.1s; */
+}
+
+nav.scrolled {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #f7f9eb; 
 }
 
 nav .menu {
@@ -121,7 +140,7 @@ nav ul li a {
 }
 
 .active {
-  background-color: rgba(255, 255, 0, 0.746);
+  background-color: orange;
 }
 
 .logo {
@@ -130,7 +149,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  background-color: rgb(248, 248, 60);
+  background-color: orange;
 }
 
 @media(max-width:480px) {
@@ -227,7 +246,6 @@ nav ul li a:hover {
   font-size: 40px;
 }
 
-/* breadcrumb styling */
 /* breadcrumb styling */
 .breadcrumbs {
   background: url('../src/assets/repeating-triangles.svg');
@@ -556,4 +574,28 @@ nav ul li a:hover {
 .modal-content h2 {
   color: #837f7f;
   text-align: center;
+}
+
+/* src/Footer.css */
+.mobileFooter {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid blue;
+}
+
+
+/* footer's media quiry */
+
+@media (max-width: 430px) {
+  .footer-nav{
+    display: none;
+  }
+  .mobileFooter{
+    display: block;
+  }
+  nav{
+    width: 100%;
+  }
 }

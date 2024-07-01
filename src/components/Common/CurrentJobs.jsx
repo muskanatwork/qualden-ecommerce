@@ -5,6 +5,7 @@ import Breadcrumbs from '../Common/Breadcrumbs';
 import FooterNav from '../Common/FooterNav';
 import Nav from '../Home/Nav'
 import JobApplicationForm from './CurrentJobsForm';
+import MobileFooter from './MobileFooter';
 
 const CurrentJobs = () => {
     return (
@@ -41,6 +42,7 @@ const CurrentJobs = () => {
                         </div>
                     </div>
                     <FooterNav />
+                    <MobileFooter/>
                 </div>
             </div>
 

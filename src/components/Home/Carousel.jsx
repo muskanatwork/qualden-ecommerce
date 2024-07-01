@@ -30,7 +30,7 @@ const Carousel = () => {
                 &gt;
             </button>
         </div>
-    );
+    )
 };
 
 export default Carousel;

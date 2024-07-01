@@ -1,12 +1,13 @@
 import Nav from "../Home/Nav"
 import ProductCategory from "./ProductCategory";
- import NavInfo from "../Common/NavInfo";
- import Breadcrumbs from "../Common/Breadcrumbs";
- import FooterNav from "../Common/FooterNav";
- import '../css/Products.css'
- import SubmitRequirement from "../Common/RequrimentButton";
- import WhatsAppButton from "../Common/WhatsAppButton";
- import ScrollToTopButton from "../Common/ScrollToTopButton";
+import NavInfo from "../Common/NavInfo";
+import Breadcrumbs from "../Common/Breadcrumbs";
+import FooterNav from "../Common/FooterNav";
+import '../css/Products.css'
+import SubmitRequirement from "../Common/RequrimentButton";
+import WhatsAppButton from "../Common/WhatsAppButton";
+import ScrollToTopButton from "../Common/ScrollToTopButton";
+import MobileFooter from "../Common/MobileFooter";
 const Products = () => {
     const electronicArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5]
     const radarArr = [1, 2, 3, 4, 5]
@@ -16,9 +17,9 @@ const Products = () => {
     return (
         <>
             <div className="container">
+                <NavInfo />
+                <Nav />
                 <div className="main">
-                    <NavInfo/>
-                    <Nav/>
                     <div className='breadcrumbs'>
                         <div>
                             <h2>Products</h2>
@@ -84,7 +85,8 @@ const Products = () => {
 
                     </div>
                     <SubmitRequirement />
-                    <FooterNav/>
+                    <FooterNav />
+                    <MobileFooter/>
                     <ScrollToTopButton />
                     <WhatsAppButton
                         phoneNumber="919876543210" // Change this to your WhatsApp number with country code

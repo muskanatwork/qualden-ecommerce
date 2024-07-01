@@ -8,26 +8,28 @@ import ProductForm from './ProductForm';
 import Carousel from './ProductCardCrousel';
 import Breadcrumbs from '../Common/Breadcrumbs';
 import ProductDescription from './ProductDescription';
+import MobileFooter from '../Common/MobileFooter';
 const ProductDetails = () => {
 
     return (
         <>
             <div className="container">
+                <NavInfo />
+                <Nav />
                 <div className="main">
-                    <Nav />
-                    <NavInfo />
-                    <Breadcrumbs/>
+                    <Breadcrumbs />
                     <div className="detailsContainer">
-                    <ImagePreview />
-                    <ProductDescription/>
+                        <ImagePreview />
+                        <ProductDescription />
                     </div>
                     <TableInfo />
-                    <ProductForm/>
+                    <ProductForm />
                     <Carousel />
                     <FooterNav />
+                    <MobileFooter/>
                 </div>
             </div>
-            
+
         </>
     );
 }

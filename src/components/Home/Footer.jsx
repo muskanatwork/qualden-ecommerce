@@ -1,42 +1,31 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 const Footer = () => {
-    const [isGeneralLinksOpen, setIsGeneralLinksOpen] = useState(false);
-    const [isProductsOpen, setIsProductsOpen] = useState(false);
-
     return (
-        <footer>
-            <div className="footer-section">
-                <div className='generalDiv' onClick={() => setIsGeneralLinksOpen(!isGeneralLinksOpen)}>
+        <>
+            <footer>
+                <div className="footer-section">
                     <h3>General Links</h3>
-                    <p>+</p>
-                </div>
-                {isGeneralLinksOpen && (
                     <div className='footer-box1'>
                         <div className='section2'>
                             <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">Contact Us</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/product">Products</a></li>
+                                <li><a href="/contact">Contact Us</a></li>
                                 <li><a href="#">RSS</a></li>
                             </ul>
                         </div>
                         <div className='section1'>
                             <ul>
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Current Jobs</a></li>
+                                <li><a href="/about">About Us</a></li>
+                                <li><a href="/currentJobs">Current Jobs</a></li>
                                 <li><a href="#">Site Map</a></li>
                             </ul>
                         </div>
                     </div>
-                )}
-            </div>
-            <div className="footer-section">
-                <div className='generalDiv' onClick={() => setIsProductsOpen(!isProductsOpen)}>
-                    <h3>Products</h3>
-                    <p>+</p>
                 </div>
-                {isProductsOpen && (
+                <div className="footer-section">
+                    <h3>Products</h3>
                     <div className='footer-box1'>
                         <div className='section1'>
                             <ul>
@@ -53,21 +42,30 @@ const Footer = () => {
                                 <li><a href="#">3D Ultrasonic Anemometer</a></li>
                                 <li><a href="#">GPS Receiver Rs232</a></li>
                                 <li><a href="#">SMKB MET ROAD FS2 Weather Station</a></li>
-                                <li><a href="#">View All</a></li>
+                                <li><a href="/product">View All</a></li>
                             </ul>
                         </div>
                     </div>
-                )}
-            </div>
-            <div className='img-div'>
-                <div>
-                    <img src='https://2.wlimg.com/product_images/bc-small/2020/2/4222645/ultrasonic-wind-sensor-1582793304-5316552.jpeg' alt="Ultrasonic Wind Sensor"></img>
                 </div>
-                <div>
-                    <img src='https://2.wlimg.com/product_images/bc-small/2020/3/4222645/pt100-industrial-temperature-sensor-1583473665-5327671.jpeg' alt="PT100 Industrial Temperature Sensor"></img>
+                <div className='img-div'>
+                    <div className='img-container'>
+                        <img src='https://2.wlimg.com/product_images/bc-small/2020/2/4222645/ultrasonic-wind-sensor-1582793304-5316552.jpeg' alt='Ultrasonic Wind Sensor'></img>
+                        <a href="/product" className="specific-arrow">See all Products</a>
+                    </div>
+                    <div className='img-container'>
+                        <img src='https://2.wlimg.com/product_images/bc-small/2020/3/4222645/pt100-industrial-temperature-sensor-1583473665-5327671.jpeg' alt='PT100 Industrial Temperature Sensor'></img>
+                    </div>
+                </div>
+            </footer>
+            <div className='buttomFooter'>
+                <div className='footerHeading'>
+                    <h3>All Rights Reserved. Qualden (Terms of Use)</h3>
+                    <h3>Developed & Managed By Qualden</h3>
                 </div>
             </div>
-        </footer>
+
+        </>
+
     );
 };
 

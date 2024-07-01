@@ -13,7 +13,6 @@ const ProductForm = () => {
                         <input type="text" name="name" />
                         <label>Email:</label>
                         <input type="email" name="email" />
-
                     </div>
                     <div className='deatilForm'>
                         <label>Phone Number:</label>

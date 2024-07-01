@@ -1,6 +1,6 @@
 import { FaEnvelope } from 'react-icons/fa';
 import CallIcon from '@mui/icons-material/Call';
-import EnquiryFormDialog from './EnquiryFormDialog'; // Ensure the import path is correct
+import EnquiryFormDialog from './EnquiryFormDialog'; 
 import React, { useState } from 'react';
 
 const ProductDescription = () => {

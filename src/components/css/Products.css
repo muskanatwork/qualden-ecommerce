@@ -76,7 +76,6 @@
   
   .productItem-hover-card button {
     background-color: green;
-    /* Green color */
     color: white;
     border-radius: 4px;
     border: 1px solid #fff;
@@ -88,17 +87,14 @@
   
   .productItem-hover-card button:last-child {
     background-color: orange;
-    /* Orange color */
   }
   
   .productItem-hover-card button:hover {
     background-color: orange;
-    /* Hover: Orange to Green */
   }
   
   .productItem-hover-card button:last-child:hover {
     background-color: green;
-    /* Hover: Green to Orange */
   }
   
   .Electronicdiv {

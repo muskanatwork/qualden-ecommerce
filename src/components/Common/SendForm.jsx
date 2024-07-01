@@ -20,7 +20,7 @@ const SendForm = ({ isOpen, onCloseForm }) => {
                         <form onSubmit={handleSubmit}>
                             <input type="text" name="product" placeholder="Product" required />
 
-                            <textarea  name="description" placeholder="Description" required  />
+                            <textarea name="description" placeholder="Description" required />
 
                             <input type="text" name="name" placeholder="Name" required />
 

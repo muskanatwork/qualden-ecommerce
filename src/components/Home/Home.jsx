@@ -16,8 +16,8 @@ const Home = () => {
     return (
         <>
             <div className="container">
+            <Nav />
                 <div className="main">
-                    <Nav />
                     <Carousel />
                     <div className="homeContant">
                         <div className="paraDiv">

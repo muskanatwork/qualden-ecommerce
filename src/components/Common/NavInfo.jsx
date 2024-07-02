@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import SendForm from './SendForm';
+import SmsForm from './SmsForm';
 
 const NavInfo = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -35,6 +36,8 @@ const NavInfo = () => {
                 </button>
             </div>
             <SendForm isOpen={isModalOpen} onCloseForm={handleCloseModal} />
+            <SmsForm isOpen={isModalOpen} onCloseForm={handleCloseModal} />
+
         </div>
     );
 }

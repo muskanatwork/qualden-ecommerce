@@ -1,6 +1,6 @@
 import React from 'react';
 import CloseIcon from '@mui/icons-material/Close';
-const SendForm = ({ isOpen, onCloseForm }) => {
+const SmsForm = ({ isOpen, onCloseForm }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -14,7 +14,7 @@ const SendForm = ({ isOpen, onCloseForm }) => {
                         <span className="close" onClick={onCloseForm}>
                             <CloseIcon />
                         </span>
-                        <h2>Send Email</h2>
+                        <h2>Send SMS</h2>
                         <form onSubmit={handleSubmit}>
                             <input type="text" name="product" placeholder="Product" required />
 
@@ -35,4 +35,4 @@ const SendForm = ({ isOpen, onCloseForm }) => {
     );
 }
 
-export default SendForm;
+export default SmsForm;

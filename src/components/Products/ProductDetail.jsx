@@ -5,7 +5,7 @@ import FooterNav from '../Common/FooterNav';
 import ImagePreview from './ImagePreview';
 import TableInfo from './TableInfo';
 import ProductForm from './ProductForm';
-import Carousel from './ProductCardCrousel';
+import CarouselCard from './ProductCardCrousel';
 import Breadcrumbs from '../Common/Breadcrumbs';
 import ProductDescription from './ProductDescription';
 import MobileFooter from '../Common/MobileFooter';
@@ -24,7 +24,7 @@ const ProductDetails = () => {
                     </div>
                     <TableInfo />
                     <ProductForm />
-                    <Carousel />
+                    <CarouselCard />
                     <FooterNav />
                     <MobileFooter/>
                 </div>

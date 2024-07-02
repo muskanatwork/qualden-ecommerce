@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
 
@@ -6,6 +6,7 @@ const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showSearch, setShowSearch] = useState(false);
   const [results, setResults] = useState([]);
+  const searchRef = useRef(null);
 
   const items = [
     'Industrial Noise Sensor',
@@ -31,7 +32,6 @@ const Search = () => {
     setSearchTerm(event.target.value);
   };
   
-
   const handleGoClick = () => {
     const filteredResults = items.filter(item =>
       item.toLowerCase().includes(searchTerm.toLowerCase())
@@ -45,6 +45,24 @@ const Search = () => {
     }
   };
 
+  const handleClickOutside = (event) => {
+    if (searchRef.current && !searchRef.current.contains(event.target)) {
+      handleCancelIconClick();
+    }
+  };
+
+  useEffect(() => {
+    if (showSearch) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [showSearch]);
+
   return (
     <div className="App">
       <div className="search-bar">
@@ -53,7 +71,7 @@ const Search = () => {
         </button>
       </div>
       {showSearch && (
-        <div className='inputSearch'>
+        <div className='inputSearch' ref={searchRef}>
           <input 
             type="text"
             value={searchTerm}

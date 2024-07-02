@@ -24,7 +24,7 @@ function Nav() {
   return (
     <nav className={scrolled ? 'scrolled' : ''}>
       <Link to='/'>
-        <img className='logo' src="src/assets/qualden-technology-private-limited-logo-90x90.png" alt="qualden" />
+        <img className='logo' src="https://qualden.com/assets/imgs/template/logo.png" alt="qualden" />
       </Link>
       <div className='nav-right'>
         <ul className={menuOpen ? "open" : ""}>

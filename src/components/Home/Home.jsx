@@ -11,6 +11,7 @@ import Data from '../Products/Data.json'
 import {useState} from 'react';
 import '../css/Home.css'
 import MobileFooter from "../Common/MobileFooter"
+import MobileLogoDiv from "../Common/MobileLogoDiv"
 
 const Home = () => {
     const [data, setData] = useState(Data);
@@ -18,6 +19,7 @@ const Home = () => {
         <>
             <div className="container">
             <Nav />
+            {/* <MobileLogoDiv/> */}
                 <div className="main">
                     <Carousel />
                     <div className="homeContant">

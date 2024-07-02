@@ -1,105 +1,99 @@
 [
     {
-        "productCategory": {
-            "Electronic Sensor": [
-                {
-                    "productName": "PT100 Industrial Temperature Sensor",
-                    "Business Type": "Manufacturer, Supplier, Trader",
-                    "Temperature Range(°C)": "-200 to 420",
-                    "Probe Material": "Stainless Steel",
-                    "Probe Diameter(mm)": 4
-                },
-                {
-                    "productName": "SMK BLVD Digital Leaf Wetness Sensor",
-                    "Business Type": "Manufacturer, Supplier, Retailer, Wholesaler",
-                    "Temperature Range(°C)": "temperature-20~80℃",
-                    "Probe Material": "0~100%",
-                    "Probe Diameter(mm)": "＜1s , Accuracy: ±1℃（25℃）;±5%（25℃）"
-                },
-                {
-                    "productName": "SMK BRAT IR Infrared Road Temperature Sensor",
-                    "Business Type": "Manufacturer, Supplier, Retailer, Wholesaler",
-                    "Temperature Range(°C)": "-40-70℃",
-                    "Probe Material": "±1%",
-                    "Probe Diameter(mm)": "Target Diameter D:T=8:1"
-                },
-                {
-                    "productName": "SMKBDVIS-ECO Road Visibility Sensor",
-                    "Business Type": "Manufacturer, Supplier, Trader",
-                    "Temperature Range(°C)": "10-3000m",
-                    "Probe Material": "RS232,RS485",
-                    "Probe Diameter(mm)": "300*115*140mm"
-                },
-                {
-                    "productName": "Pressure Type Water Level Sensor",
-                    "Business Type": "Manufacturer, Supplier, Trader",
-                    "Temperature Range(°C)": "SesnorMart.com",
-                    "Probe Material": "SMKBWLP-HA",
-                    "Probe Diameter(mm)": "~250g"
-                }
-            ]
-        }
+        "Electronic Sensor": [
+            {
+                "productName": "PT100 Industrial Temperature Sensor",
+                "Business Type": "Manufacturer, Supplier, Trader",
+                "Temperature Range(°C)": "-200 to 420",
+                "Probe Material": "Stainless Steel",
+                "Probe Diameter(mm)": 4
+            },
+            {
+                "productName": "SMK BLVD Digital Leaf Wetness Sensor",
+                "Business Type": "Manufacturer, Supplier, Retailer, Wholesaler",
+                "Temperature Range(°C)": "temperature-20~80℃",
+                "Probe Material": "0~100%",
+                "Probe Diameter(mm)": "＜1s , Accuracy: ±1℃（25℃）;±5%（25℃）"
+            },
+            {
+                "productName": "SMK BRAT IR Infrared Road Temperature Sensor",
+                "Business Type": "Manufacturer, Supplier, Retailer, Wholesaler",
+                "Temperature Range(°C)": "-40-70℃",
+                "Probe Material": "±1%",
+                "Probe Diameter(mm)": "Target Diameter D:T=8:1"
+            },
+            {
+                "productName": "SMKBDVIS-ECO Road Visibility Sensor",
+                "Business Type": "Manufacturer, Supplier, Trader",
+                "Temperature Range(°C)": "10-3000m",
+                "Probe Material": "RS232,RS485",
+                "Probe Diameter(mm)": "300*115*140mm"
+            },
+            {
+                "productName": "Pressure Type Water Level Sensor",
+                "Business Type": "Manufacturer, Supplier, Trader",
+                "Temperature Range(°C)": "SesnorMart.com",
+                "Probe Material": "SMKBWLP-HA",
+                "Probe Diameter(mm)": "~250g"
+            }
+        ]
     },
     {
-        "productCategory": {
-            "Radar Sensor": [
-                {
-                    "productName": "IDR-2050 Radar Sensor.",
-                    "Business Type": "Manufacturer, Exporter, Supplier",
-                    "Temperature Range(°C)": "India",
-                    "Probe Material": "IDR-2050 Radar Sensor.",
-                    "Probe Diameter(mm)": "Plastic"
-                },
-                {
-                    "productName": "ISYS-4001 2D Radar Sensor",
-                    "Business Type": "Manufacturer, Exporter, Supplier",
-                    "Temperature Range(°C)": "temperature-20~80℃",
-                    "Probe Material": "India",
-                    "Probe Diameter(mm)": "ISYS-4001 2D Radar Sensor"
-                },
-                {
-                    "productName": "ISYS-4010 2D Radar Sensor",
-                    "Business Type": "Manufacturer, Exporter, Supplier",
-                    "Temperature Range(°C)": "India",
-                    "Probe Material": "ISYS-4010 2D Radar Sensor",
-                    "Probe Diameter(mm)": "Industrial Use"
-                },
-                {
-                    "productName": "ISYS-5220 4D Traffic Radar Sensor",
-                    "Business Type": "Manufacturer, Exporter, Supplier",
-                    "Temperature Range(°C)": "India",
-                    "Probe Material": "Radar Sensor",
-                    "Probe Diameter(mm)": "Plastic"
-                },
-                {
-                    "productName": "ITR-3800 4D Traffic Radar Sensor",
-                    "Business Type": "Manufacturer, Exporter, Supplier",
-                    "Temperature Range(°C)": "India",
-                    "Probe Material": "Radar Sensor",
-                    "Probe Diameter(mm)": "Plastic"
-                }
-            ]
-        }
+        "Radar Sensor": [
+            {
+                "productName": "IDR-2050 Radar Sensor.",
+                "Business Type": "Manufacturer, Exporter, Supplier",
+                "Temperature Range(°C)": "India",
+                "Probe Material": "IDR-2050 Radar Sensor.",
+                "Probe Diameter(mm)": "Plastic"
+            },
+            {
+                "productName": "ISYS-4001 2D Radar Sensor",
+                "Business Type": "Manufacturer, Exporter, Supplier",
+                "Temperature Range(°C)": "temperature-20~80℃",
+                "Probe Material": "India",
+                "Probe Diameter(mm)": "ISYS-4001 2D Radar Sensor"
+            },
+            {
+                "productName": "ISYS-4010 2D Radar Sensor",
+                "Business Type": "Manufacturer, Exporter, Supplier",
+                "Temperature Range(°C)": "India",
+                "Probe Material": "ISYS-4010 2D Radar Sensor",
+                "Probe Diameter(mm)": "Industrial Use"
+            },
+            {
+                "productName": "ISYS-5220 4D Traffic Radar Sensor",
+                "Business Type": "Manufacturer, Exporter, Supplier",
+                "Temperature Range(°C)": "India",
+                "Probe Material": "Radar Sensor",
+                "Probe Diameter(mm)": "Plastic"
+            },
+            {
+                "productName": "ITR-3800 4D Traffic Radar Sensor",
+                "Business Type": "Manufacturer, Exporter, Supplier",
+                "Temperature Range(°C)": "India",
+                "Probe Material": "Radar Sensor",
+                "Probe Diameter(mm)": "Plastic"
+            }
+        ]
     },
     {
-        "productCategory": {
-            "Siphon Tipping Bucket Rain Gauge": [
-                {
-                    "productName": "Siphon Tipping Bucket Rain Gauge",
-                    "Business Type": "Manufacturer, Supplier, Trader",
-                    "Temperature Range(°C)": "SesnorMart.com",
-                    "Probe Material": "Gross Weight",
-                    "Probe Diameter(mm)": "0 to 100%"
-                },
-                {
-                    "productName": "SMKBRN-ECO Tipping Bucket Rain Gauge",
-                    "Business Type": "Manufacturer, Exporter, Supplier, Retailer, Wholesaler",
-                    "Temperature Range(°C)": "SesnorMart.com",
-                    "Probe Material": "SMKBRN-ECO",
-                    "Probe Diameter(mm)": "ABS + PC"
-                }
-            ]
-        }
+        "Siphon Tipping Bucket Rain Gauge": [
+            {
+                "productName": "Siphon Tipping Bucket Rain Gauge",
+                "Business Type": "Manufacturer, Supplier, Trader",
+                "Temperature Range(°C)": "SesnorMart.com",
+                "Probe Material": "Gross Weight",
+                "Probe Diameter(mm)": "0 to 100%"
+            },
+            {
+                "productName": "SMKBRN-ECO Tipping Bucket Rain Gauge",
+                "Business Type": "Manufacturer, Exporter, Supplier, Retailer, Wholesaler",
+                "Temperature Range(°C)": "SesnorMart.com",
+                "Probe Material": "SMKBRN-ECO",
+                "Probe Diameter(mm)": "ABS + PC"
+            }
+        ]
     },
     {
         "productCategory": {

@@ -63,11 +63,6 @@
 }
 
 /* card styling */
-.productCartContainer {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .cartContainer {
   width: 100%;
   padding: 40px;
@@ -78,16 +73,6 @@
 .cartContainer h1 {
   text-align: center;
   padding: 30px;
-}
-
-.ProductCardDiv {
-  border: 1px solid #ccc;
-  background-color: rgb(253, 253, 245);
-  border-radius: 8px;
-  padding: 8px;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  width: 250px;
 }
 
 .ProductCardDiv div {
@@ -106,6 +91,24 @@
   font-size: 18px;
   color: #333;
 }
+.productCartContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .productCartContainer {
+      grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .productCartContainer {
+      grid-template-columns: repeat(4, 1fr);
+  }
+}
+
 
 /* View all-Button styling css */
 

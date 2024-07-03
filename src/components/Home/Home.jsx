@@ -19,7 +19,7 @@ const Home = () => {
         <>
             <div className="container">
             <Nav />
-            {/* <MobileLogoDiv/> */}
+            <MobileLogoDiv/>
                 <div className="main">
                     <Carousel />
                     <div className="homeContant">

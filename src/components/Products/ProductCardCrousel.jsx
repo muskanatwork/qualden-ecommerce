@@ -6,13 +6,12 @@ import Data from './Data.json';
 const CarouselCard = () => {
     const responsive = {
         superLargeDesktop: {
-            // the naming can be any, depends on you.
             breakpoint: { max: 4000, min: 3000 },
             items: 5
         },
         desktop: {
             breakpoint: { max: 3000, min: 1024 },
-            items: 3
+            items: 4 
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
@@ -32,6 +31,7 @@ const CarouselCard = () => {
                         <img src={card.image} alt={card.heading} />
                         <div className="card-body">
                             <h5 className="card-title">{card.heading}</h5>
+                            <button className="btn">Get Best Quoto</button>
                         </div>
                     </div>
                 </div>

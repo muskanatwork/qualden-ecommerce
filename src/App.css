@@ -418,13 +418,13 @@ nav ul li a:hover {
 
 
 /* search bar */
+/* General styles */
 .App {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .search-bar {
   display: flex;
@@ -434,7 +434,6 @@ nav ul li a:hover {
 }
 
 .inputSearch {
-  width: 250px;
   background-color: #f7f9eb;
   display: flex;
   justify-content: center;
@@ -455,7 +454,6 @@ nav ul li a:hover {
 
 .inputSearch input {
   padding: 8px;
-  width: 60%;
   margin-right: 10px;
 }
 
@@ -481,10 +479,30 @@ nav ul li a:hover {
   color: red;
 }
 
-.sidebar {
-  background-color: aquamarine;
-  width: 400px;
-  height: 500px;
+/* Styles for phone screens */
+@media (max-width: 600px) {
+  .inputSearch {
+    width: 100%;
+    top: auto;
+    right: auto;
+    position: static;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .inputSearch input {
+    width: 70%;
+    margin-right: 0;
+    border: 1px solid #aaad99;
+    padding: 8px;
+  }
+
+  .search-button-go {
+    width: 30%;
+    padding: 8px;
+    margin-bottom: 0;
+  }
 }
 
 /* footer nav */

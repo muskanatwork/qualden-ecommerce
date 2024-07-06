@@ -72,32 +72,32 @@
 .ProductCardDiv {
   padding: 10px;
   border: 1px solid black;
-  width: 100%; /* Use 100% width to make it responsive */
-  max-width: 250px; /* Set a maximum width */
+  width: 100%; 
+  max-width: 250px; 
   height: 350px;
-  aspect-ratio: 5 / 7; /* Maintain aspect ratio */
+  aspect-ratio: 5 / 7; 
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  box-sizing: border-box; /* Ensure padding is included in width and height */
-  margin: 16px; /* Ensure equal margin around each card */
+  box-sizing: border-box; 
+  margin: 16px; 
 }
 
 .ProductCardDiv div {
   border: 1px solid #ccc;
   width: 100%;
-  height: auto; /* Allow height to be flexible */
+  height: auto; 
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden; /* Hide overflow for consistent image display */
-  flex-grow: 1; /* Allow div to grow */
+  overflow: hidden; 
+  flex-grow: 1; 
 }
 
 .ProductCardDiv img {
   max-width: 100%;
-  height: auto; /* Maintain aspect ratio */
+  height: auto; 
   border-radius: 8px;
 }
 
@@ -106,7 +106,7 @@
   margin-top: 8px;
   font-size: 18px;
   color: #333;
-  height: auto; /* Allow height to be flexible */
+  height: auto; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -114,21 +114,21 @@
 
 .productCartContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Default to 2 columns for smaller screens */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 16px;
-  padding: 16px; /* Add padding for spacing around the grid */
-  justify-content: center; /* Center the grid */
+  padding: 16px; 
+  justify-content: center; 
 }
 
 @media (min-width: 600px) {
   .productCartContainer {
-      grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+      grid-template-columns: repeat(3, 1fr); 
   }
 }
 
 @media (min-width: 992px) {
   .productCartContainer {
-      grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
+      grid-template-columns: repeat(4, 1fr); 
   }
 }
 

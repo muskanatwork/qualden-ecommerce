@@ -8,11 +8,12 @@ import SubmitRequirement from "../Common/RequrimentButton";
 import WhatsAppButton from "../Common/WhatsAppButton";
 import ScrollToTopButton from "../Common/ScrollToTopButton";
 import MobileFooter from "../Common/MobileFooter";
+import Data from '../Products/Data.json'
 const Products = () => {
-    const electronicArr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5]
-    const radarArr = [1, 2, 3, 4, 5]
-    const tippingBucketArr = [1, 2]
-    const otherProductArr = [1, 2, 3, 4, 5, 6, 7]
+    const electronicArr = Data[0]["Electronic-Sensor"]
+    const radarArr = Data[1]["Radar Sensor"]
+    const tippingBucketArr = Data[2]["Siphon Tipping Bucket Rain Gauge"]
+    const otherProductArr = Data[3]["Other Products"]
 
     return (
         <>
@@ -36,9 +37,9 @@ const Products = () => {
                         </div>
                         <div className="Electronicdiv">
                             {
-                                electronicArr.map((item, index) => {
+                                electronicArr.map((electronicProduct, index) => {
                                     return (
-                                        <ProductCategory key={index} />
+                                        <ProductCategory product = {electronicProduct} key={index} />
                                     )
                                 })
                             }
@@ -49,9 +50,9 @@ const Products = () => {
                         </div>
                         <div className="radarDiv">
                             {
-                                radarArr.map((item, index) => {
+                                radarArr.map((radarProduct, index) => {
                                     return (
-                                        <ProductCategory key={index} />
+                                        <ProductCategory key={index} product={radarProduct}/>
                                     )
                                 })
                             }
@@ -62,9 +63,9 @@ const Products = () => {
                         </div>
                         <div className="tippingBucketDiv">
                             {
-                                tippingBucketArr.map((item, index) => {
+                                tippingBucketArr.map((tippingBucketProduct, index) => {
                                     return (
-                                        <ProductCategory key={index} />
+                                        <ProductCategory key={index} product={tippingBucketProduct}/>
                                     )
                                 })
                             }
@@ -75,9 +76,9 @@ const Products = () => {
                         </div>
                         <div className="otherProductDiv">
                             {
-                                otherProductArr.map((item, index) => {
+                                otherProductArr.map((otherProduct, index) => {
                                     return (
-                                        <ProductCategory key={index} />
+                                        <ProductCategory key={index} product={otherProduct}/>
                                     )
                                 })
                             }

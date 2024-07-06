@@ -1,33 +1,47 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Search from '../Common/SearchBar';
+import Data from '../Products/Data.json';
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const navRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
+      setScrolled(window.scrollY > 0);
+    };
+
+    const handleClickOutside = (event) => {
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setMenuOpen(false);
       }
     };
 
     window.addEventListener('scroll', handleScroll);
+    window.addEventListener('click', handleClickOutside);
+
     return () => {
       window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener('click', handleClickOutside);
     };
   }, []);
 
   return (
-    <nav className={scrolled ? 'scrolled' : ''}>
+    <nav ref={navRef} className={scrolled ? 'scrolled' : ''}>
       <Link to='/'>
         <img className='logo' src="https://qualden.com/assets/imgs/template/logo.png" alt="qualden" />
       </Link>
       <div className='nav-right'>
-        <ul className={menuOpen ? "open" : ""}>
+        <ul className={menuOpen ? 'open' : ''}>
+          {menuOpen && (
+            <li>
+              <span className='close-menu' onClick={() => setMenuOpen(false)}>
+                &times;
+              </span>
+            </li>
+          )}
           <li>
             <NavLink to='/'>Home</NavLink>
           </li>
@@ -37,30 +51,11 @@ function Nav() {
           <li className='dropdown'>
             <NavLink to='/product'>Products</NavLink>
             <ul className='dropdown-content'>
-              <li className='dropdown'>
-                <NavLink to='/product/industrial-noise-sensor'>Industrial Noise Sensor</NavLink>
-              </li>
-              <li>
-                <NavLink to='/product/siphon-tipping-bucket-rain-gauge'>Siphon Tipping Bucket Rain Gauge</NavLink>
-              </li>
-              <li>
-                <NavLink to='/product/smkbrn-eco-tipping-bucket-rain-gauge'>SMKBRN-ECO Tipping Bucket Rain Gauge</NavLink>
-              </li>
-              <li>
-                <NavLink to='/product/wind-direction-sensor'>Wind Direction Sensor</NavLink>
-              </li>
-              <li>
-                <NavLink to='/product/wind-speed-sensor'>Wind Speed Sensor</NavLink>
-              </li>
-              <li>
-                <NavLink to='/product/3d-ultrasonic-anemometer'>3D Ultrasonic Anemometer</NavLink>
-              </li>
-              <li>
-                <NavLink to='/product/atmospheric-temperature-and-humidity-sensor'>Atmospheric Temperature and Humidity Sensor</NavLink>
-              </li>
-              <li>
-                <NavLink to='/product/barometric-pressure-sensor'>Barometric Pressure Sensor</NavLink>
-              </li>
+              {Object.keys(Data).map((productCategory, index) => (
+                <li key={index} className='dropdown-item'>
+                  <NavLink to={`/product/${productCategory}`}>{productCategory}</NavLink>
+                </li>
+              ))}
             </ul>
           </li>
           <li>

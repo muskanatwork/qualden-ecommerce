@@ -1,51 +1,226 @@
 [
     {
-        "id": 0,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "PT100 Industrial Temperature Sensor"
-    },{
-        "id": 1,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "SMK BLVD Digital Leaf Wetness Sensor"
-    },{
-        "id": 2,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "SMK BRAT IR Infrared Road Temperature Sensor"
-    },{
-        "id": 3,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "Barometric Pressure Sensor"
-    },{
-        "id": 4,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "Industrial Noise Sensor"
-    },{
-        "id": 5,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "Ultrasonic Wind Sensor"
-    },{
-        "id": 6,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "Photosynthetically Active Radiation Sensor"
-    },{
-        "id": 7,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "IDR-2050 Radar Sensor."
-    },{
-        "id": 8,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "ITR-3800 4D Traffic Radar Sensor"
-    },{
-        "id": 9,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "Siphon Tipping Bucket Rain Gauge"
-    },{
-        "id": 10,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "GPS Receiver Rs232"
-    },{
-        "id": 11,
-        "image": "https://2.wlimg.com/product_images/bc-full/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
-        "heading": "KB -Tab100 Industrial Pc"
+        "Electronic-Sensor": [
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/noise-sensor-1582793122-5316534.jpeg",
+                "productName": "PT100 Industrial Temperature Sensor",
+                "businessType": "Manufacturer, Supplier, Trader",
+                "temperature": "-200 to 420",
+                "probeMaterial": "Stainless Steel",
+                "probeDiameter": 4
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/siphon-tipping-bucket-rain-gauge-1582793140-5316535.jpeg",
+                "productName": "SMK BLVD Digital Leaf Wetness Sensor",
+                "businessType": "Manufacturer, Supplier, Retailer, Wholesaler",
+                "temperature": "temperature-20~80℃",
+                "probeMaterial": "0~100%",
+                "probeDiameter":"0 to 100%"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/smkbrn-eco-tipping-bucket-rain-gauge-1582793159-5316537.jpeg",
+                "productName": "SMK BRAT IR Infrared Road Temperature Sensor",
+                "businessType": "Manufacturer, Supplier, Retailer, Wholesaler",
+                "temperature": "-40-70℃",
+                "probeMaterial": "±1%",
+                "probeDiameter": "Target Diameter D:T=8:1"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/wind-direction-sensor-1582793176-5316539.jpeg",
+                "productName": "SMKBDVIS-ECO Road Visibility Sensor",
+                "businessType": "Manufacturer, Supplier, Trader",
+                "temperature": "10-3000m",
+                "probeMaterial": "RS232,RS485",
+                "probeDiameter": "300*115*140mm"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg",
+                "productName": "Pressure Type Water Level Sensor",
+                "businessType": "Manufacturer, Supplier, Trader",
+                "temperature": "SesnorMart.com",
+                "probeMaterial": "SMKBWLP-HA",
+                "probeDiameter": "~250g"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/3d-ultrasonic-anemometer-1582793214-5316543.jpeg",
+                "productName": "SMKBDVIS-ECO Road Visibility Sensor",
+                "businessType": "Manufacturer, Supplier, Trader",
+                "temperature": "10-3000m",
+                "probeMaterial": "RS232,RS485",
+                "probeDiameter": "300*115*140mm"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/atmospheric-temperature-and-humidity-sensor-1582793223-5316544.jpeg",
+                "productName": "SMK BRAT IR Infrared Road Temperature Sensor",
+                "businessType": "Manufacturer, Supplier, Retailer, Wholesaler",
+                "temperature": "-40-70℃",
+                "probeMaterial": "±1%",
+                "probeDiameter": "Target Diameter D:T=8:1"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/barometric-pressure-sensor-1582793231-5316546.jpeg",
+                "productName": "SMK BLVD Digital Leaf Wetness Sensor",
+                "businessType": "Manufacturer, Supplier, Retailer, Wholesaler",
+                "temperature": "temperature-20~80℃",
+                "probeMaterial": "0~100%",
+                "probeDiameter": "＜1s , Accuracy: ±1℃（25℃）;±5%（25℃）"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/photosynthetically-active-radiation-sensor-1582793252-5316547.jpeg",
+                "productName": "PT100 Industrial Temperature Sensor",
+                "businessType": "Manufacturer, Supplier, Trader",
+                "temperature": "-200 to 420",
+                "probeMaterial": "Stainless Steel",
+                "probeDiameter": 4
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/pressure-type-water-level-sensor-1582793264-5316548.jpeg",
+                "productName": "SMK BRAT IR Infrared Road Temperature Sensor",
+                "businessType": "Manufacturer, Supplier, Retailer, Wholesaler",
+                "temperature": "-40-70℃",
+                "probeMaterial": "±1%",
+                "probeDiameter": "Target Diameter D:T=8:1"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/radar-level-sensor-1582793274-5316549.jpeg",
+                "productName": "SMKBDVIS-ECO Road Visibility Sensor",
+                "businessType": "Manufacturer, Supplier, Trader",
+                "temperature": "10-3000m",
+                "probeMaterial": "RS232,RS485",
+                "probeDiameter": "300*115*140mm"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/soil-temperature-and-moisture-sensor-1582793283-5316550.jpeg",
+                "productName": "SMKBDVIS-ECO Road Visibility Sensor",
+                "businessType": "Manufacturer, Supplier, Trader",
+                "temperature": "10-3000m",
+                "probeMaterial": "RS232,RS485",
+                "probeDiameter": "300*115*140mm"
+            }
+        ]
+    },
+    {
+        "Radar Sensor": [
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-full/2022/10/4222645/idr-2050-radar-sensor-1666161815-6590643.jpeg",
+                "productName": "IDR-2050 Radar Sensor.",
+                "businessType": "Manufacturer, Exporter, Supplier",
+                "temperature": "India",
+                "probeMaterial": "IDR-2050 Radar Sensor.",
+                "probeDiameter": "Plastic"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-full/2022/10/4222645/isys-4001-2d-radar-sensor-1666161849-6590645.jpeg",
+                "productName": "ISYS-4001 2D Radar Sensor",
+                "businessType": "Manufacturer, Exporter, Supplier",
+                "temperature": "temperature-20~80℃",
+                "probeMaterial": "India",
+                "probeDiameter": "ISYS-4001 2D Radar Sensor"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-full/2022/10/4222645/isys-4010-2d-radar-sensor-1666163079-6590702.jpeg",
+                "productName": "ISYS-4010 2D Radar Sensor",
+                "businessType": "Manufacturer, Exporter, Supplier",
+                "temperature": "India",
+                "probeMaterial": "ISYS-4010 2D Radar Sensor",
+                "probeDiameter": "Industrial Use"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-full/2022/10/4222645/itr-3800-4d-traffic-radar-sensor-1666163863-6590733.jpeg",
+                "productName": "ISYS-5220 4D Traffic Radar Sensor",
+                "businessType": "Manufacturer, Exporter, Supplier",
+                "temperature": "India",
+                "probeMaterial": "Radar Sensor",
+                "probeDiameter": "Plastic"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-full/2022/10/4222645/isys-5220-4d-traffic-radar-sensor-1666163747-6590727.jpeg",
+                "productName": "ITR-3800 4D Traffic Radar Sensor",
+                "businessType": "Manufacturer, Exporter, Supplier",
+                "temperature": "India",
+                "probeMaterial": "Radar Sensor",
+                "probeDiameter": "Plastic"
+            }
+        ]
+    },
+    {
+        "Siphon Tipping Bucket Rain Gauge": [
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/siphon-tipping-bucket-rain-gauge-1582793140-5316535.jpeg",
+                "productName": "Siphon Tipping Bucket Rain Gauge",
+                "businessType": "Manufacturer, Supplier, Trader",
+                "temperature": "SesnorMart.com",
+                "probeMaterial": "Gross Weight",
+                "probeDiameter": "0 to 100%"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/smkbrn-eco-tipping-bucket-rain-gauge-1582793159-5316537.jpeg",
+                "productName": "SMKBRN-ECO Tipping Bucket Rain Gauge",
+                "businessType": "Manufacturer, Exporter, Supplier, Retailer, Wholesaler",
+                "temperature": "SesnorMart.com",
+                "probeMaterial": "SMKBRN-ECO",
+                "probeDiameter": "ABS + PC"
+            }
+        ]
+    },
+    {
+        "Other Products": [
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/smkbrn-eco-tipping-bucket-rain-gauge-1582793159-5316537.jpeg",
+                "productName": "3D Ultrasonic Anemometer",
+                "businessType": "Manufacturer, Exporter, Supplier, Retailer, Wholesaler",
+                "temperature": "SesnorMart.com",
+                "probeMaterial": "SMKBRN-ECO",
+                "probeDiameter": "ABS + PC"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/3/4222645/smc-brno-eco-optical-rain-gauge-1583473243-5327660.jpeg",
+                "productName": "SMC BRNO-ECO Optical Rain Gauge",
+                "businessType": "Manufacturer, Exporter, Supplier, Retailer, Wholesaler",
+                "temperature": "SesnorMart.com",
+                "probeMaterial": "SMKBRN-ECO",
+                "probeDiameter": "ABS + PC"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/3/4222645/smc-brno-eco-optical-rain-gauge-1583473243-5327660.jpeg",
+                "productName": "GPS Receiver Rs232",
+                "businessType": "Manufacturer, Exporter, Supplier, Retailer, Wholesaler",
+                "temperature": "SesnorMart.com",
+                "probeMaterial": "SMKBRN-ECO",
+                "probeDiameter": "ABS + PC"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/3/4222645/gps-receiver-rs232-1583472846-5327648.jpeg",
+                "productName": "D116 Ultrasonic Flow Meter",
+                "businessType": "Manufacturer, Exporter, Supplier, Retailer, Wholesaler",
+                "temperature": "SesnorMart.com",
+                "probeMaterial": "SMKBRN-ECO",
+                "probeDiameter": "ABS + PC"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2020/3/4222645/d116-ultrasonic-flowmeter-1584010226-5327624.jpeg",
+                "productName": "SMKB MET ROAD FS1 Weather Station",
+                "businessType": "Manufacturer, Exporter, Supplier, Retailer, Wholesaler",
+                "temperature": "SesnorMart.com",
+                "probeMaterial": "SMKBRN-ECO",
+                "probeDiameter": "ABS + PC"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-small/2021/7/4222645/smkb-met-road-fs1-weather-station-1625295727-5882464.jpeg",
+                "productName": "SMKB MET ROAD FS2 Weather Station",
+                "businessType": "Manufacturer, Exporter, Supplier, Retailer, Wholesaler",
+                "temperature": "SesnorMart.com",
+                "probeMaterial": "SMKBRN-ECO",
+                "probeDiameter": "ABS + PC"
+            },
+            {
+                "productImg": "https://2.wlimg.com/product_images/bc-full/2023/1/4222645/kb-tab100-industrial-pc-1673353725-6710679.jpeg",
+                "productName": "KB -Tab100 Industrial Pc",
+                "businessType": "Manufacturer, Exporter, Supplier, Retailer, Wholesaler",
+                "temperature": "SesnorMart.com",
+                "probeMaterial": "SMKBRN-ECO",
+                "probeDiameter": "ABS + PC"
+            }
+        ]
     }
 ]

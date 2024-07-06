@@ -1,19 +1,18 @@
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-
-const ProductCard = ({item}) => {
+const ProductCard = ({ item }) => {
     return (
         <>
             <Link to='/product/productDetails'>
                 <div className="ProductCardDiv">
                     <div>
-                        <img src={item.image} />
+                        <img src={item.productImg} alt={item.productName} />
                     </div>
-                    <h3>{item.heading}</h3>
+                    <h3>{item.productName}</h3>
                 </div>
             </Link>
         </>
-    )
+    );
 }
 
-export default ProductCard
+export default ProductCard;

@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 const Carousel = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
     const images = [
-        "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/siphon-tipping-bucket-rain-gauge-1582793140-5316535.jpeg",
-        "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/atmospheric-temperature-and-humidity-sensor-1582793223-5316544.jpeg",
-        "https://2.wlimg.com/product_images/bc-small/2020/2/4222645/wind-speed-sensor-1582793200-5316541.jpeg"
+        "https://catalog.wlimg.com/1/4222645/other-images/357186.jpg",
+        "https://catalog.wlimg.com/1/4222645/other-images/357188.jpg",
+        "https://catalog.wlimg.com/1/4222645/other-images/357187.jpg"
     ];
 
     const goToPrevSlide = () => {
@@ -30,7 +30,7 @@ const Carousel = () => {
                 &gt;
             </button>
         </div>
-    )
+    );
 };
 
 export default Carousel;

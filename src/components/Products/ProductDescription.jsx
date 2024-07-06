@@ -1,9 +1,13 @@
 import { FaEnvelope } from 'react-icons/fa';
 import CallIcon from '@mui/icons-material/Call';
 import EnquiryFormDialog from './EnquiryFormDialog'; 
-import React, { useState } from 'react';
+import React, { useState} from 'react';
+import { useLocation } from 'react-router-dom';
 
 const ProductDescription = () => {
+    const location = useLocation();
+    const { product } = location.state;
+
     const [dialogOpen, setDialogOpen] = useState(false);
 
     const handleDialogOpen = () => {
@@ -18,7 +22,7 @@ const ProductDescription = () => {
         
         <>
             <div>
-                <h2>PT100 Industrial Temperature Sensor</h2>
+                <h2>{product.productName}</h2>
                 <h3>1 Piece(s) (MOQ)</h3>
                 <div className="number-input">
                     <input
@@ -36,19 +40,19 @@ const ProductDescription = () => {
                 <div className="detailContant">
                     <div className="detailRow">
                         <p>Business Type</p>
-                        <h4>Manufacturer, Supplier, Trader</h4>
+                        <h4>{product.businessType}</h4>
                     </div>
                     <div className="detailRow">
                         <p>Temperature Range (°C)</p>
-                        <h4>-200 to 420</h4>
+                        <h4>{product.temperature}</h4>
                     </div>
                     <div className="detailRow">
                         <p>Probe Material</p>
-                        <h4>Stainless Steel</h4>
+                        <h4>{product.probeMaterial}</h4>
                     </div>
                     <div className="detailRow">
                         <p>Probe Diameter (mm)</p>
-                        <h4>4</h4>
+                        <h4>{product.probeDiameter}</h4>
                     </div>
                 </div>
 

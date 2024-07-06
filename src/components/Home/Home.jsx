@@ -14,7 +14,9 @@ import MobileFooter from "../Common/MobileFooter"
 import MobileLogoDiv from "../Common/MobileLogoDiv"
 
 const Home = () => {
-    const [data, setData] = useState(Data);
+    // const [data, setData] = useState(Data);
+    // console.log(data[0]["Electronic-Sensor"]);
+    const ProductCardArr = Data[0]["Electronic-Sensor"]
     return (
         <>
             <div className="container">
@@ -45,7 +47,7 @@ const Home = () => {
                             <h1>Product Range</h1>
                             <div className="productCartContainer">
                                 {
-                                    data.map((item, index) => {
+                                    ProductCardArr.map((item, index) => {
                                         return (
                                             <ProduntCard key={index} item={item} />
                                         )

@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import EnquiryFormDialog from './EnquiryFormDialog';
 import { useNavigate } from 'react-router-dom';
 
-const ProductCategory = () => {
+const ProductCategory = ({ product }) => {
     const [isDialogOpen, setIsDialogOpen] = useState(false);
     const navigate = useNavigate();
 
@@ -16,7 +16,7 @@ const ProductCategory = () => {
     };
 
     const handleNavigate = () => {
-        navigate('productDetails');
+        navigate('productDetails', { state: { product } });
     };
 
     return (
@@ -24,19 +24,19 @@ const ProductCategory = () => {
             <div className="productItem" onClick={handleNavigate}>
                 <div className="productItem-image-container">
                     <img
-                        src="https://2.wlimg.com/product_images/bc-full/2020/3/4222645/pt100-industrial-temperature-sensor-1583473665-5327671.jpeg"
-                        alt="Wind Speed Sensor"
+                        src={product.productImg}
+                        alt={product.productName}
                         className="productItem-image"
                     />
                 </div>
-                <h3 className="productItem-title">Wind Speed Sensor</h3>
+                <h3 className="productItem-title">{product.productName}</h3>
                 <div className="productItem-hover-card">
                     <div>
-                        <h5>PT100 Industrial Temperature Sensor</h5>
-                        <p>Temperature Range(°C):-200 to 420</p>
-                        <p>Probe Material: Stainless Steel</p>
-                        <p>Probe Diameter(mm): 4</p>
-                        <p>Probe Length(mm): 30</p>
+                        <h5>{product.productName}</h5>
+                        <p>Temperature Range(°C): {product.temperature}</p>
+                        <p>Probe Material: {product.probeMaterial}</p>
+                        <p>Probe Diameter(mm): {product.probeDiameter}</p>
+                        <p>Probe Length(mm): {product.businessType}</p>
                         <p>Cable Length: 1.05 Meter</p>
                         <button onClick={handleDialogOpen}>Enquiry Now</button>
                         <button onClick={(e) => { e.stopPropagation(); handleNavigate(); }}>View More</button>
@@ -46,6 +46,6 @@ const ProductCategory = () => {
             <EnquiryFormDialog open={isDialogOpen} onClose={handleDialogClose} />
         </>
     );
-}
+};
 
 export default ProductCategory;

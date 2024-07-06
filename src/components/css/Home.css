@@ -7,16 +7,19 @@
 }
 
 .carousel-button {
+  display: none;
   color: white;
   border: none;
   padding: 10px 15px;
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.5);
+  color: #333;
+  font-weight: 900;
+  background-color: white;
   z-index: 10;
 }
 
 .carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: white;
 }
 
 .carousel-button:first-child {
@@ -31,6 +34,10 @@
   top: 50%;
   transform: translateY(-50%);
   right: 10px;
+}
+
+.carousel:hover .carousel-button {
+  display: block;
 }
 
 .carousel-slide {
@@ -62,25 +69,35 @@
 }
 
 /* card styling */
-.cartContainer {
-  width: 100%;
-  padding: 40px;
-  background-color: rgb(232, 232, 215);
-  box-sizing: border-box;
-}
-
-.cartContainer h1 {
-  text-align: center;
-  padding: 30px;
+.ProductCardDiv {
+  padding: 10px;
+  border: 1px solid black;
+  width: 100%; /* Use 100% width to make it responsive */
+  max-width: 250px; /* Set a maximum width */
+  height: 350px;
+  aspect-ratio: 5 / 7; /* Maintain aspect ratio */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box; /* Ensure padding is included in width and height */
+  margin: 16px; /* Ensure equal margin around each card */
 }
 
 .ProductCardDiv div {
   border: 1px solid #ccc;
+  width: 100%;
+  height: auto; /* Allow height to be flexible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide overflow for consistent image display */
+  flex-grow: 1; /* Allow div to grow */
 }
 
 .ProductCardDiv img {
   max-width: 100%;
-  height: 100%;
+  height: auto; /* Maintain aspect ratio */
   border-radius: 8px;
 }
 
@@ -89,22 +106,29 @@
   margin-top: 8px;
   font-size: 18px;
   color: #333;
+  height: auto; /* Allow height to be flexible */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 .productCartContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr); /* Default to 2 columns for smaller screens */
   gap: 16px;
+  padding: 16px; /* Add padding for spacing around the grid */
+  justify-content: center; /* Center the grid */
 }
 
 @media (min-width: 600px) {
   .productCartContainer {
-      grid-template-columns: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
   }
 }
 
 @media (min-width: 992px) {
   .productCartContainer {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(4, 1fr); /* 4 columns for large screens */
   }
 }
 

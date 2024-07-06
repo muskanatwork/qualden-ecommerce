@@ -23,14 +23,23 @@ const CarouselCard = () => {
         }
     };
 
+    // Flatten the data
+    const flattenedData = [];
+    Data.forEach(category => {
+        const categoryName = Object.keys(category)[0];
+        category[categoryName].forEach(product => {
+            flattenedData.push(product);
+        });
+    });
+
     return (
         <Carousel responsive={responsive}>
-            {Data.map((card, index) => (
+            {flattenedData.map((card, index) => (
                 <div key={index} className="carousel-item">
                     <div className="card">
-                        <img src={card.image} alt={card.heading} />
+                        <img src={card.productImg} alt={card.productName} />
                         <div className="card-body">
-                            <h5 className="card-title">{card.heading}</h5>
+                            <h5 className="card-title">{card.productName}</h5>
                             <button className="btn">Get Best Quoto</button>
                         </div>
                     </div>

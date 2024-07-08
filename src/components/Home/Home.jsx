@@ -8,14 +8,10 @@ import SubmitRequirement from "../Common/RequrimentButton"
 import ScrollToTopButton from "../Common/ScrollToTopButton"
 import WhatsAppButton from "../Common/WhatsAppButton"
 import Data from '../Products/Data.json'
-import {useState} from 'react';
 import '../css/Home.css'
 import MobileFooter from "../Common/MobileFooter"
 import MobileLogoDiv from "../Common/MobileLogoDiv"
-
 const Home = () => {
-    // const [data, setData] = useState(Data);
-    // console.log(data[0]["Electronic-Sensor"]);
     const ProductCardArr = Data[0]["Electronic-Sensor"]
     return (
         <>
@@ -66,7 +62,7 @@ const Home = () => {
                     <MobileFooter/>
                     <ScrollToTopButton />
                     <WhatsAppButton
-                        phoneNumber="919876543210" // Change this to your WhatsApp number with country code
+                        phoneNumber="919876543210" 
                         message="Hello, I want to chat with you!"
                     />
                 </div>

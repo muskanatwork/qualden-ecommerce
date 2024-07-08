@@ -1,16 +1,21 @@
 import { useState, useEffect, useRef } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import Search from '../Common/SearchBar';
-import Data from '../Products/Data.json';
-
+import Data from "../Products/Data.json";
+import PhoneSearch from '../Common/PhoneSearch';
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [hoveredCategory, setHoveredCategory] = useState(null);
   const navRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 0);
+      if (window.scrollY > 0) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
     };
 
     const handleClickOutside = (event) => {
@@ -28,8 +33,16 @@ function Nav() {
     };
   }, []);
 
+  const handleMouseEnter = (categoryName) => {
+    setHoveredCategory(categoryName);
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredCategory(null);
+  };
+
   return (
-    <nav ref={navRef} className={scrolled ? 'scrolled' : ''}>
+    <nav ref={navRef} className={`${scrolled ? 'scrolled' : ''}`}>
       <Link to='/'>
         <img className='logo' src="https://qualden.com/assets/imgs/template/logo.png" alt="qualden" />
       </Link>
@@ -50,13 +63,29 @@ function Nav() {
           </li>
           <li className='dropdown'>
             <NavLink to='/product'>Products</NavLink>
-            <ul className='dropdown-content'>
-              {Object.keys(Data).map((productCategory, index) => (
-                <li key={index} className='dropdown-item'>
-                  <NavLink to={`/product/${productCategory}`}>{productCategory}</NavLink>
-                </li>
+            <div className="dropdown-content">
+              {Data.map((category, index) => (
+                Object.keys(category).map(catName => (
+                  <div 
+                    key={catName}
+                    className='category'
+                    onMouseEnter={() => handleMouseEnter(catName)}
+                    onMouseLeave={handleMouseLeave}
+                  >
+                    {catName}
+                    {hoveredCategory === catName && (
+                      <div className='product-names'>
+                        {category[catName].map((product, productIndex) => (
+                          <Link key={productIndex} to={`/product/${catName}/${product.productName}`}>
+                            {product.productName}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ))
               ))}
-            </ul>
+            </div>
           </li>
           <li>
             <NavLink to='/contact'>Contact Us</NavLink>
@@ -69,6 +98,7 @@ function Nav() {
           <span></span>
         </div>
       </div>
+      <PhoneSearch/>
     </nav>
   );
 }

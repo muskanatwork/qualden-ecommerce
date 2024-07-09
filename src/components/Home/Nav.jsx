@@ -66,7 +66,7 @@ function Nav() {
             <div className="dropdown-content">
               {Data.map((category, index) => (
                 Object.keys(category).map(catName => (
-                  <div 
+                  <div
                     key={catName}
                     className='category'
                     onMouseEnter={() => handleMouseEnter(catName)}
@@ -98,7 +98,7 @@ function Nav() {
           <span></span>
         </div>
       </div>
-      <PhoneSearch/>
+        <PhoneSearch />
     </nav>
   );
 }

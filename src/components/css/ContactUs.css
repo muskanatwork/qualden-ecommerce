@@ -8,7 +8,7 @@
 
 .table {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   width: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -30,7 +30,7 @@
 }
 
 .contactTableText {
-  margin-left: 0; 
+  margin-left: 0;
   margin-top: 10px;
 }
 
@@ -39,15 +39,15 @@
   .container1 {
     flex-direction: row;
   }
-  
+
   .table {
     flex-direction: row;
     width: 100%;
   }
-  
+
   .contactTableText {
     margin-left: 20px;
-    margin-top: 0; 
+    margin-top: 0;
   }
 }
 
@@ -57,7 +57,7 @@
     width: 500px;
   }
 }
-  
+
 /* Form styling in the Contact page */
 .form {
   padding: 20px;
@@ -93,8 +93,7 @@ textarea {
   resize: vertical;
 }
 
-.btn button[type="submit"],
-button[type="submit"]:last-of-type {
+.btn button[type="submit"] {
   background-color: rgb(251, 140, 5);
   color: rgb(249, 246, 246);
   padding: 10px 20px;
@@ -103,21 +102,33 @@ button[type="submit"]:last-of-type {
   width: auto;
 }
 
-button[type="submit"]:hover,
-button[type="submit"]:last-of-type:hover {
+.btn button[type="submit"]:last-of-type {
+  background-color: rgb(251, 140, 5);
+  color: rgb(249, 246, 246);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  width: auto;
+}
+
+.btn button[type="submit"]:hover {
+  background-color: #134f09;
+}
+
+.btn button[type="submit"]:last-of-type:hover {
   background-color: #134f09;
 }
 
 .btn {
   display: flex;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
   gap: 15px;
 }
 
 /* Default container for small screens */
 .contact-container {
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
   margin: 20px;
   margin-bottom: 40px;
   background-color: rgb(245, 240, 233);
@@ -138,11 +149,11 @@ button[type="submit"]:last-of-type:hover {
   }
 
   .btn {
-    flex-wrap: nowrap; 
+    flex-wrap: nowrap;
   }
 
   .contact-container {
-    flex-direction: row; 
+    flex-direction: row;
   }
 }
 
@@ -159,5 +170,3 @@ button[type="submit"]:last-of-type:hover {
     width: 500px;
   }
 }
-
-  

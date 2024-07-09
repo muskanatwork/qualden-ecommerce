@@ -436,6 +436,7 @@ nav ul li a:hover {
 }
 
 .inputSearch {
+  width: 250px;
   background-color: #f7f9eb;
   display: flex;
   justify-content: center;
@@ -481,12 +482,12 @@ nav ul li a:hover {
   color: red;
 }
 
+/* Phone search bar */
   .phoneSearch{
     display: none;
     margin: auto;
 
   }
-
   .phone-search-bar {
     display: flex;
     align-items: center;
@@ -495,11 +496,9 @@ nav ul li a:hover {
     border-radius: 0; 
     font-size: 16px;
     min-width: 270px;
-    margin-left: 30px 
+    margin-left: 50px 
 
   }
-
-  
 
   .phone-search-icon {
     margin-bottom: 10px;
@@ -531,32 +530,6 @@ nav ul li a:hover {
     color: #888;
   }
 
-
-/* Styles for phone screens */
-@media (max-width: 600px) {
-  .inputSearch {
-    width: 100%;
-    top: auto;
-    right: auto;
-    position: static;
-    border: none;
-    padding: 0;
-    background-color: transparent;
-  }
-
-  .inputSearch input {
-    width: 70%;
-    margin-right: 0;
-    border: 1px solid #aaad99;
-    padding: 8px;
-  }
-
-  .search-button-go {
-    width: 30%;
-    padding: 8px;
-    margin-bottom: 0;
-  }
-}
 
 /* footer nav */
 .footer-nav {

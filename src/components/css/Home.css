@@ -207,12 +207,11 @@ textarea {
 }
 
 .button {
-  width: 28%;
+  width: 20%;
   padding: 10px;
-  background-color: rgb(240, 240, 132);
+  background-color:orange;
   color: #fff;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
   margin: auto;
   display: block;
@@ -220,7 +219,7 @@ textarea {
 }
 
 .button:hover {
-  background-color: yellowgreen;
+  background-color: green;
 }
 
 

@@ -25,38 +25,37 @@
 }
 
 /* Accordion design in the about us page */
-.accordianDiv {
+
+.accordionDiv{
   background-color: rgb(247, 245, 242);
   display: inline-block;
   padding: 10px;
   border: 1px solid #ccc;
-  margin: 20px;
+  margin: 15px;
 }
-
-.accordianDiv hr {
+.fristHr{
   margin-top: 10px;
   margin-bottom: 10px;
   height: 1px;
   background-color: rgb(251, 168, 13);
-  border: none;
+}
+.accordionDiv h4{
+  margin-bottom: 6px;
+  margin-top: 6px;
+ } 
+
+.accordionHeader{
+  margin-bottom: 5px;
+  color: #777373;
 }
 
-.accordianDiv h3 {
-  color: #09501a;
-  margin-left: 10px;
+.accordionHeader:hover{
+  color: rgb(5, 0, 0);
 }
 
-.accordianItem {
-  padding-left: 20px;
-  padding: 10px;
-  border-bottom: dotted 1px black;
-}
-
-.accordianIcon {
-  font-size: 20px;
-  font-weight: bold;
+.accordionIcon{
   cursor: pointer;
-  /* Add this to show hand cursor */
+
 }
 
 /* Table styling */
@@ -85,7 +84,7 @@ td {
   display: inline-block;
   padding: 10px;
   border: 1px solid #ccc;
-  margin: 20px;
+  margin: 15px;
   margin-top: 5px;
 }
 

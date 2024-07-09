@@ -3,7 +3,7 @@ import Footer from "./Footer"
 import ProduntCard from "./ProductCard"
 import Form from "./Form"
 import Nav from "./Nav"
-import { Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import SubmitRequirement from "../Common/RequrimentButton"
 import ScrollToTopButton from "../Common/ScrollToTopButton"
 import WhatsAppButton from "../Common/WhatsAppButton"
@@ -11,13 +11,14 @@ import Data from '../Products/Data.json'
 import '../css/Home.css'
 import MobileFooter from "../Common/MobileFooter"
 import MobileLogoDiv from "../Common/MobileLogoDiv"
+import Grid from '@mui/material/Grid';
 const Home = () => {
     const ProductCardArr = Data[0]["Electronic-Sensor"]
     return (
         <>
             <div className="container">
-            <Nav />
-            <MobileLogoDiv/>
+                <Nav />
+                <MobileLogoDiv />
                 <div className="main">
                     <Carousel />
                     <div className="homeContant">
@@ -41,15 +42,15 @@ const Home = () => {
                         </div>
                         <div className="cartContainer">
                             <h1>Product Range</h1>
-                            <div className="productCartContainer">
-                                {
-                                    ProductCardArr.map((item, index) => {
-                                        return (
-                                            <ProduntCard key={index} item={item} />
-                                        )
-                                    })
-                                }
-                            </div>
+                            <Grid container>
+                                        {
+                                            ProductCardArr.map((item, index) => {
+                                                return (
+                                                    <ProduntCard key={index} item={item} />
+                                                )
+                                            })
+                                        }
+                            </Grid>
                             <div className='view-all-button'>
                                 <Link to="/product"><button>View All Products</button></Link>
                             </div>
@@ -59,10 +60,10 @@ const Home = () => {
                     </div>
                     <SubmitRequirement />
                     <Footer />
-                    <MobileFooter/>
+                    <MobileFooter />
                     <ScrollToTopButton />
                     <WhatsAppButton
-                        phoneNumber="919876543210" 
+                        phoneNumber="919876543210"
                         message="Hello, I want to chat with you!"
                     />
                 </div>

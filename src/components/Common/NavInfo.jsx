@@ -37,7 +37,6 @@ const NavInfo = () => {
             </div>
             <SendForm isOpen={isModalOpen} onCloseForm={handleCloseModal} />
             <SmsForm isOpen={isModalOpen} onCloseForm={handleCloseModal} />
-
         </div>
     );
 }

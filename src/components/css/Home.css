@@ -70,29 +70,13 @@
 
 /* card styling */
 .ProductCardDiv {
-  padding: 10px;
   border: 1px solid black;
-  width: 100%; 
-  max-width: 250px; 
-  height: 350px;
-  aspect-ratio: 5 / 7; 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  box-sizing: border-box; 
-  margin: 16px; 
 }
 
 .ProductCardDiv div {
   border: 1px solid #ccc;
-  width: 100%;
-  height: auto; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden; 
-  flex-grow: 1; 
 }
 
 .ProductCardDiv img {
@@ -106,21 +90,14 @@
   margin-top: 8px;
   font-size: 18px;
   color: #333;
-  height: auto; 
+  /* height: auto;  */
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.productCartContainer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 16px;
-  padding: 16px; 
-  justify-content: center; 
-}
 
-@media (min-width: 600px) {
+/* @media (min-width: 600px) {
   .productCartContainer {
       grid-template-columns: repeat(3, 1fr); 
   }
@@ -130,7 +107,7 @@
   .productCartContainer {
       grid-template-columns: repeat(4, 1fr); 
   }
-}
+} */
 
 
 /* View all-Button styling css */

@@ -154,6 +154,7 @@
   
   
   .detailRow {
+    padding: 10px;
     display: flex;
     justify-content:space-between;
     margin-bottom: 10px;
@@ -200,10 +201,11 @@
   }
   .number-input button {
     background-color: rgb(221, 160, 48);
-    width: 60%;
+    width: 50%;
     height: 30px;
     color: white;
     border: none;
+    margin-top: 1px;
   }
   /* details table 2 */
 .zoomingImg img {
@@ -237,6 +239,7 @@
     border: none;
     background-color: rgb(204, 150, 50);
     color: white;
+    margin-top: 20px;
   }
   
   .interested button:hover {
@@ -292,6 +295,7 @@
 
 .number-input {
   display: flex;
+  gap: 10px;
 }
 
 .send-enquiry-button {

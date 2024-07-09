@@ -3,10 +3,12 @@ import { Link, NavLink } from 'react-router-dom';
 import Search from '../Common/SearchBar';
 import Data from "../Products/Data.json";
 import PhoneSearch from '../Common/PhoneSearch';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [hoveredCategory, setHoveredCategory] = useState(null);
+  const [viewAll, setViewAll] = useState({});
   const navRef = useRef(null);
 
   useEffect(() => {
@@ -39,6 +41,11 @@ function Nav() {
 
   const handleMouseLeave = () => {
     setHoveredCategory(null);
+    setViewAll({});
+  };
+
+  const handleViewAll = (categoryName) => {
+    setViewAll({ ...viewAll, [categoryName]: true });
   };
 
   return (
@@ -62,7 +69,7 @@ function Nav() {
             <NavLink to='/about'>About Us</NavLink>
           </li>
           <li className='dropdown'>
-            <NavLink to='/product'>Products</NavLink>
+            <NavLink to='/product'>Products <ExpandMoreIcon/> </NavLink>
             <div className="dropdown-content">
               {Data.map((category, index) => (
                 Object.keys(category).map(catName => (
@@ -75,11 +82,14 @@ function Nav() {
                     {catName}
                     {hoveredCategory === catName && (
                       <div className='product-names'>
-                        {category[catName].map((product, productIndex) => (
+                        {category[catName].slice(0, viewAll[catName] ? category[catName].length : 5).map((product, productIndex) => (
                           <Link key={productIndex} to={`/product/${catName}/${product.productName}`}>
                             {product.productName}
                           </Link>
                         ))}
+                        {catName === "Electronic-Sensor" && category[catName].length > 5 && !viewAll[catName] && (
+                          <button onClick={() => handleViewAll(catName)}>View All</button>
+                        )}
                       </div>
                     )}
                   </div>
@@ -98,7 +108,7 @@ function Nav() {
           <span></span>
         </div>
       </div>
-        <PhoneSearch />
+      <PhoneSearch />
     </nav>
   );
 }

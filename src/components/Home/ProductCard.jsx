@@ -1,21 +1,24 @@
 import { Link } from 'react-router-dom';
 import GridItem from '@mui/material/Grid';
 
-
-const ProductCard = ({ item }) => {
+const ProductCard = ({ product }) => {
     return (
-        <>
-            <GridItem item sm={6} md={6}>
-                <Link to='/product/productDetails'>
-                    <div className="ProductCardDiv">
-                        <div>
-                            <img src={item.productImg} alt={item.productName} />
-                        </div>
-                        <h3>{item.productName}</h3>
-                    </div>  
-                </Link>
-            </GridItem>
-        </>
+        <GridItem item xs={2} sm={3} md={3}>
+            <Link 
+                className='productLink' 
+                to={{
+                    pathname: '/product/productDetails',
+                    state: { product }
+                }}
+            >
+                <div className="ProductCardDiv">
+                    <div>
+                        <img src={product.productImg} alt={product.productName} />
+                    </div>
+                    <h3>{product.productName}</h3>
+                </div>  
+            </Link>
+        </GridItem>
     );
 }
 

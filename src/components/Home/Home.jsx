@@ -42,11 +42,11 @@ const Home = () => {
                         </div>
                         <div className="cartContainer">
                             <h1>Product Range</h1>
-                            <Grid container>
+                            <Grid container spacing={{xs:2,md:3}} columns={{xs:4,sm:8,md:12}}>
                                         {
                                             ProductCardArr.map((item, index) => {
                                                 return (
-                                                    <ProduntCard key={index} item={item} />
+                                                    <ProduntCard key={index} product={item} />
                                                 )
                                             })
                                         }

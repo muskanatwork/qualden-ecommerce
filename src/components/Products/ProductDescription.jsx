@@ -4,10 +4,10 @@ import EnquiryFormDialog from './EnquiryFormDialog';
 import React, { useState} from 'react';
 import { useLocation } from 'react-router-dom';
 
-const ProductDescription = () => {
+const ProductDescription = (props) => {
     const location = useLocation();
-    const { product } = location.state;
-
+    // const {state} = props.location
+    console.log(props);
     const [dialogOpen, setDialogOpen] = useState(false);
 
     const handleDialogOpen = () => {
@@ -18,8 +18,6 @@ const ProductDescription = () => {
         setDialogOpen(false);
     };
     return (
-
-        
         <>
             <div>
                 <h2>{product.productName}</h2>

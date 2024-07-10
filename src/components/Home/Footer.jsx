@@ -12,7 +12,6 @@ const Footer = () => {
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/product">Products</a></li>
                                 <li><a href="/contact">Contact Us</a></li>
-                                <li><a href="#">RSS</a></li>
                             </ul>
                         </div>
                         <div className='section1'>

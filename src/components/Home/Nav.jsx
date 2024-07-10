@@ -71,7 +71,7 @@ function Nav() {
               <NavLink to='/about'>About Us</NavLink>
             </li>
             <li className='dropdown'>
-              <NavLink to='/product'>Products <ExpandMoreIcon/> </NavLink>
+              <NavLink to='/product'>Products </NavLink>
               <div className="dropdown-content">
                 {Data.map((category, index) => (
                   Object.keys(category).map(catName => (
@@ -112,7 +112,7 @@ function Nav() {
         </div>
         <PhoneSearch />
       </nav>
-    </div>
+     </div>
   );
 }
 

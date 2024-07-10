@@ -1,6 +1,7 @@
 * {
   margin: 0;
 }
+
 .container {
   width: 100%;
   background-color: #09501a;
@@ -12,13 +13,14 @@
   background-color: #fff;
   margin-top: 0;
 }
-.container .main > *:first-child {
+
+.container .main>*:first-child {
   margin-top: 0;
 }
 
 /* nav info */
 .Nav-info {
-  
+
   background-color: #28a745;
   display: flex;
   align-items: center;
@@ -27,6 +29,7 @@
   width: 80%;
   margin: auto;
 }
+
 .info-heading {
   justify-content: center;
   align-items: center;
@@ -88,15 +91,6 @@ nav {
   z-index: 2;
 }
 
-nav.scrolled {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1000;
-  background-color: #f7f9eb;
-}
-
 nav .menu {
   display: none;
   position: absolute;
@@ -109,7 +103,7 @@ nav .menu {
 }
 
 nav .menu span {
-  height: 0.2rem; 
+  height: 0.2rem;
   width: 100%;
   background-color: black;
 }
@@ -157,7 +151,7 @@ nav ul li a:hover {
   nav .menu {
     display: flex;
   }
-  
+
 
   nav {
     flex-direction: column;
@@ -213,9 +207,11 @@ nav ul li a:hover {
     color: black;
     cursor: pointer;
   }
+
   .active {
-    background-color: transparent; 
+    background-color: transparent;
   }
+
   .scrolled {
     display: none;
   }
@@ -235,7 +231,7 @@ nav ul li a:hover {
   display: none;
   position: absolute;
   top: 100%;
-  left: 0; /* Align to the left side */
+  left: 0;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -259,7 +255,8 @@ nav ul li a:hover {
   display: none;
   position: absolute;
   top: 0;
-  left: -100%; /* Move to the left side */
+  left: -100%;
+  /* Move to the left side */
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -288,6 +285,41 @@ nav ul li a:hover {
 .menu {
   display: none;
 }
+
+.viewAllButton {
+  width: 100%;
+  height: 30px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+}
+
+.nav-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  z-index: 1000;
+  transition: width 0.3s;
+}
+
+.nav-container.scrolled {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #f5f8f3;
+}
+
+
 
 @media (max-width: 768px) {
   .nav-right ul {
@@ -326,7 +358,8 @@ nav ul li a:hover {
   background-color: #f5f5f5;
   width: 100%;
 }
-.logoDivContainer{
+
+.logoDivContainer {
   display: none;
 }
 
@@ -499,13 +532,15 @@ nav ul li a:hover {
   .link {
     font-size: 12px;
   }
-  .whatsApp{
+
+  .whatsApp {
     bottom: 12%;
     right: 20px;
-  
+
   }
-  .scroll-to-top{
-    bottom: 8%;  
+
+  .scroll-to-top {
+    bottom: 8%;
   }
 }
 
@@ -575,52 +610,54 @@ nav ul li a:hover {
 }
 
 /* Phone search bar */
-  .phoneSearch{
-    display: none;
-    margin: auto;
+.phoneSearch {
+  display: none;
+  margin: auto;
 
-  }
-  .phone-search-bar {
-    display: flex;
-    align-items: center;
-  }
-  .phoneSearch .phone-search-input {
-    border-radius: 0; 
-    font-size: 16px;
-    min-width: 270px;
-    margin-left: 50px 
+}
 
-  }
+.phone-search-bar {
+  display: flex;
+  align-items: center;
+}
 
-  .phone-search-icon {
-    margin-bottom: 10px;
-    cursor: pointer;
-    color: #fff;
-    background-color:#888;
-    padding: 6px; 
-    border-radius: 0 4px 4px 0; 
-  }
-  .phone-search-results {
-    margin-top: 20px;
-  }
+.phoneSearch .phone-search-input {
+  border-radius: 0;
+  font-size: 16px;
+  min-width: 270px;
+  margin-left: 50px
+}
 
-  .phone-search-results ul {
-    list-style: none;
-    padding: 0;
-  }
+.phone-search-icon {
+  margin-bottom: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #888;
+  padding: 6px;
+  border-radius: 0 4px 4px 0;
+}
 
-  .phone-search-results li {
-    background-color: #fff;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 4px;
-    border: 1px solid #ddd;
-  }
+.phone-search-results {
+  margin-top: 20px;
+}
 
-  .phone-search-no-results {
-    margin-top: 20px;
-    color: #888;
-  }
+.phone-search-results ul {
+  list-style: none;
+  padding: 0;
+}
+
+.phone-search-results li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.phone-search-no-results {
+  margin-top: 20px;
+  color: #888;
+}
 
 
 /* footer nav */
@@ -820,29 +857,35 @@ nav ul li a:hover {
 
 /* footer's media quiry */
 @media (max-width: 430px) {
-  .footer-nav{
+  .footer-nav {
     display: none;
   }
-  .mobileFooter{
+
+  .mobileFooter {
     display: block;
   }
-  nav{
+
+  nav {
     width: 100%;
     position: relative;
   }
-  .logo{
+
+  .logo {
     display: none;
   }
-  .logoDivContainer{
+
+  .logoDivContainer {
     display: block;
     position: sticky;
     z-index: 2;
     top: 0;
   }
-  .phoneSearch{
+
+  .phoneSearch {
     display: block;
   }
-  .App{
+
+  .App {
     display: none;
   }
 }

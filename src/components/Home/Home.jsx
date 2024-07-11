@@ -13,6 +13,7 @@ import MobileFooter from "../Common/MobileFooter"
 import MobileLogoDiv from "../Common/MobileLogoDiv"
 import Grid from '@mui/material/Grid';
 import CallUs from "../Common/CallUsButton"
+import MobileCarousel from "../Common/MobileCarousel"
 const Home = () => {
     const ProductCardArr = Data[0]["Electronic-Sensor"]
     return (
@@ -22,6 +23,7 @@ const Home = () => {
                 <MobileLogoDiv />
                 <div className="main">
                     <Carousel />
+                    <MobileCarousel/>
                     <div className="homeContant">
                         <div className="paraDiv">
                             <h1 className="heading">WELCOME TO OUR WEBSITE</h1>
@@ -38,7 +40,7 @@ const Home = () => {
                                 mechanical, and other components from the trusted vendors
                                 only, after ascertaining the product quality and performance,
                                 price competitiveness, shipping costs, transit period etc.
-                                Sensor Mart was established in the year 2016 with a visi Read more...
+                                Sensor Mart was established in the year 2016 with a visi <Link className="readMore" to={'/about'}><span>Read more...</span></Link> 
                             </p>
                         </div>
                         <div className="cartContainer">

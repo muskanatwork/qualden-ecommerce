@@ -910,3 +910,57 @@ nav ul li a:hover {
     display: block; 
   }
 }
+/* mobile screen carousel */
+/* carousel.css */
+
+/* Common styles for the carousel */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.carousel-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ccc;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-indicator.active {
+  background-color: #333;
+}
+
+/* Hide carousel on laptop and larger screens */
+@media (min-width: 1024px) {
+  .carousel-container {
+    display: none;
+  }
+}
+

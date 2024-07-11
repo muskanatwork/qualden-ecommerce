@@ -2,12 +2,8 @@ import { FaEnvelope } from 'react-icons/fa';
 import CallIcon from '@mui/icons-material/Call';
 import EnquiryFormDialog from './EnquiryFormDialog'; 
 import React, { useState} from 'react';
-import { useLocation } from 'react-router-dom';
 
-const ProductDescription = (props) => {
-    const location = useLocation();
-    // const {state} = props.location
-    console.log(props);
+const ProductDescription = ({product}) => {
     const [dialogOpen, setDialogOpen] = useState(false);
 
     const handleDialogOpen = () => {

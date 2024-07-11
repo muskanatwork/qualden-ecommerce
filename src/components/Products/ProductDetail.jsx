@@ -9,8 +9,10 @@ import CarouselCard from './ProductCardCrousel';
 import Breadcrumbs from '../Common/Breadcrumbs';
 import ProductDescription from './ProductDescription';
 import MobileFooter from '../Common/MobileFooter';
+import { useLocation } from 'react-router-dom';
 const ProductDetails = () => {
-
+    const location = useLocation();
+    const product = location.state
     return (
         <>
             <div className="container">
@@ -20,11 +22,11 @@ const ProductDetails = () => {
                     <Breadcrumbs />
                     <div className="detailsContainer">
                         <ImagePreview />
-                        <ProductDescription />
+                        <ProductDescription product={product} />
                     </div>
-                    <TableInfo />
+                    <TableInfo product={product}/>
                     <ProductForm />
-                    <CarouselCard />
+                    <CarouselCard product={product} />
                     <FooterNav />
                     <MobileFooter/>
                 </div>

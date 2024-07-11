@@ -3,7 +3,6 @@ import { Link, NavLink } from 'react-router-dom';
 import Search from '../Common/SearchBar';
 import Data from "../Products/Data.json";
 import PhoneSearch from '../Common/PhoneSearch';
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);

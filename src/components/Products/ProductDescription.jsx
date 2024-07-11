@@ -63,8 +63,6 @@ const ProductDescription = ({product}) => {
                 </div>
             </div>
             <EnquiryFormDialog open={dialogOpen} onClose={handleDialogClose} />
-
-
         </>
     )
 }

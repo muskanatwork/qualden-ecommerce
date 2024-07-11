@@ -21,7 +21,7 @@ const ProductDetails = () => {
                 <div className="main">
                     <Breadcrumbs />
                     <div className="detailsContainer">
-                        <ImagePreview />
+                        <ImagePreview product={product} />
                         <ProductDescription product={product} />
                     </div>
                     <TableInfo product={product}/>

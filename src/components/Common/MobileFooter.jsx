@@ -22,6 +22,10 @@ const MobileFooter = () => {
     }
   };
 
+  const handleCallClick = () => {
+    window.location.href = 'tel:+1234567890'; // Replace with the actual phone number
+  };
+
   return (
     <div className="mobileFooter">
       <BottomNavigation
@@ -62,9 +66,8 @@ const MobileFooter = () => {
         <BottomNavigationAction
           label="Call Us"
           icon={<CallIcon />}
-          component={Link}
-          to="/call"
-          onDoubleClick={() => handleDoubleClick('/call')}
+          onClick={handleCallClick}
+          onDoubleClick={handleCallClick}
         />
       </BottomNavigation>
     </div>

@@ -18,8 +18,8 @@ const ProductCard = ({ product }) => {
                             alt ={product.productName}
                             image={product.productImg}
                         />
-                        <h3>{product.productName}</h3>
                     </Card>
+                    <h3>{product.productName}</h3>
                 </div>  
             </Link>
         </GridItem>

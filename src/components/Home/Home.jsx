@@ -12,6 +12,7 @@ import '../css/Home.css'
 import MobileFooter from "../Common/MobileFooter"
 import MobileLogoDiv from "../Common/MobileLogoDiv"
 import Grid from '@mui/material/Grid';
+import CallUs from "../Common/CallUsButton"
 const Home = () => {
     const ProductCardArr = Data[0]["Electronic-Sensor"]
     return (
@@ -60,6 +61,7 @@ const Home = () => {
                     </div>
                     <SubmitRequirement />
                     <Footer />
+                    <CallUs/>
                     <MobileFooter />
                     <ScrollToTopButton />
                     <WhatsAppButton

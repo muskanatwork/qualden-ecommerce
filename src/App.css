@@ -884,4 +884,29 @@ nav ul li a:hover {
   .App {
     display: none;
   }
+  .call-icon{
+    display: block;
+  }
+}
+
+/* call us button */
+.call-icon {
+  background-color: #31bae8; 
+  color: white; 
+  border-radius: 50%; 
+  padding: 10px; 
+  cursor: pointer; 
+  font-size: 20px; 
+  position: fixed;
+  bottom: 120px;
+  right: 20px;
+  z-index: 1000;
+  display: none; 
+}
+
+/* Media query for tablets and phones */
+@media screen and (max-width: 1024px) {
+  .call-icon {
+    display: block; 
+  }
 }

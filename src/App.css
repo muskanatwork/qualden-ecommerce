@@ -229,9 +229,9 @@ nav ul li a:hover {
 
 .nav-right ul li.dropdown .dropdown-content {
   display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
+  position: relative;
+  /* top: 100%;
+  left: 0; */
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -242,6 +242,9 @@ nav ul li a:hover {
 
 
 .category {
+  position: absolute;
+  /* top: 20px;
+  left: 10px; */
   padding: 8px 16px;
   cursor: pointer;
 }
@@ -653,6 +656,18 @@ nav ul li a:hover {
 .phone-search-no-results {
   margin-top: 20px;
   color: #888;
+}
+
+
+/* search result */
+.resultProduct{
+  display: flex;
+}
+.resultProduct img{
+  height: 150px;
+}
+.searchResult{
+  margin-right: 80%;
 }
 
 

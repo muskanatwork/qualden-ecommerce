@@ -16,7 +16,7 @@ const ProductCategory = ({ product }) => {
     };
 
     const handleNavigate = () => {
-        navigate('productDetails', { state: { product } });
+        navigate('productDetails', { state: product  });
     };
 
     return (

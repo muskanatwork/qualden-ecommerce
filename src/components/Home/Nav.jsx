@@ -49,7 +49,7 @@ function Nav() {
   };
 
   return (
-    <div className={`nav-container ${scrolled ? 'scrolled' : ''}`}>
+    // <div className={`nav-container ${scrolled ? 'scrolled' : ''}`}>
       <nav ref={navRef}>
         <Link to='/'>
           <img className='logo' src="https://qualden.com/assets/imgs/template/logo.png" alt="qualden" />
@@ -111,7 +111,7 @@ function Nav() {
         </div>
         <PhoneSearch />
       </nav>
-     </div>
+    //  </div>
   );
 }
 

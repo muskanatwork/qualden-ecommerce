@@ -2,6 +2,7 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Data from './Data.json';
+import { Link } from 'react-router-dom';
 
 const CarouselCard = () => {
     const responsive = {
@@ -33,19 +34,21 @@ const CarouselCard = () => {
     });
 
     return (
+        <Link to={'/product/productDetails'}>
         <Carousel responsive={responsive}>
-            {flattenedData.map((card, index) => (
+            {flattenedData.map((product, index) => (
                 <div key={index} className="carousel-item">
                     <div className="card">
-                        <img src={card.productImg} alt={card.productName} />
+                        <img src={product.productImg} alt={product.productName} />
                         <div className="card-body">
-                            <h5 className="card-title">{card.productName}</h5>
+                            <h5 className="card-title">{product.productName}</h5>
                             <button className="btn">Get Best Quoto</button>
                         </div>
                     </div>
                 </div>
             ))}
         </Carousel>
+        </Link>
     );
 };
 

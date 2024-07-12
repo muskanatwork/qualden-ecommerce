@@ -1,46 +1,61 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useNavigate } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import CloseIcon from '@mui/icons-material/Close';
+import data from '../Products/Data.json';
+
+// Flatten the JSON data
+const flattenData = (data) => {
+  const items = [];
+  data.forEach(category => {
+    Object.values(category).forEach(products => {
+      items.push(...products);
+    });
+  });
+  return items;
+};
+
+const items = flattenData(data);
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [showSearch, setShowSearch] = useState(false);
   const [results, setResults] = useState([]);
   const searchRef = useRef(null);
-
-  const items = [
-    'Industrial Noise Sensor',
-    'Siphon Tipping Bucket Rain Gauge',
-    'SMKBRN-ECO Tipping Bucket Rain Gauge',
-    'Wind Speed Sensor',
-    'Radar Type Water Level Sensor',
-    'Soil Moisture and Temperature Sensor',
-    'Industrial Noise Sensor'
-  ];
+  const navigate = useNavigate();
 
   const handleSearchIconClick = () => {
     setShowSearch(true);
+    console.log('Search icon clicked');
   };
 
   const handleCancelIconClick = () => {
     setShowSearch(false);
     setSearchTerm('');
     setResults([]);
+    console.log('Cancel icon clicked');
   };
 
   const handleInputChange = (event) => {
     setSearchTerm(event.target.value);
+    console.log('Input changed:', event.target.value);
   };
   
   const handleGoClick = () => {
+    console.log('Search initiated with term:', searchTerm);
     const filteredResults = items.filter(item =>
-      item.toLowerCase().includes(searchTerm.toLowerCase())
+      item.productName.toLowerCase().includes(searchTerm.toLowerCase())
     );
+    console.log('Filtered results:', filteredResults);
     setResults(filteredResults);
+
+    // Navigate to the SearchResults page with the search term and results
+    navigate('/search-results', { state: { results: filteredResults, searchTerm } });
   };
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
+      console.log('Enter key pressed');
       handleGoClick();
     }
   };
@@ -81,18 +96,6 @@ const Search = () => {
           />
           <button className='search-button-go' onClick={handleGoClick}>Go</button>
         </div>
-      )}
-      {results.length > 0 && (
-        <div className="search-results">
-          <ul>
-            {results.map((result, index) => (
-              <li key={index}>{result}</li>
-            ))}
-          </ul>
-        </div>
-      )}
-      {results.length === 0 && searchTerm && (
-        <div className="no-results">No results found</div>
       )}
     </div>
   );

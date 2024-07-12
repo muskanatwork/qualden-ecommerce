@@ -10,7 +10,7 @@ import Breadcrumbs from '../Common/Breadcrumbs';
 import ProductDescription from './ProductDescription';
 import MobileFooter from '../Common/MobileFooter';
 import { useLocation } from 'react-router-dom';
-const ProductDetails = () => {
+const ProductDetails = (props) => {
     const location = useLocation();
     const product = location.state
     return (

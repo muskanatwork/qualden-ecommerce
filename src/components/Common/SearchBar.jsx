@@ -42,6 +42,11 @@ const Search = () => {
   };
   
   const handleGoClick = () => {
+    if (searchTerm.trim() === '') {
+      alert('Please enter the text');
+      return;
+    }
+
     console.log('Search initiated with term:', searchTerm);
     const filteredResults = items.filter(item =>
       item.productName.toLowerCase().includes(searchTerm.toLowerCase())

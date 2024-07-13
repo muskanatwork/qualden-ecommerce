@@ -229,9 +229,9 @@ nav ul li a:hover {
 
 .nav-right ul li.dropdown .dropdown-content {
   display: none;
-  position: relative;
-  /* top: 100%;
-  left: 0; */
+  position: absolute;
+  top: 100%;
+  left: 0;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -242,9 +242,8 @@ nav ul li a:hover {
 
 
 .category {
-  position: absolute;
-  /* top: 20px;
-  left: 10px; */
+  top: 20px;
+  left: 10px;
   padding: 8px 16px;
   cursor: pointer;
 }
@@ -657,6 +656,43 @@ nav ul li a:hover {
   margin-top: 20px;
   color: #888;
 }
+.custom-alert {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.custom-alert-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.custom-alert-content p {
+  margin: 0 0 10px;
+}
+
+.custom-alert-content button {
+  padding: 8px 16px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.custom-alert-content button:hover {
+  background-color: #0056b3;
+}
+
 
 
 /* search result */
@@ -665,12 +701,50 @@ nav ul li a:hover {
 }
 .resultProduct img{
   height: 150px;
+  width: 150px; 
+  object-fit: cover; 
 }
 .searchResult{
   margin-right: 80%;
 }
+.main-Content{
+  display: flex;
+}
+.resultContent{
+  width:3000px;
+}
+.resultList{
+  list-style: none;
+}
+.productResult{
+color: #09501a;
+margin: 10px;
+}
+.customHr {
+  width: 50%; 
+  margin: 10px;
+}
+.resultImg{
+  border: 1px solid black;
+  margin-left: 10px;
+}
+.productListResult{
+  margin: 20px;
+}
 
+.search-header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 20px;
+}
 
+.bold {
+  font-weight: bold;
+}
+.resultContent{
+  margin: 20px;
+}
 /* footer nav */
 .footer-nav {
   width: 96%;
@@ -902,7 +976,26 @@ nav ul li a:hover {
   .call-icon{
     display: block;
   }
+  .aside1{
+    display: none;
+  }
 }
+@media (max-width: 600px) {
+  .resultProduct {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  .resultImg {
+      max-width: 100%;
+      height: auto;
+  }
+  .productListResult {
+      margin-top: 10px;
+      text-align: center;
+  }
+}
+
 
 /* call us button */
 .call-icon {

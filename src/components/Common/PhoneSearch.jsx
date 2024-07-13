@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import SearchIcon from '@mui/icons-material/Search';
 import data from '../Products/Data.json';
 
 const PhoneSearch = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [results, setResults] = useState([]);
+  const [showAlert, setShowAlert] = useState(false); // State for custom alert
+  const navigate = useNavigate();
 
   // Flatten the JSON data
   const flattenData = (data) => {
@@ -25,23 +28,39 @@ const PhoneSearch = () => {
   };
 
   const handleSearch = () => {
-    console.log('Search initiated with term:', searchTerm); 
+    if (searchTerm.trim() === '') {
+      setShowAlert(true); // Show custom alert
+      return;
+    }
+
+    console.log('Search initiated with term:', searchTerm);
     const filteredResults = items.filter(item =>
       item.productName.toLowerCase().includes(searchTerm.toLowerCase())
     );
-    console.log('Filtered results:', filteredResults); 
+    console.log('Filtered results:', filteredResults);
     setResults(filteredResults);
+
+    // Navigate to the SearchResults page with the search term and results
+    navigate('/search-results', { state: { results: filteredResults, searchTerm } });
   };
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
-      console.log('Enter key pressed'); 
+      console.log('Enter key pressed');
       handleSearch();
     }
   };
 
   return (
     <div className="phoneSearch">
+      {showAlert && (
+        <div className="custom-alert">
+          <div className="custom-alert-content">
+            <p>Please enter the text</p>
+            <button onClick={() => setShowAlert(false)}>OK</button>
+          </div>
+        </div>
+      )}
       <div className="phone-search-bar">
         <input
           type="text"
@@ -68,9 +87,6 @@ const PhoneSearch = () => {
             ))}
           </ul>
         </div>
-      )}
-      {results.length === 0 && searchTerm && (
-        <div className="phone-search-no-results">No results found</div>
       )}
     </div>
   );

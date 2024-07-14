@@ -6,6 +6,7 @@ import Products from './components/Products/Products';
 import Contactus from './components/ContactUs/Contactus';
 import ProductDetails from './components/Products/ProductDetail';
 import SearchResults from './components/Common/SearchResult';
+import CategoryProducts from './components/Products/CategoryProducts';
 function App() {
   return (
     <>
@@ -18,6 +19,8 @@ function App() {
                 <Route path="/product/productDetails" element={<ProductDetails />} />
                 <Route path="/products/:id" component={ProductDetails} />
                 <Route path="/search-results" element={<SearchResults />} />
+                <Route path='/product/:categoryName' element={<CategoryProducts />} />
+
             </Routes>
         </Router>
 

@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { FaPlus, FaMinus } from 'react-icons/fa';
 
 const Footer = () => {
+    const [generalLinksOpen, setGeneralLinksOpen] = useState(false);
+    const [productsOpen, setProductsOpen] = useState(false);
+
+    const toggleGeneralLinks = () => {
+        setGeneralLinksOpen(!generalLinksOpen);
+    };
+
+    const toggleProducts = () => {
+        setProductsOpen(!productsOpen);
+    };
+
     return (
         <>
             <footer>
                 <div className="footer-section">
-                    <h3>General Links</h3>
-                    <div className='footer-box1'>
+                    <h3 onClick={toggleGeneralLinks} className="toggle-heading">
+                        General Links
+                        <span className="toggle-icon">{generalLinksOpen ? <FaMinus /> : <FaPlus />}</span>
+                    </h3>
+                    <div className={`footer-box1 ${generalLinksOpen ? 'open' : ''}`}>
                         <div className='section2'>
                             <ul>
                                 <li><a href="/" title="Home">Home</a></li>
@@ -24,8 +39,11 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer-section">
-                    <h3>Products</h3>
-                    <div className='footer-box1'>
+                    <h3 onClick={toggleProducts} className="toggle-heading">
+                        Products
+                        <span className="toggle-icon">{productsOpen ? <FaMinus /> : <FaPlus />}</span>
+                    </h3>
+                    <div className={`footer-box1 ${productsOpen ? 'open' : ''}`}>
                         <div className='section1'>
                             <ul>
                                 <li><a href="#" title="Electronic Sensor">Electronic Sensor</a></li>

@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, NavLink, useNavigate } from 'react-router-dom';
 import Search from '../Common/SearchBar';
 import Data from "../Products/Data.json";
 import PhoneSearch from '../Common/PhoneSearch';
@@ -8,8 +8,8 @@ function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [hoveredCategory, setHoveredCategory] = useState(null);
-  const [viewAll, setViewAll] = useState({});
   const navRef = useRef(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,15 +41,14 @@ function Nav() {
 
   const handleMouseLeave = () => {
     setHoveredCategory(null);
-    setViewAll({});
   };
 
   const handleViewAll = (categoryName) => {
-    setViewAll({ ...viewAll, [categoryName]: true });
+    navigate(`/product/${categoryName}`);
   };
 
   return (
-    // <div className={`nav-container ${scrolled ? 'scrolled' : ''}`}>
+    <div className={`nav-container ${scrolled ? 'scrolled' : ''}`}>
       <nav ref={navRef}>
         <Link to='/'>
           <img className='logo' src="https://qualden.com/assets/imgs/template/logo.png" alt="qualden" />
@@ -70,7 +69,7 @@ function Nav() {
               <NavLink to='/about'>About Us</NavLink>
             </li>
             <li className='dropdown'>
-              <NavLink to='/product'>Products </NavLink>
+              <NavLink to='/product'>Products</NavLink>
               <div className="dropdown-content">
                 {Data.map((category, index) => (
                   Object.keys(category).map(catName => (
@@ -83,12 +82,12 @@ function Nav() {
                       {catName}
                       {hoveredCategory === catName && (
                         <div className='product-names'>
-                          {category[catName].slice(0, viewAll[catName] ? category[catName].length : 5).map((product, productIndex) => (
+                          {category[catName].slice(0, 5).map((product, productIndex) => (
                             <Link key={productIndex} to={`/product/${catName}/${product.productName}`}>
                               {product.productName}
                             </Link>
                           ))}
-                          {catName === "Electronic-Sensor" && category[catName].length > 5 && !viewAll[catName] && (
+                          {category[catName].length > 5 && (
                             <button className='viewAllButton' onClick={() => handleViewAll(catName)}>View All</button>
                           )}
                         </div>
@@ -111,7 +110,7 @@ function Nav() {
         </div>
         <PhoneSearch />
       </nav>
-    //  </div>
+     </div> 
   );
 }
 

@@ -2,9 +2,11 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Data from './Data.json';
+import { useNavigate } from 'react-router-dom';
 import { Link } from 'react-router-dom';
 
 const CarouselCard = () => {
+    const navigate = useNavigate();
     const responsive = {
         superLargeDesktop: {
             breakpoint: { max: 4000, min: 3000 },
@@ -33,11 +35,16 @@ const CarouselCard = () => {
         });
     });
 
+    const handleNavigateClick = (product) => {
+        navigate('/product/productDetails', { state: product });
+    };
+
+
     return (
-        <Link to={'/product/productDetails'}>
+        // <Link to={'/product/productDetails'}>
         <Carousel responsive={responsive}>
             {flattenedData.map((product, index) => (
-                <div key={index} className="carousel-item">
+                <div onClick={()=>handleNavigateClick(product)} key={index} className="carousel-item">
                     <div className="card">
                         <img src={product.productImg} alt={product.productName} />
                         <div className="card-body">
@@ -48,7 +55,7 @@ const CarouselCard = () => {
                 </div>
             ))}
         </Carousel>
-        </Link>
+        // </Link>
     );
 };
 

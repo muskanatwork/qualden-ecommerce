@@ -3,6 +3,7 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 import Search from '../Common/SearchBar';
 import Data from "../Products/Data.json";
 import PhoneSearch from '../Common/PhoneSearch';
+import MobileLogoDiv from '../Common/MobileLogoDiv';
 
 function Nav() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,12 +55,15 @@ function Nav() {
           <img className='logo' src="https://qualden.com/assets/imgs/template/logo.png" alt="qualden" />
         </Link>
         <div className='nav-right'>
+          {menuOpen && (
+            <button className='close-menu' onClick={() => setMenuOpen(false)}>×</button>
+          )}
           <ul className={menuOpen ? 'open' : ''}>
             {menuOpen && (
-              <li>
-                <span className='close-menu' onClick={() => setMenuOpen(false)}>
-                  &times;
-                </span>
+              <li className='mobile-menu-header'>
+                <div className='mobile-logo-div'>
+                  <MobileLogoDiv />
+                </div>
               </li>
             )}
             <li>
@@ -110,7 +114,7 @@ function Nav() {
         </div>
         <PhoneSearch />
       </nav>
-     </div> 
+    </div>
   );
 }
 

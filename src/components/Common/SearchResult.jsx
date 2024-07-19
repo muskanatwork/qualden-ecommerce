@@ -10,6 +10,7 @@ import ScrollToTopButton from './ScrollToTopButton';
 import MobileFooter from './MobileFooter';
 import Breadcrumbs from './Breadcrumbs';
 import CallUs from './CallUsButton';
+import MobileBreadcrumbs from '../Common/MobileBreadcrumbs'
 
 const SearchResults = () => {
     const location = useLocation();
@@ -29,6 +30,7 @@ const SearchResults = () => {
                             <Breadcrumbs />
                         </div>
                     </div>
+                    <MobileBreadcrumbs/>
                     <div className='main-Content'>
                         <div className='resultContent'>
                         <p className='search-header'>

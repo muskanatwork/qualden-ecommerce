@@ -9,6 +9,8 @@ import WhatsAppButton from "../Common/WhatsAppButton";
 import ScrollToTopButton from "../Common/ScrollToTopButton";
 import MobileFooter from "../Common/MobileFooter";
 import Data from '../Products/Data.json'
+import MobileBreadcrumbs from '../Common/MobileBreadcrumbs'
+import CallUs from "../Common/CallUsButton";
 const Products = () => {
     const electronicArr = Data[0]["Electronic-Sensor"]
     const radarArr = Data[1]["Radar Sensor"]
@@ -29,6 +31,7 @@ const Products = () => {
                             <Breadcrumbs />
                         </div>
                     </div>
+                    <MobileBreadcrumbs/>
 
                     <div className="categoryContainer">
                         <div className="categoryTittle">
@@ -87,6 +90,7 @@ const Products = () => {
                     </div>
                     <SubmitRequirement />
                     <FooterNav />
+                    <CallUs/>
                     <MobileFooter/>
                     <ScrollToTopButton />
                     <WhatsAppButton

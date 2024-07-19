@@ -61,11 +61,7 @@
   transform-origin: bottom; 
 }
 
-.readMore {
-  text-decoration: none;
-  color: rgb(23, 62, 23);
-  font-weight: 800;
-}
+
 
 /* Hide the entire carousel on phone and tablet screens */
 @media (max-width: 1024px) {
@@ -89,6 +85,39 @@
 .paraDiv p {
   text-align: justify;
 }
+
+.readMoreDesktop{
+  text-decoration: none;
+  color: rgb(23, 62, 23);
+  font-weight: 800;
+
+}
+
+.readMore {
+  text-decoration: none;
+  color: rgb(23, 62, 23);
+  font-weight: 800;
+}
+@media (min-width: 768px) {
+  .readMoreDesktop {
+      display: inline;
+  }
+
+  .readMore {
+      display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .readMoreDesktop {
+      display: none;
+  }
+
+  .readMore {
+      display: inline;
+  }
+}
+
 
 /* card styling */
 
@@ -402,6 +431,8 @@ footer {
       width: 100%;
   }
 }
+
+
 
 @media only screen and (min-width: 769px) {
   .toggle-icon {

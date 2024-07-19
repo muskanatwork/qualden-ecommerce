@@ -9,6 +9,8 @@ import '../css/AboutUs.css'
 import SubmitRequirement from "../Common/RequrimentButton"
 import WhatsAppButton from '../Common/WhatsAppButton';
 import MobileFooter from '../Common/MobileFooter';
+import MobileBreadcrumbs from '../Common/MobileBreadcrumbs'
+import CallUs from '../Common/CallUsButton';
 const AboutUs = () => {
     return (
         <>
@@ -24,6 +26,7 @@ const AboutUs = () => {
                             <Breadcrumbs />
                         </div>
                     </div>
+                    <MobileBreadcrumbs/>
 
                     <div className="aboutusContentDiv">
                         <div className="aboutusContent">
@@ -108,6 +111,7 @@ const AboutUs = () => {
                     </div>
                     <SubmitRequirement />
                     <FooterNav />
+                    <CallUs/>
                     <MobileFooter/>
                     <ScrollToTopButton />
                     <WhatsAppButton

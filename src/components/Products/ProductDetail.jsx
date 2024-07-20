@@ -10,6 +10,7 @@ import Breadcrumbs from '../Common/Breadcrumbs';
 import ProductDescription from './ProductDescription';
 import MobileFooter from '../Common/MobileFooter';
 import { useLocation } from 'react-router-dom';
+import MobileBreadcrumbs from '../Common/MobileBreadcrumbs'
 const ProductDetails = (props) => {
     const location = useLocation();
     const product = location.state
@@ -20,6 +21,7 @@ const ProductDetails = (props) => {
                 <Nav />
                 <div className="main">
                     <Breadcrumbs />
+                    <MobileBreadcrumbs/>
                     <div className="detailsContainer">
                         <ImagePreview product={product} />
                         <ProductDescription product={product} />
@@ -27,7 +29,7 @@ const ProductDetails = (props) => {
                     <TableInfo product={product}/>
                     <ProductForm />
                     <CarouselCard product={product} />
-                    <FooterNav />
+                  ``  <FooterNav />
                     <MobileFooter/>
                 </div>
             </div>

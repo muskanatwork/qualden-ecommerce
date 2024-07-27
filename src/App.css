@@ -306,11 +306,15 @@ nav ul li a:hover {
   display: none;
   position: absolute;
   top: 0;
-  left: -100%;
+  left: -115%;
   background-color: white;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  width: 200px;
+  width: 300px;
+  white-space: normal;
+}
+.arrow-icon{
+  margin-left: 8px;
 }
 
 .product-names a {
@@ -383,7 +387,6 @@ nav ul li a:hover {
   position: sticky;
   top: 0;
   width: 100%;
-  overflow-x: auto;
   white-space: nowrap;
   z-index: 1000;
   transition: width 0.3s;

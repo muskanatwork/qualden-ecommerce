@@ -1,5 +1,7 @@
-import { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import Search from '../Common/SearchBar';
 import Data from "../Products/Data.json";
 import PhoneSearch from '../Common/PhoneSearch';
@@ -73,7 +75,10 @@ function Nav() {
               <NavLink to='/about'>About Us</NavLink>
             </li>
             <li className='dropdown'>
-              <NavLink to='/product'>Products</NavLink>
+              <NavLink to='/product'>
+                Products
+                <FontAwesomeIcon icon={faChevronDown} className="arrow-icon" />
+              </NavLink>
               <div className="dropdown-content">
                 {Data.map((category, index) => (
                   Object.keys(category).map(catName => (

@@ -261,6 +261,24 @@ textarea {
   margin-bottom: 10px;
 }
 
+.quick-text {
+  color: green;
+}
+
+.enquiry-text {
+  color: rgb(233, 197, 129);
+}
+
+.colorful-hr {
+  margin: auto;
+  border: none; 
+  height: 3px; 
+  width: 20%; 
+  background: linear-gradient(to right, green 50%, rgb(239, 193, 107) 50%);
+  margin: 10px auto; 
+}
+
+
 /* Footer */
 footer {
   background-color: rgb(3, 99, 3);
